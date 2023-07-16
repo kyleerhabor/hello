@@ -1,0 +1,55 @@
+name: "GitHub Pages"
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  build:
+    # Thought: Is there any way to extract this to a vriable for the build and deploy jobs?
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v3
+      - name: "Setup Java"
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: "17"
+      - name: "Setup Clojure"
+        uses: DeLaGuardo/setup-clojure@11.0
+        with:
+          cli: 1.11.1.1347
+      - name: "Cache clojure dependencies"
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.m2/repository
+            ~/.gitlibs
+            ~/.deps.clj
+          key: "cljdeps-${{ hashFiles('deps.edn') }}"
+          restore-keys: "cljdeps-"
+      - name: "Generate Static Site Files"
+        run: "clojure -M -m kyleerhabor.hello.core"
+      - name: "Upload Static Site Files"
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: out/
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Deploy to GitHub Pages"
+        id: deployment
+        uses: actions/deploy-pages@v2

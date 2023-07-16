@@ -1,0 +1,5 @@
+# deps.edn
+.cpcache/
+
+# Output for static site
+out/

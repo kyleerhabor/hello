@@ -3,16 +3,16 @@
  :kyleerhabor.hello.ui/email "kyleerhabor@gmail.com"
  :kyleerhabor.hello.ui/github "https://github.com/KyleErhabor"
  :kyleerhabor.hello.ui/anilist "https://anilist.co/user/KlayLay"
- :kyleerhabor.hello.ui/discord "klaylay" ; unused
+ :kyleerhabor.hello.ui/discord "klaylay"
 
  ;;; A lot of the colors are based on the color scheme used in Wonder Cat Kyuu-chan.
 
  ;; Source: https://twitter.com/nitorisasami/status/1569306543522476037, 1st image, 1st frame, Hinata's hair with 50% brightness.
- :kyleerhabor.hello.ui/secondary-text-color "#7F7F7F" ; unused.
+ ;;
+ ;; NOTE: Unused.
+ :kyleerhabor.hello.ui/secondary-text-color "#7F7F7F"
  ;; Source: [1], 2nd frame at Hinata's hair with a saturation of 30% and brightness of 50%.
  :kyleerhabor.hello.ui/link-color-light "#7B597F"
- ;; Source: volume 6, chapter 18, page 40, 4th frame, Hinata's hair with 19% saturation.
- ; :kyleerhabor.hello.ui/link-color-dark "#B591AE"
  ;; Source: [1], 3rd frame at Hinata's hair (#ada3ad) with 19% saturation.
  :kyleerhabor.hello.ui/link-color-dark "#ad8cad"
  ;; Source: [1], 3rd frame with a brightness of 10%.

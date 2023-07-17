@@ -4,7 +4,9 @@
     [kyleerhabor.hello.ui :as ui]
     [hiccup2.core :as h]
     [hickory.core :as hi]
-    [hickory.render :refer [hickory-to-html]]))
+    [hickory.render :refer [hickory-to-html]])
+  (:import
+    (java.nio.file Files Path StandardCopyOption)))
 
 ;;; A note on Hiccup: I was kind of surprised that nested elements (like :li>a) aren't supported.
 
@@ -39,6 +41,13 @@
       (update-in body merge-contents (get-in home body)))))
 
 (defn -main []
-  (let [path "out/index.html"]
+  (let [path "out/index.html"
+        public (io/file (io/resource "public"))
+        out (Path/of (.toURI (io/file "out")))]
     (io/make-parents path)
+    (doseq [;; The first item is the public folder itself.
+            file (rest (file-seq public))]
+      (let [path (Path/of (.toURI file))
+            output (.resolve out (.getFileName path))]
+        (Files/copy path output (into-array [StandardCopyOption/REPLACE_EXISTING]))))
     (spit path (str doctype (hickory-to-html home-page)))))

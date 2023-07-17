@@ -40,14 +40,16 @@
       (update-in head merge-contents (get-in home head))
       (update-in body merge-contents (get-in home body)))))
 
+(defn path [file]
+  (Path/of (.toURI file)))
+
 (defn -main []
-  (let [path "out/index.html"
+  (let [html "out/index.html"
         public (io/file (io/resource "public"))
-        out (Path/of (.toURI (io/file "out")))]
-    (io/make-parents path)
+        out (path (io/file "out"))]
+    (io/make-parents html)
     (doseq [;; The first item is the public folder itself.
-            file (rest (file-seq public))]
-      (let [path (Path/of (.toURI file))
-            output (.resolve out (.getFileName path))]
+            path (map path (rest (file-seq public)))]
+      (let [output (.resolve out (.getFileName path))]
         (Files/copy path output (into-array [StandardCopyOption/REPLACE_EXISTING]))))
-    (spit path (str doctype (hickory-to-html home-page)))))
+    (spit html (str doctype (hickory-to-html home-page)))))

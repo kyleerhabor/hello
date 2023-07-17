@@ -32,10 +32,9 @@
         :font "inherit"}]
    [:html {:background-color (vari "--background-color")
            :color-scheme "light dark"
-           ;; Mozilla recommends at least 1.5 for accessibility.
            :line-height "1.5"}]
-   [:body {:margin "1rem auto"
-           :max-width "min(100% - 2rem, 600px)"
+   [:body {:margin "0.5rem auto"
+           :max-width "min(100% - 1.6rem, 600px)"
            :box-sizing "border-box"
            :font-family ["\"Helvetica Neue\"" "\"Helvetica\"" "\"Arial\"" "sans-serif"]}]
    [:a {:color (vari "--link-color")}]
@@ -56,6 +55,7 @@
        (css default-css-flags
          (conj default-css-rules
            [:body {:display "grid"
+                   ;; The gap is for separating the content and links nicely.
                    :gap "0.5em"}]
            ;; Close to, but not exactly bold (else, it looks weird with the h1).
            [:b {:font-weight "500"}]
@@ -115,7 +115,7 @@
                :target "_blank"
                :title "My AniList profile"}
            (update icon/anilist 1 assoc :height height)]]
-         ;; TODO: Figure out a way to display the username on hover or click.
+         ;; TODO: Figure out a way to display the username on click.
          #_[:li
             (update icon/discord 1 assoc :height height)]])]]]])
 

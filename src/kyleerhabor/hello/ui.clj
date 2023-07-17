@@ -32,10 +32,10 @@
         :font "inherit"}]
    [:html {:background-color (vari "--background-color")
            :color-scheme "light dark"
+           ;; Mozilla recommends at least 1.5 for accessibility.
            :line-height "1.5"}]
-   [:body {:margin-block-start "0.5em"
-           :margin-inline "auto"
-           :max-width "min(100% - 1rem, 600px)"
+   [:body {:margin "1rem auto"
+           :max-width "min(100% - 2rem, 600px)"
            :box-sizing "border-box"
            :font-family ["\"Helvetica Neue\"" "\"Helvetica\"" "\"Arial\"" "sans-serif"]}]
    [:a {:color (vari "--link-color")}]

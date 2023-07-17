@@ -81,7 +81,11 @@
                             :font-weight "550"
                             :gap "0.35em"})]
            [:#links (merge flex no-list-style-type
-                      {:gap "0.3125em"})])))]]
+                      {:gap "0.3125em"})]
+           [:#discord (merge flex
+                        {:gap "0.25em"})]
+           [(s/+ :#discord-checkbox :div) {:display "none"}]
+           ["#discord-checkbox:checked + div" {:display "block"}])))]]
    [:body
     [:header
      [:nav
@@ -115,9 +119,14 @@
                :target "_blank"
                :title "My AniList profile"}
            (update icon/anilist 1 assoc :height height)]]
-         ;; TODO: Figure out a way to display the username on click.
-         #_[:li
-            (update icon/discord 1 assoc :height height)]])]]]])
+         [:li {:id "discord"}
+          [:label {:for "discord-checkbox"}
+           (update icon/discord 1 assoc :height height)]
+          [:input {:id "discord-checkbox"
+                   :style {:display "none"}
+                   :type "checkbox"}]
+          [:div
+           (::discord config)]]])]]]])
 
 ;; NOTE: I had an implementation for a writings (articles/blog/etc.) page, but decided to remove it, since just having a
 ;; home page is enough.

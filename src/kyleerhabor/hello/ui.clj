@@ -84,8 +84,9 @@
                       {:gap "0.3125em"})]
            [:#discord (merge flex
                         {:gap "0.25em"})]
-           [(s/+ :#discord-checkbox :div) {:display "none"}]
-           ["#discord-checkbox:checked + div" {:display "block"}])))]]
+           [(s/+ :#discord-checkbox :div) {:display "none"
+                                           }]
+           ["#discord-checkbox:checked + *" {:display "block"}])))]]
    [:body
     [:header
      [:nav

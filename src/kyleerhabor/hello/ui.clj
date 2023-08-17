@@ -124,6 +124,7 @@
           [:label {:for "discord-checkbox"}
            [:span {:id "discord-icon"}
             (update icon/discord 1 assoc :height height)]]
+          ;; NOTE: This appears to be inaccessible via tabbing.
           [:input {:id "discord-checkbox"
                    :style {:display "none"}
                    :type "checkbox"}]

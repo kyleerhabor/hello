@@ -33,16 +33,10 @@
    [:html {:background-color (vari "--background-color")
            :color-scheme "light dark"
            :line-height "1.5"}]
-   [:body {
-           ;; :margin "0.5rem auto"
-           ;; :max-width "min(100% - 1.6rem, 600px)"
-           :box-sizing "border-box"
+   [:body {:box-sizing "border-box"
            ;; TODO: Find a better font.
            :font-family ["\"Helvetica Neue\"" "\"Helvetica\"" "\"Arial\"" "sans-serif"]}]
-   [:a {:color (vari "--link-color")}]
-   #_(at-media {:hover "hover"}
-     [:a {:text-decoration-line "inherit"}
-      [:&:hover {:text-decoration-line "underline"}]])])
+   [:a {:color (vari "--link-color")}]])
 
 (def flex {:display "flex"})
 
@@ -59,7 +53,7 @@
            [:body {:display "grid"
                    :font-size "1.1em"
                    :gap "0.75em"
-                   :margin-block-start "45vh"
+                   :margin-block-start "40vh"
                    :margin-inline "4vw"}]
            [:header {:grid-row "1"
                      :grid-column "2"}]
@@ -81,17 +75,13 @@
             [:a {:color "inherit"}]]
            [:#discord (merge flex
                         {:gap "0.25em"})]
-           ;; [:#discord-icon (s/hover) {:display "block"}]
            [[:#discord-icon (s/hover)]  {:display "block"}]
            [(s/+ :#discord-checkbox :div) {:display "none"}]
            ["#discord-checkbox:checked + *" {:display "block"}])))]]
    [:body
     [:header
      [:nav
-      [:ul {:id "navigation"}
-       #_[:li
-          [:a {:href "/writings"}
-           "Writings"]]]]]
+      [:ul {:id "navigation"}]]]
     [:main
      [:h1
       "Hello!"]

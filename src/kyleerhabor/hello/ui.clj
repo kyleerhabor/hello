@@ -101,6 +101,11 @@
                :title "My email"}
            (update icon/mail 1 assoc :height height)]]
          [:li
+          [:a {:href (::linkedin config)
+               :target "_blank"
+               :title "My LinkedIn profile"}
+           (update icon/linkedin 1 assoc :height height)]]
+         [:li
           [:a {:href (::github config)
                :target "_blank"
                :title "My GitHub profile"}

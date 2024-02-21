@@ -1,7 +1,6 @@
 {:kyleerhabor.hello.core/debug? false
  :kyleerhabor.hello.ui/title "Kyle Erhabor"
  :kyleerhabor.hello.ui/email "kyleerhabor@gmail.com"
- :kyleerhabor.hello.ui/linkedin "https://www.linkedin.com/in/kyleerhabor/"
  :kyleerhabor.hello.ui/github "https://github.com/KyleErhabor"
  :kyleerhabor.hello.ui/anilist "https://anilist.co/user/KlayLay"
  :kyleerhabor.hello.ui/discord "klaylay"

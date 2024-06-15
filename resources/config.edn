@@ -2,11 +2,9 @@
  :kyleerhabor.hello.ui/title "Kyle Erhabor"
  :kyleerhabor.hello.ui/email "kyleerhabor@gmail.com"
  :kyleerhabor.hello.ui/github "https://github.com/KyleErhabor"
- :kyleerhabor.hello.ui/anilist "https://anilist.co/user/KlayLay"
- :kyleerhabor.hello.ui/discord "klaylay"
 
  ;;; A lot of the colors are based on the color scheme used in Wonder Cat Kyuu-chan.
-
+ 
  ;; Source: https://twitter.com/nitorisasami/status/1569306543522476037, 1st image, 1st frame, Hinata's hair with 50% brightness.
  ;;
  ;; NOTE: Unused.

@@ -72,12 +72,7 @@
                             :gap "0.35em"})]
            [:#links (merge flex no-list-style-type
                       {:gap "0.3125em"})
-            [:a {:color "inherit"}]]
-           [:#discord (merge flex
-                        {:gap "0.25em"})]
-           [[:#discord-icon (s/hover)]  {:display "block"}]
-           [(s/+ :#discord-checkbox :div) {:display "none"}]
-           ["#discord-checkbox:checked + *" {:display "block"}])))]]
+            [:a {:color "inherit"}]])))]]
    [:body
     [:header
      [:nav
@@ -104,22 +99,7 @@
           [:a {:href (::github config)
                :target "_blank"
                :title "My GitHub profile"}
-           (update icon/github 1 assoc :height height)]]
-         [:li
-          [:a {:href (::anilist config)
-               :target "_blank"
-               :title "My AniList profile"}
-           (update icon/anilist 1 assoc :height height)]]
-         [:li {:id "discord"}
-          [:label {:for "discord-checkbox"}
-           [:span {:id "discord-icon"}
-            (update icon/discord 1 assoc :height height)]]
-          ;; NOTE: This appears to be inaccessible via tabbing.
-          [:input {:id "discord-checkbox"
-                   :style {:display "none"}
-                   :type "checkbox"}]
-          [:div
-           (::discord config)]]])]]]])
+           (update icon/github 1 assoc :height height)]]])]]]])
 
 ;; NOTE: I had an implementation for a writings (articles/blog/etc.) page, but decided to remove it, since just having a
 ;; home page is enough.

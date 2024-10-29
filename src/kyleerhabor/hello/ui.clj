@@ -70,8 +70,9 @@
                             :font-variant-caps "all-small-caps"
                             :font-weight "550"
                             :gap "0.35em"})]
-           [:#links (merge flex no-list-style-type
-                      {:gap "0.3125em"})
+           [:#contacts (merge flex no-list-style-type
+                         {:padding-inline-start "0"
+                          :column-gap "0.375rem"})
             [:a {:color "inherit"}]])))]]
    [:body
     [:header
@@ -88,18 +89,16 @@
       "."]]
     [:footer
      [:address
-      ;; On Safari, this has to be rem (as opposed to em) for the icons to scale with the zoom level.
-      (let [height "1.7rem"]
-        [:ul {:id "links"}
-         [:li
-          [:a {:href (str "mailto:" (::email config))
-               :title "My email"}
-           (update icon/mail 1 assoc :height height)]]
-         [:li
-          [:a {:href (::github config)
-               :target "_blank"
-               :title "My GitHub profile"}
-           (update icon/github 1 assoc :height height)]]])]]]])
+      [:ul {:id "contacts"}
+       [:li
+        [:a {:href (str "mailto:" (::email config))
+             :title "Email"}
+         icon/mail]]
+       [:li
+        [:a {:href (::github config)
+             :target "_blank"
+             :title "GitHub"}
+         icon/github]]]]]]])
 
 ;; NOTE: I had an implementation for a writings (articles/blog/etc.) page, but decided to remove it, since just having a
 ;; home page is enough.

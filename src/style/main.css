@@ -1,0 +1,13 @@
+a {
+  color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.line-limit {
+  height: calc(var(--line-height) * var(--line-count));
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

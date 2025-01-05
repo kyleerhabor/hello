@@ -17,9 +17,9 @@
           <a href="/">About</a>
         </li>
         <li>
-          <a href="/titles">Titles</a>
+          <a href="/titles">Series Recs.</a>
         </li>
-        /
+        |
         <li>
           <a href="mailto:{PUBLIC_SOCIAL_EMAIL_ADDRESS}">Email</a>
         </li>

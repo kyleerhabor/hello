@@ -25,6 +25,6 @@
    the <ExternalLink href={PUBLIC_PROJECT_SAMPLED_URL} url={origin}>Sampled</ExternalLink> music player app.
 </p>
 <p>
-  If you'd like to reach me, the best way to do so is via email. I enjoy reading them and will try to respond in a
+  If you'd like to reach me, the best way is to send me an email. I enjoy reading them and will try to respond in a
   timely manner.
 </p>

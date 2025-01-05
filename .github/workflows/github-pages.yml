@@ -30,6 +30,7 @@ jobs:
           # Supports wildcards or a list of file names for caching multiple dependencies.
           # Default: ''
           cache-dependency-path: package-lock.json
+      - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v2
         with:

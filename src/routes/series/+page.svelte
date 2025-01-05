@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>Titles | Kyle Erhabor</title>
+  <title>Series Recs. | Kyle Erhabor</title>
 </svelte:head>
 
 <div class="grid">

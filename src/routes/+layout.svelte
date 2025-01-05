@@ -17,7 +17,7 @@
           <a href="/">About</a>
         </li>
         <li>
-          <a href="/titles">Series Recs.</a>
+          <a href="/series">Series Recs.</a>
         </li>
         |
         <li>

@@ -1,0 +1,302 @@
+{
+  "mediums": [
+    {
+      "id": "animation",
+      "value": 0
+    },
+    {
+      "id": "novel",
+      "value": 1
+    },
+    {
+      "id": "comics",
+      "value": 2
+    },
+    {
+      "id": "film",
+      "value": 3
+    }
+  ],
+  "titles": [
+    {
+      "id": "sonny-boy",
+      "name": "Sonny Boy",
+      "medium": "animation",
+      "coverImagePath": "cover-images/sonny-boy.png"
+    },
+    {
+      "id": "crest-of-the-stars",
+      "name": "Crest of the Stars",
+      "medium": "novel",
+      "coverImagePath": "cover-images/crest-of-the-stars.jpg"
+    },
+    {
+      "id": "banner-of-the-stars",
+      "name": "Banner of the Stars",
+      "medium": "novel",
+      "coverImagePath": "cover-images/banner-of-the-stars.jpg"
+    },
+    {
+      "id": "blood-on-the-tracks",
+      "name": "Blood on the Tracks",
+      "medium": "comics",
+      "coverImagePath": "cover-images/blood-on-the-tracks.jpg"
+    },
+    {
+      "id": "the-summer-hikaru-died",
+      "name": "The Summer Hikaru Died",
+      "medium": "comics",
+      "coverImagePath": "cover-images/the-summer-hikaru-died.jpg"
+    },
+    {
+      "id": "the-music-of-marie",
+      "name": "The Music of Marie",
+      "medium": "comics",
+      "coverImagePath": "cover-images/the-music-of-marie.jpg"
+    },
+    {
+      "id": "solanin",
+      "name": "Solanin",
+      "medium": "comics",
+      "coverImagePath": "cover-images/solanin.jpg"
+    },
+    {
+      "id": "girls-last-tour",
+      "name": "Girls' Last Tour",
+      "medium": "comics",
+      "coverImagePath": "cover-images/girls-last-tour.jpg"
+    },
+    {
+      "id": "song-of-the-long-march",
+      "name": "Song of the Long March",
+      "medium": "comics",
+      "coverImagePath": "cover-images/song-of-the-long-march.jpg"
+    },
+    {
+      "id": "kinos-journey",
+      "name": "Kino's Journey",
+      "medium": "novel",
+      "coverImagePath": "cover-images/kinos-journey.jpg"
+    },
+    {
+      "id": "hirayasumi",
+      "name": "Hirayasumi",
+      "medium": "comics",
+      "coverImagePath": "cover-images/hirayasumi.jpg"
+    },
+    {
+      "id": "mushishi",
+      "name": "Mushishi",
+      "medium": "animation",
+      "coverImagePath": "cover-images/mushishi.jpg"
+    },
+    {
+      "id": "the-case-of-hana-and-alice",
+      "name": "The Case of Hana & Alice",
+      "medium": "animation",
+      "coverImagePath": "cover-images/the-case-of-hana-and-alice.jpg"
+    },
+    {
+      "id": "samurai-champloo",
+      "name": "Samurai Champloo",
+      "medium": "animation",
+      "coverImagePath": "cover-images/samurai-champloo.png"
+    },
+    {
+      "id": "the-tale-of-the-princess-kaguya",
+      "name": "The Tale of the Princess Kaguya",
+      "medium": "animation",
+      "coverImagePath": "cover-images/the-tale-of-the-princess-kaguya.jpg"
+    },
+    {
+      "id": "eden-of-the-east",
+      "name": "Eden of the East",
+      "medium": "animation",
+      "coverImagePath": "cover-images/eden-of-the-east.png"
+    },
+    {
+      "id": "eureka-seven",
+      "name": "Eureka Seven",
+      "medium": "animation",
+      "coverImagePath": "cover-images/eureka-seven.jpg"
+    },
+    {
+      "id": "gurren-lagann",
+      "name": "Gurren Lagann",
+      "medium": "animation",
+      "coverImagePath": "cover-images/gurren-lagann.jpg"
+    },
+    {
+      "id": "from-the-new-world",
+      "name": "From the New World",
+      "medium": "animation",
+      "coverImagePath": "cover-images/from-the-new-world.jpg"
+    },
+    {
+      "id": "heavenly-delusion",
+      "name": "Heavenly Delusion",
+      "medium": "animation",
+      "coverImagePath": "cover-images/heavenly-delusion.jpg"
+    },
+    {
+      "id": "akira",
+      "name": "Akira",
+      "medium": "animation",
+      "coverImagePath": "cover-images/akira.png"
+    },
+    {
+      "id": "haibane-renmei",
+      "name": "Haibane Renmei",
+      "medium": "animation",
+      "coverImagePath": "cover-images/haibane-renmei.jpg"
+    },
+    {
+      "id": "mononoke",
+      "name": "Mononoke",
+      "medium": "animation",
+      "coverImagePath": "cover-images/mononoke.png"
+    },
+    {
+      "id": "wonder-cat-kyuu-chan",
+      "name": "Wonder Cat Kyuu-chan",
+      "medium": "comics",
+      "coverImagePath": "cover-images/wonder-cat-kyuu-chan.jpg"
+    },
+    {
+      "id": "link-click",
+      "name": "Link Click",
+      "medium": "animation",
+      "coverImagePath": "cover-images/link-click.png"
+    },
+    {
+      "id": "trigun",
+      "name": "Trigun",
+      "medium": "animation",
+      "coverImagePath": "cover-images/trigun.jpg"
+    },
+    {
+      "id": "princess-mononoke",
+      "name": "Princess Mononoke",
+      "medium": "animation",
+      "coverImagePath": "cover-images/princess-mononoke.jpg"
+    },
+    {
+      "id": "hell-girl",
+      "name": "Hell Girl",
+      "medium": "animation",
+      "coverImagePath": "cover-images/hell-girl.png"
+    },
+    {
+      "id": "made-in-abyss",
+      "name": "Made in Abyss",
+      "medium": "comics",
+      "coverImagePath": "cover-images/made-in-abyss.jpg"
+    }
+  ],
+  "logs": [
+    {
+      "titleID": "the-music-of-marie",
+      "rating": 9
+    },
+    {
+      "titleID": "eureka-seven",
+      "rating": 7
+    },
+    {
+      "titleID": "gurren-lagann",
+      "rating": 10
+    },
+    {
+      "titleID": "eden-of-the-east",
+      "rating": 7
+    },
+    {
+      "titleID": "kinos-journey",
+      "rating": 7
+    },
+    {
+      "titleID": "solanin",
+      "rating": 9
+    },
+    {
+      "titleID": "akira",
+      "rating": 7
+    },
+    {
+      "titleID": "haibane-renmei",
+      "rating": 8
+    },
+    {
+      "titleID": "song-of-the-long-march",
+      "rating": 8
+    },
+    {
+      "titleID": "sonny-boy",
+      "rating": 8
+    },
+    {
+      "titleID": "samurai-champloo",
+      "rating": 8
+    },
+    {
+      "titleID": "crest-of-the-stars",
+      "rating": 8
+    },
+    {
+      "titleID": "the-tale-of-the-princess-kaguya",
+      "rating": 10
+    },
+    {
+      "titleID": "hirayasumi",
+      "rating": 8
+    },
+    {
+      "titleID": "heavenly-delusion",
+      "rating": 8
+    },
+    {
+      "titleID": "trigun",
+      "rating": 6
+    },
+    {
+      "titleID": "mushishi",
+      "rating": 10
+    },
+    {
+      "titleID": "made-in-abyss",
+      "rating": 8
+    },
+    {
+      "titleID": "the-case-of-hana-and-alice",
+      "rating": 9
+    },
+    {
+      "titleID": "mononoke",
+      "rating": 8
+    },
+    {
+      "titleID": "from-the-new-world",
+      "rating": 8
+    },
+    {
+      "titleID": "girls-last-tour",
+      "rating": 8
+    },
+    {
+      "titleID": "blood-on-the-tracks",
+      "rating": 10
+    },
+    {
+      "titleID": "hell-girl",
+      "rating": 7
+    },
+    {
+      "titleID": "link-click",
+      "rating": 9
+    },
+    {
+      "titleID": "the-summer-hikaru-died",
+      "rating": 8
+    }
+  ]
+}

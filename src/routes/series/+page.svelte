@@ -50,7 +50,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--cover-image-width), 1fr));
     gap: 16px 12px;
-    margin-top: 16px;
+    margin-top: var(--container-inset);
   }
 
   .grid-item {

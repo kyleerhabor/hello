@@ -11,6 +11,5 @@ export async function load() {
     mediums,
     titles,
     logs,
-    data: data
   };
 }

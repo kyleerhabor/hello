@@ -8,11 +8,11 @@
 	let { children } = $props();
 </script>
 
-<div id="root">
+<div class="root">
   <header class="container">
-    <h1>Kyle Erhabor</h1>
+    <h1 class="name">Kyle Erhabor</h1>
     <nav>
-      <ul id="navigation">
+      <ul class="navigation">
         <li>
           <a href="/">About</a>
         </li>
@@ -29,7 +29,7 @@
       </ul>
     </nav>
   </header>
-  <div id="divider"></div>
+  <div class="divider"></div>
   <main class="container">
     {@render children()}
   </main>
@@ -37,32 +37,45 @@
 
 <style>
   :root {
+    --container-inset: 16px;
     color-scheme: light dark;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
-  #root {
-    padding-block: 16px;
+  .root {
+    padding-block: var(--container-inset);
   }
 
   .container {
     max-width: 800px; /* 768 - 832 */
     margin: auto;
-    padding-inline: 16px;
+    padding-inline: var(--container-inset);
   }
 
   header {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  #divider {
-    border-bottom: 1.5px dotted dimgray;
+  @media (min-width: 550px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 
-  #navigation {
+  .navigation {
     display: flex;
     gap: 6px;
+    margin-block: 0;
+    padding-inline-start: 0;
+  }
+
+  .divider {
+    border-bottom: 1.5px dotted dimgray;
+    margin-block-start: var(--container-inset);
   }
 </style>

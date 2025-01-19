@@ -3,7 +3,7 @@
 </script>
 
 <div class="cover-image">
-  <img class="cover-image-item" {src} alt="Cover" decoding="async" />
+  <img class="cover-image-item" {src} alt="Cover" decoding="async" loading="lazy" />
 </div>
 
 <style>

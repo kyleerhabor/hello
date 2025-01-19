@@ -10,7 +10,7 @@
 
 <div class="root">
   <header class="container">
-    <h1 class="name">Kyle Erhabor</h1>
+    <h1>Kyle Erhabor</h1>
     <nav>
       <ul class="navigation">
         <li>
@@ -66,6 +66,10 @@
       justify-content: space-between;
       align-items: baseline;
     }
+  }
+
+  h1 {
+    font-weight: 200;
   }
 
   nav {

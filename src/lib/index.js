@@ -33,7 +33,7 @@ export function unique(transform = identity, coll) {
     return obj;
   }, {
     items: [],
-    set: new Set()
+    set: new Set(),
   });
 
   return result.items;

@@ -191,9 +191,43 @@
       "name": "Made in Abyss",
       "medium": "comics",
       "coverImagePath": "cover-images/made-in-abyss.jpg"
+    },
+    {
+      "id": "spice-and-wolf",
+      "name": "Spice and Wolf",
+      "medium": "animation",
+      "coverImagePath": "cover-images/spice-and-wolf.jpg"
+    },
+    {
+      "id": "katanagatari",
+      "name": "Katanagatari",
+      "medium": "animation",
+      "coverImagePath": "cover-images/katanagatari.png"
+    },
+    {
+      "id": "ping-pong-the-animation",
+      "name": "Ping Pong the Animation",
+      "medium": "animation",
+      "coverImagePath": "cover-images/ping-pong-the-animation.jpg"
+    },
+    {
+      "id": "genshiken",
+      "name": "Genshiken",
+      "medium": "animation",
+      "coverImagePath": "cover-images/genshiken.jpg"
+    },
+    {
+      "id": "legend-of-the-galactic-heroes",
+      "name": "Legend of the Galactic Heroes",
+      "medium": "animation",
+      "coverImagePath": "cover-images/legend-of-the-galactic-heroes.jpeg"
     }
   ],
   "logs": [
+    {
+      "titleID": "spice-and-wolf",
+      "rating": 7
+    },
     {
       "titleID": "the-music-of-marie",
       "rating": 9
@@ -201,10 +235,6 @@
     {
       "titleID": "eureka-seven",
       "rating": 7
-    },
-    {
-      "titleID": "gurren-lagann",
-      "rating": 10
     },
     {
       "titleID": "eden-of-the-east",
@@ -228,6 +258,10 @@
     },
     {
       "titleID": "song-of-the-long-march",
+      "rating": 8
+    },
+    {
+      "titleID": "legend-of-the-galactic-heroes",
       "rating": 8
     },
     {
@@ -259,6 +293,10 @@
       "rating": 6
     },
     {
+      "titleID": "genshiken",
+      "rating": 8
+    },
+    {
       "titleID": "mushishi",
       "rating": 10
     },
@@ -267,12 +305,20 @@
       "rating": 8
     },
     {
+      "titleID": "ping-pong-the-animation",
+      "rating": 9
+    },
+    {
       "titleID": "the-case-of-hana-and-alice",
       "rating": 9
     },
     {
       "titleID": "mononoke",
       "rating": 8
+    },
+    {
+      "titleID": "katanagatari",
+      "rating": 7
     },
     {
       "titleID": "from-the-new-world",

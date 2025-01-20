@@ -22,205 +22,205 @@
       "id": "sonny-boy",
       "name": "Sonny Boy",
       "medium": "animation",
-      "coverImagePath": "cover-images/sonny-boy.png"
+      "coverImagePath": "static/cover-images/sonny-boy.png"
     },
     {
       "id": "crest-of-the-stars",
       "name": "Crest of the Stars",
       "medium": "novel",
-      "coverImagePath": "cover-images/crest-of-the-stars.jpg"
+      "coverImagePath": "static/cover-images/crest-of-the-stars.jpg"
     },
     {
       "id": "banner-of-the-stars",
       "name": "Banner of the Stars",
       "medium": "novel",
-      "coverImagePath": "cover-images/banner-of-the-stars.jpg"
+      "coverImagePath": "static/cover-images/banner-of-the-stars.jpg"
     },
     {
       "id": "blood-on-the-tracks",
       "name": "Blood on the Tracks",
       "medium": "comics",
-      "coverImagePath": "cover-images/blood-on-the-tracks.jpg"
+      "coverImagePath": "static/cover-images/blood-on-the-tracks.jpg"
     },
     {
       "id": "the-summer-hikaru-died",
       "name": "The Summer Hikaru Died",
       "medium": "comics",
-      "coverImagePath": "cover-images/the-summer-hikaru-died.jpg"
+      "coverImagePath": "static/cover-images/the-summer-hikaru-died.jpg"
     },
     {
       "id": "the-music-of-marie",
       "name": "The Music of Marie",
       "medium": "comics",
-      "coverImagePath": "cover-images/the-music-of-marie.jpg"
+      "coverImagePath": "static/cover-images/the-music-of-marie.jpg"
     },
     {
       "id": "solanin",
       "name": "Solanin",
       "medium": "comics",
-      "coverImagePath": "cover-images/solanin.jpg"
+      "coverImagePath": "static/cover-images/solanin.jpg"
     },
     {
       "id": "girls-last-tour",
       "name": "Girls' Last Tour",
       "medium": "comics",
-      "coverImagePath": "cover-images/girls-last-tour.jpg"
+      "coverImagePath": "static/cover-images/girls-last-tour.jpg"
     },
     {
       "id": "song-of-the-long-march",
       "name": "Song of the Long March",
       "medium": "comics",
-      "coverImagePath": "cover-images/song-of-the-long-march.jpg"
+      "coverImagePath": "static/cover-images/song-of-the-long-march.jpg"
     },
     {
       "id": "kinos-journey",
       "name": "Kino's Journey",
       "medium": "novel",
-      "coverImagePath": "cover-images/kinos-journey.jpg"
+      "coverImagePath": "static/cover-images/kinos-journey.jpg"
     },
     {
       "id": "hirayasumi",
       "name": "Hirayasumi",
       "medium": "comics",
-      "coverImagePath": "cover-images/hirayasumi.jpg"
+      "coverImagePath": "static/cover-images/hirayasumi.jpg"
     },
     {
       "id": "mushishi",
       "name": "Mushishi",
       "medium": "animation",
-      "coverImagePath": "cover-images/mushishi.jpg"
+      "coverImagePath": "static/cover-images/mushishi.jpg"
     },
     {
       "id": "the-case-of-hana-and-alice",
       "name": "The Case of Hana & Alice",
       "medium": "animation",
-      "coverImagePath": "cover-images/the-case-of-hana-and-alice.jpg"
+      "coverImagePath": "static/cover-images/the-case-of-hana-and-alice.jpg"
     },
     {
       "id": "samurai-champloo",
       "name": "Samurai Champloo",
       "medium": "animation",
-      "coverImagePath": "cover-images/samurai-champloo.png"
+      "coverImagePath": "static/cover-images/samurai-champloo.png"
     },
     {
       "id": "the-tale-of-the-princess-kaguya",
       "name": "The Tale of the Princess Kaguya",
       "medium": "animation",
-      "coverImagePath": "cover-images/the-tale-of-the-princess-kaguya.jpg"
+      "coverImagePath": "static/cover-images/the-tale-of-the-princess-kaguya.jpg"
     },
     {
       "id": "eden-of-the-east",
       "name": "Eden of the East",
       "medium": "animation",
-      "coverImagePath": "cover-images/eden-of-the-east.png"
+      "coverImagePath": "static/cover-images/eden-of-the-east.png"
     },
     {
       "id": "eureka-seven",
       "name": "Eureka Seven",
       "medium": "animation",
-      "coverImagePath": "cover-images/eureka-seven.jpg"
+      "coverImagePath": "static/cover-images/eureka-seven.jpg"
     },
     {
       "id": "gurren-lagann",
       "name": "Gurren Lagann",
       "medium": "animation",
-      "coverImagePath": "cover-images/gurren-lagann.jpg"
+      "coverImagePath": "static/cover-images/gurren-lagann.jpg"
     },
     {
       "id": "from-the-new-world",
       "name": "From the New World",
       "medium": "animation",
-      "coverImagePath": "cover-images/from-the-new-world.jpg"
+      "coverImagePath": "static/cover-images/from-the-new-world.jpg"
     },
     {
       "id": "heavenly-delusion",
       "name": "Heavenly Delusion",
       "medium": "animation",
-      "coverImagePath": "cover-images/heavenly-delusion.jpg"
+      "coverImagePath": "static/cover-images/heavenly-delusion.jpg"
     },
     {
       "id": "akira",
       "name": "Akira",
       "medium": "animation",
-      "coverImagePath": "cover-images/akira.png"
+      "coverImagePath": "static/cover-images/akira.png"
     },
     {
       "id": "haibane-renmei",
       "name": "Haibane Renmei",
       "medium": "animation",
-      "coverImagePath": "cover-images/haibane-renmei.jpg"
+      "coverImagePath": "static/cover-images/haibane-renmei.jpg"
     },
     {
       "id": "mononoke",
       "name": "Mononoke",
       "medium": "animation",
-      "coverImagePath": "cover-images/mononoke.png"
+      "coverImagePath": "static/cover-images/mononoke.png"
     },
     {
       "id": "wonder-cat-kyuu-chan",
       "name": "Wonder Cat Kyuu-chan",
       "medium": "comics",
-      "coverImagePath": "cover-images/wonder-cat-kyuu-chan.jpg"
+      "coverImagePath": "static/cover-images/wonder-cat-kyuu-chan.jpg"
     },
     {
       "id": "link-click",
       "name": "Link Click",
       "medium": "animation",
-      "coverImagePath": "cover-images/link-click.png"
+      "coverImagePath": "static/cover-images/link-click.png"
     },
     {
       "id": "trigun",
       "name": "Trigun",
       "medium": "animation",
-      "coverImagePath": "cover-images/trigun.jpg"
+      "coverImagePath": "static/cover-images/trigun.jpg"
     },
     {
       "id": "princess-mononoke",
       "name": "Princess Mononoke",
       "medium": "animation",
-      "coverImagePath": "cover-images/princess-mononoke.jpg"
+      "coverImagePath": "static/cover-images/princess-mononoke.jpg"
     },
     {
       "id": "hell-girl",
       "name": "Hell Girl",
       "medium": "animation",
-      "coverImagePath": "cover-images/hell-girl.png"
+      "coverImagePath": "static/cover-images/hell-girl.png"
     },
     {
       "id": "made-in-abyss",
       "name": "Made in Abyss",
       "medium": "comics",
-      "coverImagePath": "cover-images/made-in-abyss.jpg"
+      "coverImagePath": "static/cover-images/made-in-abyss.jpg"
     },
     {
       "id": "spice-and-wolf",
       "name": "Spice and Wolf",
       "medium": "animation",
-      "coverImagePath": "cover-images/spice-and-wolf.jpg"
+      "coverImagePath": "static/cover-images/spice-and-wolf.jpg"
     },
     {
       "id": "katanagatari",
       "name": "Katanagatari",
       "medium": "animation",
-      "coverImagePath": "cover-images/katanagatari.png"
+      "coverImagePath": "static/cover-images/katanagatari.png"
     },
     {
       "id": "ping-pong-the-animation",
       "name": "Ping Pong the Animation",
       "medium": "animation",
-      "coverImagePath": "cover-images/ping-pong-the-animation.jpg"
+      "coverImagePath": "static/cover-images/ping-pong-the-animation.jpg"
     },
     {
       "id": "genshiken",
       "name": "Genshiken",
       "medium": "animation",
-      "coverImagePath": "cover-images/genshiken.jpg"
+      "coverImagePath": "static/cover-images/genshiken.jpg"
     },
     {
       "id": "legend-of-the-galactic-heroes",
       "name": "Legend of the Galactic Heroes",
       "medium": "animation",
-      "coverImagePath": "cover-images/legend-of-the-galactic-heroes.jpeg"
+      "coverImagePath": "static/cover-images/legend-of-the-galactic-heroes.jpeg"
     }
   ],
   "logs": [

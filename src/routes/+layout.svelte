@@ -73,7 +73,7 @@
   }
 
   nav {
-    margin-block: 4px;
+    margin-block-start: 8px;
   }
 
   .navigation {

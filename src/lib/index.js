@@ -16,12 +16,15 @@ export function isLocalURL(url, base) {
 }
 
 export function key(key, coll) {
-  return coll.reduce((obj, element) => ({ ...obj, [key(element)]: element }), {});
+  return coll.reduce((obj, element) => ({
+    ...obj,
+    [key(element)]: element,
+  }), {});
 }
 
-export function unique(transform = identity, coll) {
+export function unique(key, coll) {
   const result = coll.reduce((obj, element) => {
-    const s = transform(element);
+    const s = key(element);
 
     if (obj.set.has(s)) {
       return obj;

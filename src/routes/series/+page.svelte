@@ -29,8 +29,8 @@
     {@const title = data.titles[log.titleID]}
     {@const med = data.mediums[title.medium]}
     <div class="grid-item">
-      <div class="cover-image">
-        <CoverImage src={title.coverImagePath} />
+      <div class="grid-item-cover-image">
+        <CoverImage src={title.coverImagePath} color={title.color} />
       </div>
       <div class="title line-limit">{title.name}</div>
       <div class="medium">{medium(med.value)}</div>
@@ -58,7 +58,7 @@
     flex-direction: column;
   }
 
-  .cover-image {
+  .grid-item-cover-image {
     --cover-image-border-radius: 4px;
   }
 

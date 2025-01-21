@@ -11,14 +11,12 @@ export async function load() {
   const logs = unique((log) => log.titleID, data.logs.toReversed());
   const colors = await Promise.allSettled(R.map(async (log) => {
     const id = log.titleID;
-    // TODO: Make ESLint tolerate non-indented ternary (flatTernaryExpressions doesn't seem to work).
-    const path = dev
-      ? `../../../static/${titles[id].coverImagePath}`
-      : `../../../../client/${titles[id].coverImagePath}`;
+    const root = dev ? "../../../static" : "../../../../client";
+    const path = titles[id].coverImagePath;
 
     return {
       titleID: id,
-      color: await getColor(new URL(path, import.meta.url).pathname),
+      accentColor: await getColor(new URL(`${root}/${path}`, import.meta.url).pathname),
     };
   }, logs));
 
@@ -28,7 +26,7 @@ export async function load() {
     }
 
     const value = result.value;
-    titles[value.titleID].color = value.color;
+    titles[value.titleID].accentColor = value.accentColor;
   });
 
   return {

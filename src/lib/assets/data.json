@@ -221,6 +221,12 @@
       "name": "Legend of the Galactic Heroes",
       "medium": "animation",
       "coverImagePath": "static/cover-images/legend-of-the-galactic-heroes.jpeg"
+    },
+    {
+      "id": "key-the-metal-idol",
+      "name": "Key the Metal Idol",
+      "medium": "animation",
+      "coverImagePath": "static/cover-images/key-the-metal-idol.jpg"
     }
   ],
   "logs": [
@@ -279,6 +285,10 @@
     {
       "titleID": "the-tale-of-the-princess-kaguya",
       "rating": 10
+    },
+    {
+      "titleID": "key-the-metal-idol",
+      "rating": 6
     },
     {
       "titleID": "hirayasumi",

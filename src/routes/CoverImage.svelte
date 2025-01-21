@@ -1,13 +1,13 @@
 <script>
-  const { src, color } = $props();
+  const { src, accentColor } = $props();
 
-  const rgb = $derived(color ? `rgb(${color[0]},${color[1]},${color[2]})` : undefined);
+  const color = $derived(accentColor ? `rgb(${accentColor[0]},${accentColor[1]},${accentColor[2]})` : undefined);
 </script>
 
-<div class="cover-image">
+<div class="cover-image"
+     style:--accent-color={color}>
   <!-- FIXME: Background color creates a small line below the image  -->
   <img class="cover-image-item"
-       style:background-color={rgb}
        {src}
        alt="Cover"
        decoding="async"
@@ -25,5 +25,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: var(--accent-color);
   }
 </style>

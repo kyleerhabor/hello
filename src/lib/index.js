@@ -1,8 +1,4 @@
 // place files you want to import through the `$lib` alias in this folder.
-export function identity(x) {
-  return x;
-}
-
 export function isZero(n) {
   return n === 0;
 }

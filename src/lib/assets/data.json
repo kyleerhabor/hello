@@ -227,6 +227,30 @@
       "name": "Key the Metal Idol",
       "medium": "animation",
       "coverImagePath": "static/cover-images/key-the-metal-idol.jpg"
+    },
+    {
+      "id": "blade-of-the-immortal",
+      "name": "Blade of the Immortal",
+      "medium": "comics",
+      "coverImagePath": "static/cover-images/blade-of-the-immortal.jpg"
+    },
+    {
+      "id": "heesu-in-class-2",
+      "name": "Heesu in Class 2",
+      "medium": "comics",
+      "coverImagePath": "static/cover-images/heesu-in-class-2.jpg"
+    },
+    {
+      "id": "shishunki-bitter-change",
+      "name": "Shishunki Bitter Change",
+      "medium": "comics",
+      "coverImagePath": "static/cover-images/shishunki-bitter-change.jpg"
+    },
+    {
+      "id": "space-dandy",
+      "name": "Space Dandy",
+      "medium": "animation",
+      "coverImagePath": "static/cover-images/space-dandy.jpg"
     }
   ],
   "logs": [
@@ -240,6 +264,10 @@
     },
     {
       "titleID": "eureka-seven",
+      "rating": 7
+    },
+    {
+      "titleID": "shishunki-bitter-change",
       "rating": 7
     },
     {
@@ -303,6 +331,10 @@
       "rating": 6
     },
     {
+      "titleID": "heesu-in-class-2",
+      "rating": 8
+    },
+    {
       "titleID": "genshiken",
       "rating": 8
     },
@@ -327,6 +359,10 @@
       "rating": 7
     },
     {
+      "titleID": "space-dandy",
+      "rating": 8
+    },
+    {
       "titleID": "from-the-new-world",
       "rating": 8
     },
@@ -348,6 +384,10 @@
     },
     {
       "titleID": "the-summer-hikaru-died",
+      "rating": 8
+    },
+    {
+      "titleID": "blade-of-the-immortal",
       "rating": 8
     }
   ]

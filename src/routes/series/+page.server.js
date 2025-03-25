@@ -4,51 +4,54 @@ import { dev } from "$app/environment";
 import { key, unique } from "$lib/index";
 import data from "$lib/assets/data.json";
 import { getColor } from "colorthief";
+import { findUp } from "find-up";
 import * as R from "ramda";
 import sharp from "sharp";
+import { dirname } from "node:path";
 
-export async function load() {
+/** @type {import('./$types').PageServerLoad]} */
+export async function load(event) {
   const idProp = R.prop("id");
+  const titleIdProp = R.prop("titleID");
   const mediums = key(idProp, data.mediums);
   const titles = key(idProp, data.titles);
-  const logs = unique((log) => log.titleID, data.logs.toReversed());
-  const colors = await Promise.allSettled(logs.map(async (log) => {
-    const id = log.titleID;
-    const path = titles[id].coverImagePath;
-    const baseDirectory = dev ? "../../../" : "../../../../../../";
-    const url = new URL(`${baseDirectory}/${path}`, import.meta.url);
-    const buffer = await readFile(url);
+  const logs = unique(titleIdProp, data.logs.toReversed());
+  const projectDirectory = dirname(await findUp("package.json"));
+  const assetsDirectory = `${projectDirectory}/static/assets`;
+  const results = await Promise.allSettled(logs.map(async (log) => {
+    const id = titleIdProp(log);
+    const title = titles[id];
+    const buffer = await readFile(`${title.coverImagePath}`);
     const name = hash("sha256", buffer);
-    const assetsDirectory = "assets";
-    const assetsURL = new URL(`${baseDirectory}/${assetsDirectory}`, import.meta.url);
-    const fileURL = new URL(`${baseDirectory}/${assetsDirectory}/${name}.webp`, import.meta.url);
+    // TODO: Write to .svelte-kit/output/client when building for production.
+    const filePath = `${assetsDirectory}/${name}.jpeg`;
     // ~125 KB
+    // TODO: Support many formats (JPEG XL, WebP, JPEG)
     const output = await sharp(buffer)
       .resize(300, 450)
-      // TODO: Support many formats (JPEG XL, WebP, JPEG)
       .jpeg({ quality: 100 })
       // .webp({ lossless: true })
       .toBuffer();
 
     try {
-      await writeFile(fileURL, output);
+      await writeFile(filePath, output);
     } catch (e) {
       if (e.code != "ENOENT") {
         throw e;
       }
 
-      await mkdir(assetsURL, { recursive: true });
-      await writeFile(fileURL, output);
+      await mkdir(assetsDirectory, { recursive: true });
+      await writeFile(filePath, output);
     }
 
     return {
       titleID: id,
       accentColor: await getColor(output),
-      coverImageAssetsPath: `/assets/${name}.webp`,
+      coverImageAssetsPath: `assets/${name}.jpeg`,
     };
   }));
 
-  colors.forEach((result) => {
+  results.forEach((result) => {
     if (result.status != "fulfilled") {
       // TODO: Add proper logging.
       console.error(result.reason);

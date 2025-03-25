@@ -15,6 +15,10 @@
     {
       "id": "film",
       "value": 3
+    },
+    {
+      "id": "series",
+      "value": 4
     }
   ],
   "titles": [
@@ -23,12 +27,6 @@
       "name": "Sonny Boy",
       "medium": "animation",
       "coverImagePath": "static/cover-images/sonny-boy.png"
-    },
-    {
-      "id": "crest-of-the-stars",
-      "name": "Crest of the Stars",
-      "medium": "novel",
-      "coverImagePath": "static/cover-images/crest-of-the-stars.jpg"
     },
     {
       "id": "banner-of-the-stars",
@@ -251,6 +249,12 @@
       "name": "Space Dandy",
       "medium": "animation",
       "coverImagePath": "static/cover-images/space-dandy.jpg"
+    },
+    {
+      "id": "seikai",
+      "name": "Seikai",
+      "medium": "series",
+      "coverImagePath": "static/cover-images/seikai.png"
     }
   ],
   "logs": [
@@ -304,10 +308,6 @@
     },
     {
       "titleID": "samurai-champloo",
-      "rating": 8
-    },
-    {
-      "titleID": "crest-of-the-stars",
       "rating": 8
     },
     {
@@ -389,6 +389,10 @@
     {
       "titleID": "blade-of-the-immortal",
       "rating": 8
+    },
+    {
+      "titleID": "seikai",
+      "rating": 10
     }
   ]
 }

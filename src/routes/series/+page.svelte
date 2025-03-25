@@ -8,15 +8,12 @@
   const MEDIUM_NOVEL = 1;
   const MEDIUM_COMICS = 2;
   const MEDIUM_FILM = 3;
+  const MEDIUM_SERIES = 4;
+  const MEDIUMS = ["Animation", "Novel", "Comics", "Film", "Series"]
   const { data } = $props();
 
   function medium(x) {
-    switch (x) {
-      case MEDIUM_ANIMATION: return "Animation";
-      case MEDIUM_NOVEL: return "Novel";
-      case MEDIUM_COMICS: return "Comics";
-      case MEDIUM_FILM: return "Film";
-    }
+    return MEDIUMS[x];
   }
 </script>
 

@@ -17,7 +17,8 @@ export async function load(event) {
   const titles = key(idProp, data.titles);
   const logs = unique(titleIdProp, data.logs.toReversed());
   const projectDirectory = dirname(await findUp("package.json"));
-  const assetsDirectory = `${projectDirectory}/static/assets`;
+  const baseDirectory = dev ? "static/assets" : ".svelte-kit/output/client";
+  const assetsDirectory = `${projectDirectory}/${baseDirectory}`;
   const results = await Promise.allSettled(logs.map(async (log) => {
     const id = titleIdProp(log);
     const title = titles[id];

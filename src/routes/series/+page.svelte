@@ -27,7 +27,7 @@
     {@const med = data.mediums[title.medium]}
     <div class="grid-item">
       <div class="grid-item-cover-image">
-        <CoverImage src={title.coverImagePath} accentColor={title.accentColor} />
+        <CoverImage src={title.coverImageAssetsPath} accentColor={title.accentColor} />
       </div>
       <div class="title line-limit">{title.name}</div>
       <div class="medium">{medium(med.value)}</div>

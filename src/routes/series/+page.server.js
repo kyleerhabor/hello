@@ -15,13 +15,13 @@ export async function load() {
   const colors = await Promise.allSettled(logs.map(async (log) => {
     const id = log.titleID;
     const path = titles[id].coverImagePath;
-    const root = dev ? "../../../static" : "../../../../client";
-    const url = new URL(`${root}/${path}`, import.meta.url);
+    const baseDirectory = dev ? "../../../" : "../../../../../../";
+    const url = new URL(`${baseDirectory}/${path}`, import.meta.url);
     const buffer = await readFile(url);
     const name = hash("sha256", buffer);
     const assetsDirectory = "assets";
-    const assetsURL = new URL(`${root}/${assetsDirectory}`, import.meta.url);
-    const fileURL = new URL(`${root}/${assetsDirectory}/${name}.webp`, import.meta.url);
+    const assetsURL = new URL(`${baseDirectory}/${assetsDirectory}`, import.meta.url);
+    const fileURL = new URL(`${baseDirectory}/${assetsDirectory}/${name}.webp`, import.meta.url);
     // ~125 KB
     const output = await sharp(buffer)
       .resize(300, 450)

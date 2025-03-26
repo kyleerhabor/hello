@@ -1,6 +1,5 @@
 import { hash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { dev } from "$app/environment";
 import { key, unique } from "$lib/index";
 import data from "$lib/assets/data.json";
 import { getColor } from "colorthief";
@@ -17,14 +16,15 @@ export async function load(event) {
   const titles = key(idProp, data.titles);
   const logs = unique(titleIdProp, data.logs.toReversed());
   const projectDirectory = dirname(await findUp("package.json"));
-  const assetsDirectory = `${projectDirectory}/static/assets`;
+  const staticDirectory = `${projectDirectory}/static`;
+  const assetsDirectoryName = "assets";
   const results = await Promise.allSettled(logs.map(async (log) => {
     const id = titleIdProp(log);
     const title = titles[id];
     const buffer = await readFile(`${title.coverImagePath}`);
     const name = hash("sha256", buffer);
-    // TODO: Write to .svelte-kit/output/client when building for production.
-    const filePath = `${assetsDirectory}/${name}.jpeg`;
+    const path = `${assetsDirectoryName}/${name}.jpeg`;
+    const filePath = `${staticDirectory}/${path}`;
     // ~125 KB
     // TODO: Support many formats (JPEG XL, WebP, JPEG)
     const output = await sharp(buffer)
@@ -40,14 +40,14 @@ export async function load(event) {
         throw e;
       }
 
-      await mkdir(assetsDirectory, { recursive: true });
+      await mkdir(`${staticDirectory}/${assetsDirectoryName}`, { recursive: true });
       await writeFile(filePath, output);
     }
 
     return {
       titleID: id,
       accentColor: await getColor(output),
-      coverImageAssetsPath: `assets/${name}.jpeg`,
+      coverImageAssetsPath: path,
     };
   }));
 

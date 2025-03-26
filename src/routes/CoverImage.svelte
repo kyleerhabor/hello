@@ -1,18 +1,20 @@
 <script>
-  const { src, accentColor } = $props();
+  const { assets, accentColor } = $props();
 
-  const color = $derived(accentColor ? `rgb(${accentColor[0]},${accentColor[1]},${accentColor[2]})` : undefined);
+  const color = accentColor ? `rgb(${accentColor[0]},${accentColor[1]},${accentColor[2]})` : undefined;
+  const asset = assets[assets.length - 1];
 </script>
 
-<div class="cover-image"
-     style:--accent-color={color}>
+<picture class="cover-image"
+         style:--accent-color={color}>
   <!-- FIXME: Background color creates a small line below the image  -->
-  <img class="cover-image-item"
-       {src}
-       alt="Cover"
-       decoding="async"
-       loading="lazy" />
-</div>
+  {#each assets.slice(0, -1) as asset}
+    <source srcset={asset.path} type={asset.mimeType}>
+  {/each}
+  {#if asset}
+    <img class="cover-image-item" src={asset.path} alt="Cover">
+  {/if}
+</picture>
 
 <style>
   .cover-image {

@@ -24,13 +24,13 @@
 <div class="grid">
   {#each data.logs as log}
     {@const title = data.titles[log.titleID]}
-    {@const med = data.mediums[title.medium]}
+    {@const m = data.mediums[title.medium]}
     <div class="grid-item">
       <div class="grid-item-cover-image">
-        <CoverImage src={title.coverImageAssetsPath} accentColor={title.accentColor} />
+        <CoverImage assets={title.coverImageAssets} accentColor={title.accentColor} />
       </div>
       <div class="title line-limit">{title.name}</div>
-      <div class="medium">{medium(med.value)}</div>
+      <div class="medium">{medium(m.value)}</div>
       <div>
         <StarRating rating={log.rating ?? 0} />
       </div>

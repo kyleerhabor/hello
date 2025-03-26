@@ -12,7 +12,11 @@
     <source srcset={asset.path} type={asset.mimeType}>
   {/each}
   {#if asset}
-    <img class="cover-image-item" src={asset.path} alt="Cover">
+    <img class="cover-image-item"
+         src={asset.path}
+         alt="Cover"
+         decoding="async"
+         loading="lazy">
   {/if}
 </picture>
 

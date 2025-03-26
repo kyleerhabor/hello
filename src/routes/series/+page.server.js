@@ -47,11 +47,13 @@ export async function load(event) {
   const logs = unique(titleIdProp, d.logs.toReversed());
   const projectDirectory = dirname(await findUp("package.json"));
   const directory = `${projectDirectory}/static/assets`;
+  const width = 200;
+  const height = width * (3 / 2);
   const results = await Promise.allSettled(logs.map(async (log) => {
     const id = titleIdProp(log);
     const title = titles[id];
     const buffer = await readFile(`${title.coverImagePath}`);
-    const s = sharp(buffer).resize(300, 450);
+    const s = sharp(buffer).resize(width, height);
     const output = await s.toBuffer();
 
     return {

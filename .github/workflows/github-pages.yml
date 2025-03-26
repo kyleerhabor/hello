@@ -28,7 +28,8 @@ jobs:
           # Default: ''
           cache-dependency-path: package-lock.json
       - run: npm ci
-      - run: npm run build
+      # A hack, but it works.
+      - run: npm run build || npm run build
       - uses: actions/upload-pages-artifact@v3
         id: deployment
         with:

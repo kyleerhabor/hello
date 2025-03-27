@@ -29,7 +29,8 @@
       <div class="grid-item-cover-image">
         <CoverImage assets={title.coverImageAssets} accentColor={title.accentColor} />
       </div>
-      <div class="title line-limit">{title.name}</div>
+      <!-- TODO: Figure out a way to display an arbitrarily long title in a non-fixed way. -->
+      <div class="title line-limit" title={title.name}>{title.name}</div>
       <div class="medium">{medium(m.value)}</div>
       <div>
         <StarRating rating={log.rating ?? 0} />

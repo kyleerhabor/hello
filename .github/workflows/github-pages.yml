@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: true
-      - run: git lfs pull
+      - run: git lfs checkout
       - uses: actions/setup-node@v4
         with:
           # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.

@@ -73,7 +73,7 @@
     {
       "id": "kinos-journey",
       "name": "Kino's Journey",
-      "medium": "novel",
+      "medium": "series",
       "coverImagePath": "src/lib/assets/cover-images/kinos-journey.jpg"
     },
     {
@@ -185,12 +185,6 @@
       "coverImagePath": "src/lib/assets/cover-images/hell-girl.jpg"
     },
     {
-      "id": "made-in-abyss",
-      "name": "Made in Abyss",
-      "medium": "comics",
-      "coverImagePath": "src/lib/assets/cover-images/made-in-abyss.jpg"
-    },
-    {
       "id": "spice-and-wolf",
       "name": "Spice and Wolf",
       "medium": "animation",
@@ -255,6 +249,78 @@
       "name": "Seikai",
       "medium": "series",
       "coverImagePath": "src/lib/assets/cover-images/seikai.png"
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/noir.jpeg"
+    },
+    {
+      "id": "millennium-actress",
+      "name": "Millennium Actress",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/millennium-actress.png"
+    },
+    {
+      "id": "the-irresponsible-captain-tylor",
+      "name": "The Irresponsible Captain Tylor",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/the-irresponsible-captain-tylor.png"
+    },
+    {
+      "id": "princess-mononoke",
+      "name": "Princess Mononoke",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/princess-mononoke.jpg"
+    },
+    {
+      "id": "castle-in-the-sky",
+      "name": "Castle in the Sky",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/castle-in-the-sky.jpg"
+    },
+    {
+      "id": "made-in-abyss",
+      "name": "Made in Abyss",
+      "medium": "series",
+      "coverImagePath": "src/lib/assets/cover-images/made-in-abyss.jpg"
+    },
+    {
+      "id": "land-of-the-lustrous",
+      "name": "Land of the Lustrous",
+      "medium": "series",
+      "coverImagePath": "src/lib/assets/cover-images/land-of-the-lustrous.jpg"
+    },
+    {
+      "id": "witch-hat-atelier",
+      "name": "Witch Hat Atelier",
+      "medium": "comics",
+      "coverImagePath": "src/lib/assets/cover-images/witch-hat-atelier.jpg"
+    },
+    {
+      "id": "children-of-the-whales",
+      "name": "Children of the Whales",
+      "medium": "comics",
+      "coverImagePath": "src/lib/assets/cover-images/children-of-the-whales.jpg"
+    },
+    {
+      "id": "nausicaä-of-the-valley-of-the-wind",
+      "name": "Nausicaä of the Valley of the Wind",
+      "medium": "comics",
+      "coverImagePath": "src/lib/assets/cover-images/nausicaä-of-the-valley-of-the-wind.jpg"
+    },
+    {
+      "id": "kaiba",
+      "name": "Kaiba",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/kaiba.jpg"
+    },
+    {
+      "id": "galaxy-express-999",
+      "name": "Galaxy Express 999",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/galaxy-express-999.jpg"
     }
   ],
   "logs": [
@@ -393,6 +459,54 @@
     {
       "titleID": "seikai",
       "rating": 10
+    },
+    {
+      "titleID": "noir",
+      "rating": 6
+    },
+    {
+      "titleID": "millennium-actress",
+      "rating": 9
+    },
+    {
+      "titleID": "the-irresponsible-captain-tylor",
+      "rating": 8
+    },
+    {
+      "titleID": "princess-mononoke",
+      "rating": 8
+    },
+    {
+      "titleID": "castle-in-the-sky",
+      "rating": 9
+    },
+    {
+      "titleID": "made-in-abyss",
+      "rating": 8
+    },
+    {
+      "titleID": "land-of-the-lustrous",
+      "rating": 10
+    },
+    {
+      "titleID": "witch-hat-atelier",
+      "rating": 8
+    },
+    {
+      "titleID": "children-of-the-whales",
+      "rating": 6
+    },
+    {
+      "titleID": "nausicaä-of-the-valley-of-the-wind",
+      "rating": 8
+    },
+    {
+      "titleID": "kaiba",
+      "rating": 7
+    },
+    {
+      "titleID": "galaxy-express-999",
+      "rating": 9
     }
   ]
 }

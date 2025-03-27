@@ -1,12 +1,13 @@
 import { hash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { dirname } from "node:path";
+import * as v8 from "node:v8";
 import { key, unique } from "$lib/index";
 import data from "$lib/assets/data.json";
 import { getColor } from "colorthief";
 import { findUp } from "find-up";
 import * as R from "ramda";
 import sharp from "sharp";
-import { dirname } from "node:path";
 
 async function writeImage(sharp, directory, extension) {
   const buffer = await sharp.toBuffer();
@@ -37,14 +38,20 @@ async function writeImageAsset(sharp, directory, extension, mimeType) {
   };
 }
 
+function copy(value) {
+  return v8.deserialize(v8.serialize(value));
+}
+
 /** @type {import('./$types').PageServerLoad]} */
 export async function load(event) {
-  const d = JSON.parse(JSON.stringify(data));
+  const d = copy(data);
   const idProp = R.prop("id");
   const titleIdProp = R.prop("titleID");
   const mediums = key(idProp, d.mediums);
   const titles = key(idProp, d.titles);
-  const logs = unique(titleIdProp, d.logs.toReversed());
+  const logs = unique(titleIdProp, d.logs.toReversed())
+    .sort((a, b) => b.rating - a.rating || titles[a.titleID].name.localeCompare(titles[b.titleID].name));
+
   const projectDirectory = dirname(await findUp("package.json"));
   const directory = `${projectDirectory}/static/assets`;
   const width = 200;

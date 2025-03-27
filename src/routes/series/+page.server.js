@@ -52,7 +52,7 @@ export async function load(event) {
   const results = await Promise.allSettled(logs.map(async (log) => {
     const id = titleIdProp(log);
     const title = titles[id];
-    const buffer = await readFile(`${title.coverImagePath}`);
+    const buffer = await readFile(`${projectDirectory}/${title.coverImagePath}`);
     const s = sharp(buffer).resize(width, height);
     const output = await s.toBuffer();
 

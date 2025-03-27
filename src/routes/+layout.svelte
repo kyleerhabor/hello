@@ -19,7 +19,9 @@
         <li>
           <a href="/series">Series Recs.</a>
         </li>
-        |
+        <li>
+          |
+        </li>
         <li>
           <a href="mailto:{PUBLIC_SOCIAL_EMAIL_ADDRESS}">Email</a>
         </li>

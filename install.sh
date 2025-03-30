@@ -1,5 +1,11 @@
 #!/bin/sh
 
+set -e # Exit if any command fails
+
+export CPLUS_INCLUDE_PATH="$CWD/include:$CPLUS_INCLUDE_PATH"
+export LIBRARY_PATH="$CWD/lib:$LIBRARY_PATH"
+export LD_LIBRARY_PATH="$CWD/lib:$LD_LIBRARY_PATH"
+
 CWD="$(pwd)"
 SRCDIR=submodules
 BUILDDIR=preinstall

@@ -29,7 +29,7 @@ cmake \
   -S "$CWD/$LIBJXL_SRCDIR" -B "$CWD/$LIBJXL_BUILDDIR"
 
 cmake --build "$CWD/$LIBJXL_BUILDDIR" -- -j 4
-cmake --install "$CWD/$LIBJXL_BUILDDIR"
+sudo cmake --install "$CWD/$LIBJXL_BUILDDIR"
 
 ## libvips
 
@@ -44,4 +44,4 @@ meson setup \
   "$CWD/$LIBVIPS_BUILDDIR" "$CWD/$LIBVIPS_SRCDIR"
 
 meson compile -C "$CWD/$LIBVIPS_BUILDDIR" -j 0
-meson install -C "$CWD/$LIBVIPS_BUILDDIR"
+sudo meson install -C "$CWD/$LIBVIPS_BUILDDIR"

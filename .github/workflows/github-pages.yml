@@ -20,14 +20,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install meson pkg-config libglib2.0-dev libjpeg-dev libwebp-dev
-      - run: |
-          ./install.sh
-
-          echo "PKG_CONFIG_PATH=$(pwd)/lib/pkgconfig:$PKG_CONFIG_PATH" >> $GITHUB_ENV
-          echo "C_INCLUDE_PATH=$(pwd)/include:$C_INCLUDE_PATH" >> $GITHUB_ENV
-          echo "CPLUS_INCLUDE_PATH=$(pwd)/include:$CPLUS_INCLUDE_PATH" >> $GITHUB_ENV
-          echo "LD_LIBRARY_PATH=$(pwd)/lib:$LD_LIBRARY_PATH" >> $GITHUB_ENV
-          echo "LIBRARY_PATH=$(pwd)/lib:$LIBRARY_PATH" >> $GITHUB_ENV
+      - run: ./scripts/install.sh /usr/local
       - uses: actions/setup-node@v4
         with:
           # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.

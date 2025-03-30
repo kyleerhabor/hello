@@ -8,12 +8,18 @@ on:
 jobs:
   build:
     # Thought: Is there any way to extract this to a variable for the build and deploy jobs?
+    #
+    # Potential answer: matrix strategy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           lfs: true
           submodules: recursive
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install meson
       - run: ./install.sh
       - uses: actions/setup-node@v4
         with:

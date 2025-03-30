@@ -19,7 +19,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install meson
+          sudo apt-get install meson pkg-config libglib2.0-dev libjpeg-dev libwebp-dev
       - run: ./install.sh
       - uses: actions/setup-node@v4
         with:
@@ -37,9 +37,9 @@ jobs:
           # Supports wildcards or a list of file names for caching multiple dependencies.
           # Default: ''
           cache-dependency-path: package-lock.json
-      - run: npm run ci
-      # A hack, but it works.
-      - run: npm run build || npm run build
+      - run: |
+        npm run ci
+        npm run build || npm run build # Run twice for transient errors
       - uses: actions/upload-pages-artifact@v3
         id: deployment
         with:

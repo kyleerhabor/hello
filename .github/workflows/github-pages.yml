@@ -38,9 +38,8 @@ jobs:
           # Default: ''
           cache-dependency-path: package-lock.json
       - run: |
-          echo "Current directory: $(pwd)"
-          npm ci
-          npm build || npm build # Run twice for transient errors
+          npm ci --build-from-source
+          npm run build || npm run build # Run twice for transient errors
       - uses: actions/upload-pages-artifact@v3
         id: deployment
         with:

@@ -75,11 +75,11 @@ export async function load(event) {
       accentColor: await getColor(output),
       coverImageAssets: await Promise.all([
         // TODO: Support JPEG XL
-        writeImageAsset(s.jxl({ lossless: true }), directory, "jxl", "image/jxl", dt, sha256({
-          buffer,
-          format: "jxl",
-          version: 0,
-        })),
+        // writeImageAsset(s.jxl({ lossless: true }), directory, "jxl", "image/jxl", dt, sha256({
+        //   buffer,
+        //   format: "jxl",
+        //   version: 0,
+        // })),
         writeImageAsset(s.webp({ lossless: true }), directory, "webp", "image/webp", dt, sha256({
           buffer,
           format: "webp",

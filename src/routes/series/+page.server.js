@@ -1,19 +1,15 @@
 import fs from "node:fs/promises";
-import { createRequire } from "node:module";
 import { dirname } from "node:path";
 import * as v8 from "node:v8";
-import { copy, fileExists, key, sha256, unique, writeFile } from "$lib/index";
+import { copy, fileExists, key, sha256, sha256b, unique, writeFile } from "$lib/index";
 import data from "$lib/assets/data.json";
 import { getColor } from "colorthief";
 import { findUp } from "find-up";
 import * as R from "ramda";
 import sharp from "sharp";
 
-const require = createRequire(import.meta.url);
-const { XXHash3 } = require("xxhash-addon");
-
-function path(directory, hash, extension) {
-  return `${directory}/${hash}.${extension}`;
+function path(directory, buffer, extension) {
+  return `${directory}/${buffer.toString("hex")}.${extension}`;
 }
 
 async function writeImage(sharp, directory, extension, data) {
@@ -22,11 +18,9 @@ async function writeImage(sharp, directory, extension, data) {
   }
 
   const buffer = await sharp.toBuffer();
-  const hash = Buffer.from(XXHash3.hash(buffer)).toString("hex");
-
+  const hash = sha256b(buffer).subarray(0, 8);
   await writeFile(directory, path(directory, hash, extension), buffer);
 
-  // Do we want to include the hasher? (SHA256, xxHash)
   return { hash };
 }
 
@@ -75,17 +69,17 @@ export async function load(event) {
       accentColor: await getColor(output),
       coverImageAssets: await Promise.all([
         // TODO: Support JPEG XL
-        // writeImageAsset(s.jxl({ lossless: true }), directory, "jxl", "image/jxl", dt, sha256({
+        // writeImageAsset(s.clone().jxl({ lossless: true }), directory, "jxl", "image/jxl", dt, sha256({
         //   buffer,
         //   format: "jxl",
         //   version: 0,
         // })),
-        writeImageAsset(s.webp({ lossless: true }), directory, "webp", "image/webp", dt, sha256({
+        writeImageAsset(s.clone().webp({ lossless: true }), directory, "webp", "image/webp", dt, sha256({
           buffer,
           format: "webp",
           version: 0,
         })),
-        writeImageAsset(s.jpeg({ quality: 100 }), directory, "jpeg", "image/jpeg", dt, sha256({
+        writeImageAsset(s.clone().jpeg({ quality: 100 }), directory, "jpeg", "image/jpeg", dt, sha256({
           buffer,
           format: "jpeg",
           version: 0,

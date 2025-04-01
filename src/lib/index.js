@@ -1,8 +1,29 @@
 import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import v8 from "node:v8";
+import * as R from "ramda";
 
-// place files you want to import through the `$lib` alias in this folder.
+// export const sha256b = R.curry(crypto.hash)("sha256", R.__, "buffer");
+// export const sha256 = R.pipe(v8.serialize, sha256b);
+
+export function sha256b(buffer) {
+  return crypto.hash("sha256", buffer, "buffer");
+}
+
+export function sha256(o) {
+  return sha256b(v8.serialize(o));
+}
+
+async function resolves(p) {
+  try {
+    await p;
+
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export function isZero(n) {
   return n === 0;
 }
@@ -56,19 +77,9 @@ export async function writeFile(directory, path, data) {
 }
 
 export async function fileExists(path) {
-  try {
-    await fs.access(path);
-
-    return true;
-  } catch {
-    return false;
-  }
+  await resolves(fs.access(path));
 }
 
 export function copy(value) {
   return v8.deserialize(v8.serialize(value));
-}
-
-export function sha256(o) {
-  return crypto.hash("sha256", v8.serialize(o));
 }

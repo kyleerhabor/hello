@@ -248,7 +248,7 @@
       "id": "seikai",
       "name": "Seikai",
       "medium": "series",
-      "coverImagePath": "src/lib/assets/cover-images/seikai.png"
+      "coverImagePath": "src/lib/assets/cover-images/seikai.webp"
     },
     {
       "id": "noir",
@@ -284,7 +284,7 @@
       "id": "made-in-abyss",
       "name": "Made in Abyss",
       "medium": "series",
-      "coverImagePath": "src/lib/assets/cover-images/made-in-abyss.jpg"
+      "coverImagePath": "src/lib/assets/cover-images/made-in-abyss.webp"
     },
     {
       "id": "land-of-the-lustrous",
@@ -302,7 +302,7 @@
       "id": "children-of-the-whales",
       "name": "Children of the Whales",
       "medium": "comics",
-      "coverImagePath": "src/lib/assets/cover-images/children-of-the-whales.jpg"
+      "coverImagePath": "src/lib/assets/cover-images/children-of-the-whales.webp"
     },
     {
       "id": "nausicaä-of-the-valley-of-the-wind",
@@ -321,6 +321,42 @@
       "name": "Galaxy Express 999",
       "medium": "animation",
       "coverImagePath": "src/lib/assets/cover-images/galaxy-express-999.jpg"
+    },
+    {
+      "id": "samurai-x-trust-and-betrayal",
+      "name": "Samurai X: Trust & Betrayal",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/samurai-x-trust-and-betrayal.webp"
+    },
+    {
+      "id": "bunny-drop",
+      "name": "Bunny Drop",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/bunny-drop.jpg"
+    },
+    {
+      "id": "living-for-the-day-after-tomorrow",
+      "name": "Living for the Day After Tomorrow",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/living-for-the-day-after-tomorrow.png"
+    },
+    {
+      "id": "violet-evergarden",
+      "name": "Violet Evergarden",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/violet-evergarden.webp"
+    },
+    {
+      "id": "niea-under-7",
+      "name": "NieA Under 7",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/niea-under-7.webp"
+    },
+    {
+      "id": "mob-psycho-100",
+      "name": "Mob Psycho 100",
+      "medium": "animation",
+      "coverImagePath": "src/lib/assets/cover-images/mob-psycho-100.jpg"
     }
   ],
   "logs": [
@@ -507,6 +543,30 @@
     {
       "titleID": "galaxy-express-999",
       "rating": 9
+    },
+    {
+      "titleID": "samurai-x-trust-and-betrayal",
+      "rating": 9
+    },
+    {
+      "titleID": "bunny-drop",
+      "rating": 8
+    },
+    {
+      "titleID": "living-for-the-day-after-tomorrow",
+      "rating": 9
+    },
+    {
+      "titleID": "violet-evergarden",
+      "rating": 8
+    },
+    {
+      "titleID": "niea-under-7",
+      "rating": 6
+    },
+    {
+      "titleID": "mob-psycho-100",
+      "rating": 8
     }
   ]
 }

@@ -41,6 +41,7 @@
   :root {
     --container-inset: 16px;
     color-scheme: light dark;
+    /* https://github.com/system-fonts/modern-font-stacks#system-ui */
     font-family: system-ui, sans-serif;
     font-weight: normal;
   }

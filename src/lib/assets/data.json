@@ -357,6 +357,12 @@
       "name": "Mob Psycho 100",
       "medium": "animation",
       "coverImagePath": "src/lib/assets/cover-images/mob-psycho-100.jpg"
+    },
+    {
+      "id": "raise-the-red-lantern",
+      "name": "Raise the Red Lantern",
+      "medium": "film",
+      "coverImagePath": "src/lib/assets/cover-images/raise-the-red-lantern.jpg"
     }
   ],
   "logs": [
@@ -566,6 +572,10 @@
     },
     {
       "titleID": "mob-psycho-100",
+      "rating": 8
+    },
+    {
+      "titleID": "raise-the-red-lantern",
       "rating": 8
     }
   ]

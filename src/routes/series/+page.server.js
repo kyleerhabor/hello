@@ -1,10 +1,11 @@
 import fs from "node:fs/promises";
 import { dirname } from "node:path";
 import * as v8 from "node:v8";
-import { copy, fileExists, key, sha256, sha256b, unique, writeFile } from "$lib/index";
-import data from "$lib/assets/data.json";
+import { fileExists, key, sha256, sha256b, unique, writeFile } from "$lib/index";
+import data from "$lib/assets/data.toml?raw";
 import { getColor } from "colorthief";
 import { findUp } from "find-up";
+import { parse } from "smol-toml";
 import * as R from "ramda";
 import sharp from "sharp";
 
@@ -36,7 +37,7 @@ async function writeImageAsset(sharp, directory, extension, mimeType, data, key)
 
 /** @type {import('./$types').PageServerLoad]} */
 export async function load(event) {
-  const d = copy(data);
+  const d = parse(data);
   const idProp = R.prop("id");
   const titleIdProp = R.prop("titleID");
   const mediums = key(idProp, d.mediums);

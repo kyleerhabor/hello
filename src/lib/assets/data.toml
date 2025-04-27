@@ -1,0 +1,583 @@
+[[mediums]]
+id = "animation" # Anime, donghua, etc. A subset of film, but distinct for its own medium.
+value = 0
+
+[[mediums]]
+id = "novel"
+value = 1
+
+[[mediums]]
+id = "comics" # Manga, manhua, manhwa, etc.
+value = 2
+
+[[mediums]]
+id = "film"
+value = 3
+
+[[mediums]]
+id = "series" # Works transcending mediums.
+value = 4
+
+[[titles]]
+id = "sonny-boy"
+name = "Sonny Boy"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/sonny-boy.png"
+
+[[titles]]
+id = "banner-of-the-stars"
+name = "Banner of the Stars"
+medium = "novel"
+coverImagePath = "src/lib/assets/cover-images/banner-of-the-stars.jpg"
+
+[[titles]]
+id = "blood-on-the-tracks"
+name = "Blood on the Tracks"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/blood-on-the-tracks.jpg"
+
+[[titles]]
+id = "the-summer-hikaru-died"
+name = "The Summer Hikaru Died"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/the-summer-hikaru-died.jpg"
+
+[[titles]]
+id = "the-music-of-marie"
+name = "The Music of Marie"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/the-music-of-marie.jpg"
+
+[[titles]]
+id = "solanin"
+name = "Solanin"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/solanin.jpg"
+
+[[titles]]
+id = "girls-last-tour"
+name = "Girls' Last Tour"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/girls-last-tour.jpg"
+
+[[titles]]
+id = "song-of-the-long-march"
+name = "Song of the Long March"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/song-of-the-long-march.jpg"
+
+[[titles]]
+id = "kinos-journey"
+name = "Kino's Journey"
+medium = "series"
+coverImagePath = "src/lib/assets/cover-images/kinos-journey.jpg"
+
+[[titles]]
+id = "hirayasumi"
+name = "Hirayasumi"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/hirayasumi.jpg"
+
+[[titles]]
+id = "mushishi"
+name = "Mushishi"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/mushishi.jpg"
+
+[[titles]]
+id = "the-case-of-hana-and-alice"
+name = "The Case of Hana & Alice"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/the-case-of-hana-and-alice.jpg"
+
+[[titles]]
+id = "samurai-champloo"
+name = "Samurai Champloo"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/samurai-champloo.png"
+
+[[titles]]
+id = "the-tale-of-the-princess-kaguya"
+name = "The Tale of the Princess Kaguya"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/the-tale-of-the-princess-kaguya.jpg"
+
+[[titles]]
+id = "eden-of-the-east"
+name = "Eden of the East"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/eden-of-the-east.png"
+
+[[titles]]
+id = "eureka-seven"
+name = "Eureka Seven"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/eureka-seven.jpg"
+
+[[titles]]
+id = "gurren-lagann"
+name = "Gurren Lagann"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/gurren-lagann.jpg"
+
+[[titles]]
+id = "from-the-new-world"
+name = "From the New World"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/from-the-new-world.jpg"
+
+[[titles]]
+id = "heavenly-delusion"
+name = "Heavenly Delusion"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/heavenly-delusion.jpg"
+
+[[titles]]
+id = "akira"
+name = "Akira"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/akira.jpg"
+
+[[titles]]
+id = "haibane-renmei"
+name = "Haibane Renmei"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/haibane-renmei.jpg"
+
+[[titles]]
+id = "mononoke"
+name = "Mononoke"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/mononoke.png"
+
+[[titles]]
+id = "wonder-cat-kyuu-chan"
+name = "Wonder Cat Kyuu-chan"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/wonder-cat-kyuu-chan.jpg"
+
+[[titles]]
+id = "link-click"
+name = "Link Click"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/link-click.png"
+
+[[titles]]
+id = "trigun"
+name = "Trigun"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/trigun.jpg"
+
+[[titles]]
+id = "princess-mononoke"
+name = "Princess Mononoke"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/princess-mononoke.jpg"
+
+[[titles]]
+id = "hell-girl"
+name = "Hell Girl"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/hell-girl.jpg"
+
+[[titles]]
+id = "spice-and-wolf"
+name = "Spice and Wolf"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/spice-and-wolf.jpg"
+
+[[titles]]
+id = "katanagatari"
+name = "Katanagatari"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/katanagatari.png"
+
+[[titles]]
+id = "ping-pong-the-animation"
+name = "Ping Pong the Animation"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/ping-pong-the-animation.jpg"
+
+[[titles]]
+id = "genshiken"
+name = "Genshiken"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/genshiken.jpg"
+
+[[titles]]
+id = "legend-of-the-galactic-heroes"
+name = "Legend of the Galactic Heroes"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/legend-of-the-galactic-heroes.jpeg"
+
+[[titles]]
+id = "key-the-metal-idol"
+name = "Key the Metal Idol"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/key-the-metal-idol.jpg"
+
+[[titles]]
+id = "blade-of-the-immortal"
+name = "Blade of the Immortal"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/blade-of-the-immortal.jpg"
+
+[[titles]]
+id = "heesu-in-class-2"
+name = "Heesu in Class 2"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/heesu-in-class-2.jpg"
+
+[[titles]]
+id = "shishunki-bitter-change"
+name = "Shishunki Bitter Change"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/shishunki-bitter-change.jpg"
+
+[[titles]]
+id = "space-dandy"
+name = "Space Dandy"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/space-dandy.jpg"
+
+[[titles]]
+id = "seikai"
+name = "Seikai"
+medium = "series"
+coverImagePath = "src/lib/assets/cover-images/seikai.webp"
+
+[[titles]]
+id = "noir"
+name = "Noir"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/noir.jpeg"
+
+[[titles]]
+id = "millennium-actress"
+name = "Millennium Actress"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/millennium-actress.png"
+
+[[titles]]
+id = "the-irresponsible-captain-tylor"
+name = "The Irresponsible Captain Tylor"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/the-irresponsible-captain-tylor.png"
+
+[[titles]]
+id = "princess-mononoke"
+name = "Princess Mononoke"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/princess-mononoke.jpg"
+
+[[titles]]
+id = "castle-in-the-sky"
+name = "Castle in the Sky"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/castle-in-the-sky.jpg"
+
+[[titles]]
+id = "made-in-abyss"
+name = "Made in Abyss"
+medium = "series"
+coverImagePath = "src/lib/assets/cover-images/made-in-abyss.webp"
+
+[[titles]]
+id = "land-of-the-lustrous"
+name = "Land of the Lustrous"
+medium = "series"
+coverImagePath = "src/lib/assets/cover-images/land-of-the-lustrous.jpg"
+
+[[titles]]
+id = "witch-hat-atelier"
+name = "Witch Hat Atelier"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/witch-hat-atelier.jpg"
+
+[[titles]]
+id = "children-of-the-whales"
+name = "Children of the Whales"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/children-of-the-whales.webp"
+
+[[titles]]
+id = "nausicaä-of-the-valley-of-the-wind"
+name = "Nausicaä of the Valley of the Wind"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/nausicaa-of-the-valley-of-the-wind.jpg"
+
+[[titles]]
+id = "kaiba"
+name = "Kaiba"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/kaiba.jpg"
+
+[[titles]]
+id = "galaxy-express-999"
+name = "Galaxy Express 999"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/galaxy-express-999.jpg"
+
+[[titles]]
+id = "samurai-x-trust-and-betrayal"
+name = "Samurai X: Trust & Betrayal"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/samurai-x-trust-and-betrayal.webp"
+
+[[titles]]
+id = "bunny-drop"
+name = "Bunny Drop"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/bunny-drop.jpg"
+
+[[titles]]
+id = "living-for-the-day-after-tomorrow"
+name = "Living for the Day After Tomorrow"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/living-for-the-day-after-tomorrow.png"
+
+[[titles]]
+id = "violet-evergarden"
+name = "Violet Evergarden"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/violet-evergarden.webp"
+
+[[titles]]
+id = "niea-under-7"
+name = "NieA Under 7"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/niea-under-7.webp"
+
+[[titles]]
+id = "mob-psycho-100"
+name = "Mob Psycho 100"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/mob-psycho-100.jpg"
+
+[[titles]]
+id = "raise-the-red-lantern"
+name = "Raise the Red Lantern"
+medium = "film"
+coverImagePath = "src/lib/assets/cover-images/raise-the-red-lantern.jpg"
+
+[[titles]]
+id = "a-brides-story"
+name = "A Bride's Story"
+medium = "comics"
+coverImagePath = "src/lib/assets/cover-images/a-brides-story.webp"
+
+[[logs]]
+titleID = "spice-and-wolf"
+rating = 7
+
+[[logs]]
+titleID = "the-music-of-marie"
+rating = 9
+
+[[logs]]
+titleID = "eureka-seven"
+rating = 8
+
+[[logs]]
+titleID = "shishunki-bitter-change"
+rating = 7
+
+[[logs]]
+titleID = "eden-of-the-east"
+rating = 7
+
+[[logs]]
+titleID = "kinos-journey"
+rating = 7
+
+[[logs]]
+titleID = "solanin"
+rating = 9
+
+[[logs]]
+titleID = "akira"
+rating = 7
+
+[[logs]]
+titleID = "haibane-renmei"
+rating = 9
+
+[[logs]]
+titleID = "song-of-the-long-march"
+rating = 8
+
+[[logs]]
+titleID = "legend-of-the-galactic-heroes"
+rating = 7
+
+[[logs]]
+titleID = "sonny-boy"
+rating = 8
+
+[[logs]]
+titleID = "samurai-champloo"
+rating = 8
+
+[[logs]]
+titleID = "the-tale-of-the-princess-kaguya"
+rating = 10
+
+[[logs]]
+titleID = "key-the-metal-idol"
+rating = 6
+
+[[logs]]
+titleID = "hirayasumi"
+rating = 8
+
+[[logs]]
+titleID = "heavenly-delusion"
+rating = 8
+
+[[logs]]
+titleID = "trigun"
+rating = 6
+
+[[logs]]
+titleID = "heesu-in-class-2"
+rating = 8
+
+[[logs]]
+titleID = "genshiken"
+rating = 8
+
+[[logs]]
+titleID = "mushishi"
+rating = 10
+
+[[logs]]
+titleID = "ping-pong-the-animation"
+rating = 9
+
+[[logs]]
+titleID = "the-case-of-hana-and-alice"
+rating = 9
+
+[[logs]]
+titleID = "mononoke"
+rating = 8
+
+[[logs]]
+titleID = "katanagatari"
+rating = 7
+
+[[logs]]
+titleID = "space-dandy"
+rating = 8
+
+[[logs]]
+titleID = "from-the-new-world"
+rating = 8
+
+[[logs]]
+titleID = "girls-last-tour"
+rating = 8
+
+[[logs]]
+titleID = "blood-on-the-tracks"
+rating = 10
+
+[[logs]]
+titleID = "hell-girl"
+rating = 7
+
+[[logs]]
+titleID = "link-click"
+rating = 9
+
+[[logs]]
+titleID = "the-summer-hikaru-died"
+rating = 8
+
+[[logs]]
+titleID = "blade-of-the-immortal"
+rating = 8
+
+[[logs]]
+titleID = "seikai"
+rating = 10
+
+[[logs]]
+titleID = "noir"
+rating = 6
+
+[[logs]]
+titleID = "millennium-actress"
+rating = 9
+
+[[logs]]
+titleID = "the-irresponsible-captain-tylor"
+rating = 8
+
+[[logs]]
+titleID = "princess-mononoke"
+rating = 8
+
+[[logs]]
+titleID = "castle-in-the-sky"
+rating = 9
+
+[[logs]]
+titleID = "made-in-abyss"
+rating = 8
+
+[[logs]]
+titleID = "land-of-the-lustrous"
+rating = 9
+
+[[logs]]
+titleID = "witch-hat-atelier"
+rating = 8
+
+[[logs]]
+titleID = "children-of-the-whales"
+rating = 6
+
+[[logs]]
+titleID = "nausicaä-of-the-valley-of-the-wind"
+rating = 8
+
+[[logs]]
+titleID = "kaiba"
+rating = 7
+
+[[logs]]
+titleID = "galaxy-express-999"
+rating = 8
+
+[[logs]]
+titleID = "samurai-x-trust-and-betrayal"
+rating = 9
+
+[[logs]]
+titleID = "bunny-drop"
+rating = 8
+
+[[logs]]
+titleID = "living-for-the-day-after-tomorrow"
+rating = 8
+
+[[logs]]
+titleID = "violet-evergarden"
+rating = 8
+
+[[logs]]
+titleID = "niea-under-7"
+rating = 6
+
+[[logs]]
+titleID = "mob-psycho-100"
+rating = 8
+
+[[logs]]
+titleID = "raise-the-red-lantern"
+rating = 8
+
+[[logs]]
+titleID = "a-brides-story"
+rating = 7

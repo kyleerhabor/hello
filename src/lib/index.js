@@ -81,7 +81,3 @@ export async function writeFile(directory, path, data) {
 export async function fileExists(path) {
   await resolves(fs.access(path));
 }
-
-export function copy(value) {
-  return v8.deserialize(v8.serialize(value));
-}

@@ -366,6 +366,12 @@ name = "A Bride's Story"
 medium = "comics"
 coverImagePath = "src/lib/assets/cover-images/a-brides-story.webp"
 
+[[titles]]
+id = "cowboy-bebop"
+name = "Cowboy Bebop"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/cowboy-bebop.webp"
+
 [[logs]]
 titleID = "spice-and-wolf"
 rating = 7
@@ -580,4 +586,8 @@ rating = 8
 
 [[logs]]
 titleID = "a-brides-story"
+rating = 7
+
+[[logs]]
+titleID = "cowboy-bebop"
 rating = 7

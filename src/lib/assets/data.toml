@@ -136,19 +136,19 @@ coverImagePath = "src/lib/assets/cover-images/heavenly-delusion.jpg"
 id = "akira"
 name = "Akira"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/akira.jpg"
+coverImagePath = "src/lib/assets/cover-images/akira.webp"
 
 [[titles]]
 id = "haibane-renmei"
 name = "Haibane Renmei"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/haibane-renmei.jpg"
+coverImagePath = "src/lib/assets/cover-images/haibane-renmei.webp"
 
 [[titles]]
 id = "mononoke"
 name = "Mononoke"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/mononoke.png"
+coverImagePath = "src/lib/assets/cover-images/mononoke.webp"
 
 [[titles]]
 id = "wonder-cat-kyuu-chan"
@@ -160,7 +160,7 @@ coverImagePath = "src/lib/assets/cover-images/wonder-cat-kyuu-chan.jpg"
 id = "link-click"
 name = "Link Click"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/link-click.png"
+coverImagePath = "src/lib/assets/cover-images/link-click.webp"
 
 [[titles]]
 id = "trigun"
@@ -178,7 +178,7 @@ coverImagePath = "src/lib/assets/cover-images/princess-mononoke.jpg"
 id = "hell-girl"
 name = "Hell Girl"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/hell-girl.jpg"
+coverImagePath = "src/lib/assets/cover-images/hell-girl.webp"
 
 [[titles]]
 id = "spice-and-wolf"
@@ -202,13 +202,13 @@ coverImagePath = "src/lib/assets/cover-images/ping-pong-the-animation.jpg"
 id = "genshiken"
 name = "Genshiken"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/genshiken.jpg"
+coverImagePath = "src/lib/assets/cover-images/genshiken.webp"
 
 [[titles]]
 id = "legend-of-the-galactic-heroes"
 name = "Legend of the Galactic Heroes"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/legend-of-the-galactic-heroes.jpeg"
+coverImagePath = "src/lib/assets/cover-images/legend-of-the-galactic-heroes.webp"
 
 [[titles]]
 id = "key-the-metal-idol"
@@ -256,7 +256,7 @@ coverImagePath = "src/lib/assets/cover-images/noir.jpeg"
 id = "millennium-actress"
 name = "Millennium Actress"
 medium = "animation"
-coverImagePath = "src/lib/assets/cover-images/millennium-actress.png"
+coverImagePath = "src/lib/assets/cover-images/millennium-actress.webp"
 
 [[titles]]
 id = "the-irresponsible-captain-tylor"
@@ -371,6 +371,12 @@ id = "cowboy-bebop"
 name = "Cowboy Bebop"
 medium = "animation"
 coverImagePath = "src/lib/assets/cover-images/cowboy-bebop.webp"
+
+[[titles]]
+id = "heaven-officials-blessing"
+name = "Heaven Official's Blessing"
+medium = "animation"
+coverImagePath = "src/lib/assets/cover-images/heaven-officials-blessing.webp"
 
 [[logs]]
 titleID = "spice-and-wolf"
@@ -590,4 +596,8 @@ rating = 7
 
 [[logs]]
 titleID = "cowboy-bebop"
+rating = 7
+
+[[logs]]
+titleID = "heaven-officials-blessing"
 rating = 7

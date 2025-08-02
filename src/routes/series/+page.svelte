@@ -59,10 +59,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(var(--cover-image-width), 1fr)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(var(--cover-image-width), 1fr));
     gap: 16px 12px;
     margin-top: var(--container-inset);
   }

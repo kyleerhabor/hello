@@ -1,5 +1,5 @@
 <script>
-    import { KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE, KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH } from "$lib";
+    import { KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE, KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH } from "$lib/index";
 
   const { images, accentColor } = $props();
 
@@ -12,9 +12,9 @@
      style:--accent-color={color}>
   <picture>
     <!-- FIXME: Background color creates a small line below the image  -->
-    {#each images.slice(0, -1) as asset}
-      <source srcset={asset[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH]}
-              type={asset[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE]}>
+    {#each images.slice(0, -1) as image}
+      <source srcset={image[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH]}
+              type={image[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE]}>
     {/each}
     {#if primaryImage}
       <img class="cover-image-item"

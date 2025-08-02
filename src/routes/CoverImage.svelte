@@ -1,21 +1,24 @@
 <script>
-  const { assets, accentColor } = $props();
+    import { KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE, KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH } from "$lib";
+
+  const { images, accentColor } = $props();
 
   // Do we need $derived here?
   const color = accentColor ? `rgb(${accentColor[0]},${accentColor[1]},${accentColor[2]})` : undefined;
-  const asset = assets[assets.length - 1];
+  const primaryImage = images[images.length - 1];
 </script>
 
 <div class="cover-image"
      style:--accent-color={color}>
   <picture>
     <!-- FIXME: Background color creates a small line below the image  -->
-    {#each assets.slice(0, -1) as asset}
-      <source srcset={asset.path} type={asset.mimeType}>
+    {#each images.slice(0, -1) as asset}
+      <source srcset={asset[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH]}
+              type={asset[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_MIME_TYPE]}>
     {/each}
-    {#if asset}
+    {#if primaryImage}
       <img class="cover-image-item"
-           src={asset.path}
+           src={primaryImage[KEY_SERVER_PAGE_TITLE_COVER_IMAGE_PATH]}
            alt="Cover"
            decoding="async"
            loading="lazy">

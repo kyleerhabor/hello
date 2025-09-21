@@ -1,6 +1,9 @@
 name: GitHub Pages
 on:
-  # Allows you to run this workflow manually from the Actions tab
+  push:
+    # We could rely on other conditions, like releases, but I think this is fine in practice.
+    branches:
+      - main
   workflow_dispatch:
 jobs:
   build:

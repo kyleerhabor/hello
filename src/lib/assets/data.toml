@@ -390,6 +390,12 @@
 "server.config.title.medium" = "animation"
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/moribito-guardian-of-the-spirit.jpg"
 
+[["server.config.titles"]]
+"server.config.title.id" = "bungaku-shoujo"
+"server.config.title.name" = "Bungaku Shoujo"
+"server.config.title.medium" = "animation"
+"server.config.title.coverImagePath" = "src/lib/assets/cover-images/bungaku-shoujo.jpg"
+
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"
 "server.config.log.rating" = 7
@@ -621,3 +627,7 @@
 [["server.config.logs"]]
 "server.config.log.title" = "moribito-guardian-of-the-spirit"
 "server.config.log.rating" = 9
+
+[["server.config.logs"]]
+"server.config.log.title" = "bungaku-shoujo"
+"server.config.log.rating" = 6

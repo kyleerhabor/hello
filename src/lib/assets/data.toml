@@ -402,6 +402,12 @@
 "server.config.title.medium" = "animation"
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/humanity-has-declined.jpg"
 
+[["server.config.titles"]]
+"server.config.title.id" = "outlaw-star"
+"server.config.title.name" = "Outlaw Star"
+"server.config.title.medium" = "animation"
+"server.config.title.coverImagePath" = "src/lib/assets/cover-images/outlaw-star.png"
+
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"
 "server.config.log.rating" = 7
@@ -641,3 +647,7 @@
 [["server.config.logs"]]
 "server.config.log.title" = "humanity-has-declined"
 "server.config.log.rating" = 6
+
+[["server.config.logs"]]
+"server.config.log.title" = "outlaw-star"
+"server.config.log.rating" = 7

@@ -295,12 +295,6 @@
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/witch-hat-atelier.jpg"
 
 [["server.config.titles"]]
-"server.config.title.id" = "children-of-the-whales"
-"server.config.title.name" = "Children of the Whales"
-"server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/children-of-the-whales.webp"
-
-[["server.config.titles"]]
 "server.config.title.id" = "nausicaä-of-the-valley-of-the-wind"
 "server.config.title.name" = "Nausicaä of the Valley of the Wind"
 "server.config.title.medium" = "comics"
@@ -581,10 +575,6 @@
 [["server.config.logs"]]
 "server.config.log.title" = "witch-hat-atelier"
 "server.config.log.rating" = 8
-
-[["server.config.logs"]]
-"server.config.log.title" = "children-of-the-whales"
-"server.config.log.rating" = 6
 
 [["server.config.logs"]]
 "server.config.log.title" = "nausicaä-of-the-valley-of-the-wind"

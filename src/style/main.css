@@ -1,3 +1,15 @@
+:root {
+  --background-color: var(--background-color-light);
+  --header-divider-color: var(--header-divider-color-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--background-color-dark);
+    --header-divider-color: var(--header-divider-color-dark);
+  }
+}
+
 a {
   color: inherit;
 }

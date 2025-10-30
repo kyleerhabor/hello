@@ -10,7 +10,6 @@
     KEY_SERVER_PAGE_TITLE_ACCENT_COLOR,
     KEY_SERVER_PAGE_TITLE_COVER_IMAGES,
   } from "$lib/index";
-  import "../../style/cssremedy.css";
   import "../../style/main.css";
 
   const MEDIUM_ANIMATION = 0;
@@ -61,7 +60,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--cover-image-width), 1fr));
     gap: 16px 12px;
-    margin-top: var(--container-inset);
+    margin-top: 16px;
   }
 
   .grid-item {

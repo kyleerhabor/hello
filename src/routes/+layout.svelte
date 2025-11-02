@@ -49,10 +49,6 @@
     font-weight: normal;
   }
 
-  a {
-    color: inherit;
-  }
-
   .container {
     max-width: 800px;
     margin: auto;

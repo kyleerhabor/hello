@@ -10,7 +10,7 @@
 <p>Hi!</p>
 
 <p>I'm Kyle Erhabor, a software developer studying Computer Science at Suffolk University in Boston, MA. I spend my days
-  studying and developing software as a passion.</p>
+  studying and developing software.</p>
 
 <p>My current interests are in application development and systems programming for Apple's Darwin platform. Some notable
   works of mine are the <TextLink href="https://github.com/kyleerhabor/advance">Advance</TextLink> image viewer app and

@@ -1,7 +1,7 @@
 <script>
   import "../app.css";
-  import "../style/main.css";
   import "../style/cssremedy.css";
+  import "../style/main.css";
   import {
     PUBLIC_SOCIAL_EMAIL_ADDRESS,
     PUBLIC_SOCIAL_GITHUB_URL,
@@ -49,6 +49,10 @@
     font-weight: normal;
   }
 
+  a {
+    color: initial;
+  }
+
   .container {
     max-width: 800px;
     margin: auto;
@@ -69,7 +73,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px; /* 0 - 5 */
+    gap: 8px; /* 5 - 10 */
   }
 
   @media (min-width: 400px) {
@@ -91,6 +95,13 @@
   .name {
     font-size: 1.25em;
     font-weight: normal;
+    margin-block-end: 0;
+  }
+
+  @media (min-width: 400px) {
+    .name {
+      margin-block-end: revert;
+    }
   }
 
   .given-name {
@@ -100,7 +111,13 @@
   .navigation {
     display: flex;
     gap: 6px; /* 5 - 10 */
-    margin-block: 0;
     padding-inline-start: 0;
+    margin-block-start: 0;
+  }
+
+  @media (min-width: 400px) {
+    .navigation {
+      margin-block-start: revert;
+    }
   }
 </style>

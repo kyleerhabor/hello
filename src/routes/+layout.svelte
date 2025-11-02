@@ -50,7 +50,7 @@
   }
 
   a {
-    color: initial;
+    color: inherit;
   }
 
   .container {

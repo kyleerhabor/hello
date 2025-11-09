@@ -1,15 +1,5 @@
 # Hello
 
-The source code for my personal website.
+The source code for [my personal website][personal-website].
 
-## Use
-
-You can visit the website at https://kyleerhabor.com/.
-
-### Install
-
-```sh
-git clone https://github.com/kyleerhabor/hello.git --recursive --shallow-submodules
-./install.sh
-npm run dev
-```
+[personal-website]: https://kyleerhabor.com/

@@ -95,12 +95,6 @@ export async function load(event) {
       [KEY_SERVER_PAGE_TITLE]: id,
       [KEY_SERVER_PAGE_TITLE_ACCENT_COLOR]: await getColor(output),
       [KEY_SERVER_PAGE_TITLE_COVER_IMAGES]: await Promise.all([
-        // TODO: Support JPEG XL
-        // writeImageAsset(s.clone().jxl({ lossless: true }), directory, "jxl", "image/jxl", dat, sha256({
-        //   buffer,
-        //   format: "jxl",
-        //   version: 0,
-        // })),
         writeImageAsset(s.clone().webp({ lossless: true }), directory, "webp", "image/webp", dat, sha256({
           buffer,
           format: "webp",

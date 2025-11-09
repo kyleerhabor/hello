@@ -19,9 +19,4 @@ vite.config.ts.timestamp-*
 
 # Generated
 /static/assets
-/bin
-/include
-/lib
-/preinstall
-/share
 /data

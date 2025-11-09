@@ -1,6 +1,0 @@
-[submodule "submodules/libjxl"]
-	path = submodules/libjxl
-	url = https://github.com/libjxl/libjxl.git
-[submodule "submodules/libvips"]
-	path = submodules/libvips
-	url = https://github.com/libvips/libvips.git

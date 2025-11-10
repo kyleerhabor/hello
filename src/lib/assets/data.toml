@@ -414,6 +414,12 @@
 "server.config.title.medium" = "animation"
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/ergo-proxy.jpg"
 
+[["server.config.titles"]]
+"server.config.title.id" = "kikis-delivery-service"
+"server.config.title.name" = "Kiki's Delivery Service"
+"server.config.title.medium" = "animation"
+"server.config.title.coverImagePath" = "src/lib/assets/cover-images/kikis-delivery-service.png"
+
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"
 "server.config.log.rating" = 7
@@ -660,4 +666,8 @@
 
 [["server.config.logs"]]
 "server.config.log.title" = "ergo-proxy"
+"server.config.log.rating" = 8
+
+[["server.config.logs"]]
+"server.config.log.title" = "kikis-delivery-service"
 "server.config.log.rating" = 8

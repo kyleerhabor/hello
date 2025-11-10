@@ -101,7 +101,7 @@
   }
 
   .given-name {
-    font-weight: 800;
+    font-weight: 700;
   }
 
   .navigation {

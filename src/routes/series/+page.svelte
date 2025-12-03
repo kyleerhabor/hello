@@ -1,6 +1,7 @@
 <script>
   import CoverImage from "../CoverImage.svelte";
   import StarRating from "../StarRating.svelte";
+  import { PUBLIC_NAME } from "$env/static/public";
   import {
     KEY_SERVER_CONFIG_LOG_RATING,
     KEY_SERVER_CONFIG_LOG_TITLE,
@@ -26,7 +27,7 @@
 </script>
 
 <svelte:head>
-  <title>Series Recs. | Kyle Erhabor</title>
+  <title>Series Recs. | {PUBLIC_NAME}</title>
 </svelte:head>
 
 <div class="grid">

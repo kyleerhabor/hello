@@ -5,8 +5,7 @@
   import {
     PUBLIC_SOCIAL_EMAIL_ADDRESS,
     PUBLIC_SOCIAL_GITHUB_URL,
-    PUBLIC_GIVEN_NAME,
-    PUBLIC_FAMILY_NAME,
+    PUBLIC_NAME,
   } from "$env/static/public";
 
 	let { children } = $props();
@@ -15,10 +14,7 @@
 <div class="header-parent">
   <header class="header container">
     <a class="name-link" href="/">
-      <h1 class="name">
-        <b class="given-name">{PUBLIC_GIVEN_NAME}</b>
-        {PUBLIC_FAMILY_NAME}
-      </h1>
+      <h1 class="name">{PUBLIC_NAME}</h1>
     </a>
     <nav>
       <ul class="navigation">
@@ -98,10 +94,6 @@
     .name {
       margin-block-end: revert;
     }
-  }
-
-  .given-name {
-    font-weight: 700;
   }
 
   .navigation {

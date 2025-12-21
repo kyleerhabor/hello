@@ -426,6 +426,12 @@
 "server.config.title.medium" = "animation"
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/now-and-then-here-and-there.jpg"
 
+[["server.config.titles"]]
+"server.config.title.id" = "yugo-the-negotiator"
+"server.config.title.name" = "Yugo The Negotiator"
+"server.config.title.medium" = "animation"
+"server.config.title.coverImagePath" = "src/lib/assets/cover-images/yugo-the-negotiator.jpg"
+
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"
 "server.config.log.rating" = 7
@@ -681,3 +687,7 @@
 [["server.config.logs"]]
 "server.config.log.title" = "now-and-then-here-and-there"
 "server.config.log.rating" = 8
+
+[["server.config.logs"]]
+"server.config.log.title" = "yugo-the-negotiator"
+"server.config.log.rating" = 7

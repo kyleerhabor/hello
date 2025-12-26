@@ -432,12 +432,6 @@
 "server.config.title.medium" = "animation"
 "server.config.title.coverImagePath" = "src/lib/assets/cover-images/yugo-the-negotiator.jpg"
 
-[["server.config.titles"]]
-"server.config.title.id" = "r-o-d-read-or-die"
-"server.config.title.name" = "R.O.D - Read or Die"
-"server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/r-o-d-read-or-die.jpg"
-
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"
 "server.config.log.rating" = 7
@@ -696,8 +690,4 @@
 
 [["server.config.logs"]]
 "server.config.log.title" = "yugo-the-negotiator"
-"server.config.log.rating" = 7
-
-[["server.config.logs"]]
-"server.config.log.title" = "r-o-d-read-or-die"
 "server.config.log.rating" = 7

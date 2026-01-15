@@ -15,7 +15,7 @@
 		"@humanspeak/svelte-markdown": "0.8.9",
 		"@stylistic/eslint-plugin": "5.2.2",
 		"@sveltejs/adapter-static": "3.0.8",
-		"@sveltejs/kit": "2.27.0",
+		"@sveltejs/kit": "2.49.5",
 		"@sveltejs/vite-plugin-svelte": "5.1.1",
 		"colorthief": "2.6.0",
 		"eslint": "9.32.0",

@@ -4,11 +4,10 @@
   import { page } from "$app/state";
 
   const { href, title, children } = $props();
-  const isLocal = isLocalURL(href, page.url);
 </script>
 
 <Link {isLocal}>
-  <a {href} {title} target={isLocal ? "_self" : "_blank"}>
+  <a {href} {title} target={isLocalURL(href, page.url) ? "_self" : "_blank"}>
     {@render children?.()}
   </a>
 </Link>

@@ -1,11 +1,6 @@
-import fs from "node:fs/promises";
-import { dirname } from "node:path";
-import * as v8 from "node:v8";
 import {
-  fileExists,
   key,
   unique,
-  writeFile,
   KEY_SERVER_CONFIG_MEDIUMS,
   KEY_SERVER_CONFIG_MEDIUM_ID,
   KEY_SERVER_CONFIG_TITLES,
@@ -17,11 +12,8 @@ import {
   KEY_SERVER_CONFIG_LOG_RATING,
 } from "$lib/index";
 import data from "$lib/assets/data.toml?raw";
-import { getColor } from "colorthief";
-import { findUp } from "find-up";
 import { parse } from "smol-toml";
 import * as R from "ramda";
-import sharp from "sharp";
 
 function logTitleName(titles, log) {
   return titles[log[KEY_SERVER_CONFIG_LOG_TITLE]][KEY_SERVER_CONFIG_TITLE_NAME];

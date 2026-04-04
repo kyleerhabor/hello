@@ -21,8 +21,8 @@
 </p>
 <p>
   My current interests are in application development and systems programming for Apple's Darwin platform. Some notable
-  works of mine are the <TextLink href="{PUBLIC_PROJECT_SAMPLED_URL}">Sampled</TextLink> music player app and
-  <TextLink href="{PUBLIC_PROJECT_ADVANCE_URL}">Advance</TextLink> image viewer app.
+  works of mine are the <TextLink href={PUBLIC_PROJECT_SAMPLED_URL}>Sampled</TextLink> music player app and
+  <TextLink href={PUBLIC_PROJECT_ADVANCE_URL}>Advance</TextLink> image viewer app.
 </p>
 <p>
   If you'd like to reach me, the best way is to send me an email. I enjoy reading them and will try to respond soon.

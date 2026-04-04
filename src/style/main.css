@@ -1,12 +1,18 @@
 :root {
   --background-color: var(--background-color-light);
   --header-divider-color: var(--header-divider-color-light);
+  --series-table-header-text-color: var(--series-table-header-text-color-light);
+  --series-table-header-background-color: var(--series-table-header-background-color-light);
+  --series-table-row-divider-color: var(--series-table-row-divider-color-light);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--background-color-dark);
     --header-divider-color: var(--header-divider-color-dark);
+    --series-table-header-text-color: var(--series-table-header-text-color-dark);
+    --series-table-header-background-color: var(--series-table-header-background-color-dark);
+    --series-table-row-divider-color: var(--series-table-row-divider-color-dark);
   }
 }
 

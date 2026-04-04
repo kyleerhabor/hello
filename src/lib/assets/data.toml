@@ -7,7 +7,7 @@
 "server.config.medium.value" = 1
 
 [["server.config.mediums"]]
-"server.config.medium.id" = "comics" # Manga, manhua, manhwa, etc.
+"server.config.medium.id" = "comics" # Manga, manhua, etc.
 "server.config.medium.value" = 2
 
 [["server.config.mediums"]]
@@ -22,415 +22,346 @@
 "server.config.title.id" = "sonny-boy"
 "server.config.title.name" = "Sonny Boy"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/sonny-boy.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "banner-of-the-stars"
 "server.config.title.name" = "Banner of the Stars"
 "server.config.title.medium" = "novel"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/banner-of-the-stars.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "blood-on-the-tracks"
 "server.config.title.name" = "Blood on the Tracks"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/blood-on-the-tracks.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "the-summer-hikaru-died"
 "server.config.title.name" = "The Summer Hikaru Died"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/the-summer-hikaru-died.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "the-music-of-marie"
 "server.config.title.name" = "The Music of Marie"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/the-music-of-marie.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "solanin"
 "server.config.title.name" = "Solanin"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/solanin.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "girls-last-tour"
 "server.config.title.name" = "Girls' Last Tour"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/girls-last-tour.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "song-of-the-long-march"
 "server.config.title.name" = "Song of the Long March"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/song-of-the-long-march.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "kinos-journey"
 "server.config.title.name" = "Kino's Journey"
 "server.config.title.medium" = "series"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/kinos-journey.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "hirayasumi"
 "server.config.title.name" = "Hirayasumi"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/hirayasumi.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "mushishi"
 "server.config.title.name" = "Mushishi"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/mushishi.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "the-case-of-hana-and-alice"
 "server.config.title.name" = "The Case of Hana & Alice"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/the-case-of-hana-and-alice.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "samurai-champloo"
 "server.config.title.name" = "Samurai Champloo"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/samurai-champloo.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "the-tale-of-the-princess-kaguya"
 "server.config.title.name" = "The Tale of the Princess Kaguya"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/the-tale-of-the-princess-kaguya.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "eden-of-the-east"
 "server.config.title.name" = "Eden of the East"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/eden-of-the-east.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "eureka-seven"
 "server.config.title.name" = "Eureka Seven"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/eureka-seven.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "gurren-lagann"
 "server.config.title.name" = "Gurren Lagann"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/gurren-lagann.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "from-the-new-world"
 "server.config.title.name" = "From the New World"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/from-the-new-world.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "heavenly-delusion"
 "server.config.title.name" = "Heavenly Delusion"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/heavenly-delusion.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "akira"
 "server.config.title.name" = "Akira"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/akira.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "haibane-renmei"
 "server.config.title.name" = "Haibane Renmei"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/haibane-renmei.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "mononoke"
 "server.config.title.name" = "Mononoke"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/mononoke.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "wonder-cat-kyuu-chan"
 "server.config.title.name" = "Wonder Cat Kyuu-chan"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/wonder-cat-kyuu-chan.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "link-click"
 "server.config.title.name" = "Link Click"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/link-click.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "trigun"
 "server.config.title.name" = "Trigun"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/trigun.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "princess-mononoke"
 "server.config.title.name" = "Princess Mononoke"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/princess-mononoke.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "hell-girl"
 "server.config.title.name" = "Hell Girl"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/hell-girl.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "spice-and-wolf"
 "server.config.title.name" = "Spice and Wolf"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/spice-and-wolf.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "katanagatari"
 "server.config.title.name" = "Katanagatari"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/katanagatari.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "ping-pong-the-animation"
 "server.config.title.name" = "Ping Pong the Animation"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/ping-pong-the-animation.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "genshiken"
 "server.config.title.name" = "Genshiken"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/genshiken.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "legend-of-the-galactic-heroes"
 "server.config.title.name" = "Legend of the Galactic Heroes"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/legend-of-the-galactic-heroes.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "key-the-metal-idol"
 "server.config.title.name" = "Key the Metal Idol"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/key-the-metal-idol.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "blade-of-the-immortal"
 "server.config.title.name" = "Blade of the Immortal"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/blade-of-the-immortal.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "heesu-in-class-2"
 "server.config.title.name" = "Heesu in Class 2"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/heesu-in-class-2.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "shishunki-bitter-change"
 "server.config.title.name" = "Shishunki Bitter Change"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/shishunki-bitter-change.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "space-dandy"
 "server.config.title.name" = "Space Dandy"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/space-dandy.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "seikai"
 "server.config.title.name" = "Seikai"
 "server.config.title.medium" = "series"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/seikai.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "noir"
 "server.config.title.name" = "Noir"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/noir.jpeg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "millennium-actress"
 "server.config.title.name" = "Millennium Actress"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/millennium-actress.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "the-irresponsible-captain-tylor"
 "server.config.title.name" = "The Irresponsible Captain Tylor"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/the-irresponsible-captain-tylor.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "princess-mononoke"
 "server.config.title.name" = "Princess Mononoke"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/princess-mononoke.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "castle-in-the-sky"
 "server.config.title.name" = "Castle in the Sky"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/castle-in-the-sky.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "made-in-abyss"
 "server.config.title.name" = "Made in Abyss"
 "server.config.title.medium" = "series"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/made-in-abyss.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "land-of-the-lustrous"
 "server.config.title.name" = "Land of the Lustrous"
 "server.config.title.medium" = "series"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/land-of-the-lustrous.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "witch-hat-atelier"
 "server.config.title.name" = "Witch Hat Atelier"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/witch-hat-atelier.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "nausicaä-of-the-valley-of-the-wind"
 "server.config.title.name" = "Nausicaä of the Valley of the Wind"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/nausicaa-of-the-valley-of-the-wind.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "kaiba"
 "server.config.title.name" = "Kaiba"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/kaiba.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "galaxy-express-999"
 "server.config.title.name" = "Galaxy Express 999"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/galaxy-express-999.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "samurai-x-trust-and-betrayal"
 "server.config.title.name" = "Samurai X: Trust & Betrayal"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/samurai-x-trust-and-betrayal.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "bunny-drop"
 "server.config.title.name" = "Bunny Drop"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/bunny-drop.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "living-for-the-day-after-tomorrow"
 "server.config.title.name" = "Living for the Day After Tomorrow"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/living-for-the-day-after-tomorrow.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "violet-evergarden"
 "server.config.title.name" = "Violet Evergarden"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/violet-evergarden.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "niea-under-7"
 "server.config.title.name" = "NieA Under 7"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/niea-under-7.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "mob-psycho-100"
 "server.config.title.name" = "Mob Psycho 100"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/mob-psycho-100.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "raise-the-red-lantern"
 "server.config.title.name" = "Raise the Red Lantern"
 "server.config.title.medium" = "film"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/raise-the-red-lantern.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "a-brides-story"
 "server.config.title.name" = "A Bride's Story"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/a-brides-story.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "cowboy-bebop"
 "server.config.title.name" = "Cowboy Bebop"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/cowboy-bebop.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "heaven-officials-blessing"
 "server.config.title.name" = "Heaven Official's Blessing"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/heaven-officials-blessing.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "takopis-original-sin"
 "server.config.title.name" = "Takopi's Original Sin"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/takopis-original-sin.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "moribito-guardian-of-the-spirit"
 "server.config.title.name" = "Moribito: Guardian of the Spirit"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/moribito-guardian-of-the-spirit.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "bungaku-shoujo"
 "server.config.title.name" = "Bungaku Shoujo"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/bungaku-shoujo.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "humanity-has-declined"
 "server.config.title.name" = "Humanity Has Declined"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/humanity-has-declined.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "outlaw-star"
 "server.config.title.name" = "Outlaw Star"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/outlaw-star.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "emanon"
 "server.config.title.name" = "Emanon"
 "server.config.title.medium" = "comics"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/emanon.webp"
 
 [["server.config.titles"]]
 "server.config.title.id" = "ergo-proxy"
 "server.config.title.name" = "Ergo Proxy"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/ergo-proxy.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "kikis-delivery-service"
 "server.config.title.name" = "Kiki's Delivery Service"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/kikis-delivery-service.png"
 
 [["server.config.titles"]]
 "server.config.title.id" = "now-and-then-here-and-there"
 "server.config.title.name" = "Now and Then, Here and There"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/now-and-then-here-and-there.jpg"
 
 [["server.config.titles"]]
 "server.config.title.id" = "yugo-the-negotiator"
 "server.config.title.name" = "Yugo The Negotiator"
 "server.config.title.medium" = "animation"
-"server.config.title.coverImagePath" = "src/lib/assets/cover-images/yugo-the-negotiator.jpg"
 
 [["server.config.logs"]]
 "server.config.log.title" = "spice-and-wolf"

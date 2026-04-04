@@ -3,4 +3,15 @@
   --background-color-dark: hsl(0deg 0% 12%);
   --header-divider-color-light: hsl(30deg 0% 60%);
   --header-divider-color-dark: hsl(30deg 0% 40%);
+  --series-table-header-text-color-light: hsl(0deg 0% 50%);
+  --series-table-header-text-color-dark: hsl(0deg 0% 65%);
+  --series-table-header-background-color-light: hsl(0deg 0% 98%);
+  --series-table-header-background-color-dark: hsl(0deg 0% 16%);
+  --series-table-row-divider-color-light: hsl(30deg 0% 80%);
+  --series-table-row-divider-color-dark: hsl(30deg 0% 28%);
+  --series-table-margin-block: 16px;
+  --series-table-border-radius: 12px;
+  --series-table-cell-padding-block: 0.625rem;
+  --series-table-cell-padding-inline: 0.75rem;
+  --series-table-min-width: 500px;
 }

@@ -5,6 +5,8 @@
 
   const STAR_SIZE = 16;
   const { rating } = $props();
+  const fullStars = Math.floor(rating / 2);
+  const isHalfStar = !isEven(rating);
 </script>
 
 <div class="container">
@@ -20,21 +22,28 @@
       <Star size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
     {/each}
 
-    <StarHalf size={STAR_SIZE} strokeWidth="0" fill={isEven(rating) ? "transparent" : PUBLIC_STAR_COLOR} />
+    {#if isHalfStar}
+      <StarHalf size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
+    {/if}
   </div>
 </div>
 
 <style>
-  .container {
+   .container {
     position: relative;
+    display: inline-block;
+    width: max-content;
+    line-height: 0;
   }
 
   .stars {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .rating {
     position: absolute;
-    top: 0;
+    inset-block-start: 0;
+    inset-inline-start: 0;
   }
 </style>

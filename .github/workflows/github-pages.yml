@@ -33,8 +33,8 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Build project
         run: |
-          npm ci # --build-from-source --foreground-scripts
-          npm run build || npm run build # Run twice for transient errors
+          npm ci
+          npm run build
       - uses: actions/upload-pages-artifact@v3
         id: deployment
         with:

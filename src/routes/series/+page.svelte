@@ -1,5 +1,4 @@
 <script>
-  import CoverImage from "../CoverImage.svelte";
   import StarRating from "../StarRating.svelte";
   import { PUBLIC_NAME } from "$env/static/public";
   import {
@@ -8,16 +7,9 @@
     KEY_SERVER_CONFIG_MEDIUM_VALUE,
     KEY_SERVER_CONFIG_TITLE_MEDIUM,
     KEY_SERVER_CONFIG_TITLE_NAME,
-    KEY_SERVER_PAGE_TITLE_ACCENT_COLOR,
-    KEY_SERVER_PAGE_TITLE_COVER_IMAGES,
   } from "$lib/index";
   import "../../style/main.css";
 
-  const MEDIUM_ANIMATION = 0;
-  const MEDIUM_NOVEL = 1;
-  const MEDIUM_COMICS = 2;
-  const MEDIUM_FILM = 3;
-  const MEDIUM_SERIES = 4;
   const MEDIUMS = ["Animation", "Novel", "Comics", "Film", "Series"];
   const { data } = $props();
 
@@ -30,59 +22,102 @@
   <title>Series Recs. | {PUBLIC_NAME}</title>
 </svelte:head>
 
-<div class="grid">
-  {#each data.logs as log}
-    {@const title = data.titles[log[KEY_SERVER_CONFIG_LOG_TITLE]]}
-    {@const titleName = title[KEY_SERVER_CONFIG_TITLE_NAME]}
-    {@const medium = data.mediums[title[KEY_SERVER_CONFIG_TITLE_MEDIUM]]}
-    <div class="grid-item">
-      <div class="grid-item-cover-image">
-        <CoverImage images={title[KEY_SERVER_PAGE_TITLE_COVER_IMAGES]}
-                    accentColor={title[KEY_SERVER_PAGE_TITLE_ACCENT_COLOR]} />
-      </div>
-      <!-- TODO: Figure out a way to display an arbitrarily long title in a non-fixed way. -->
-      <div class="title line-limit" title={titleName}>{titleName}</div>
-      <div class="medium">
-        {mediumName(medium[KEY_SERVER_CONFIG_MEDIUM_VALUE])}
-      </div>
-      <div>
-        <StarRating rating={log[KEY_SERVER_CONFIG_LOG_RATING]} />
-      </div>
-    </div>
-  {/each}
+<div class="container">
+  <table class="table">
+    <colgroup>
+      <col class="title-col" />
+      <col class="medium-col" />
+      <col class="rating-col" />
+    </colgroup>
+    <thead>
+      <tr class="row">
+        <th scope="col" class="cell header">Title</th>
+        <th scope="col" class="cell header">Medium</th>
+        <th scope="col" class="cell header">Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each data.logs as log}
+        {@const title = data.titles[log[KEY_SERVER_CONFIG_LOG_TITLE]]}
+        {@const titleName = title[KEY_SERVER_CONFIG_TITLE_NAME]}
+        {@const medium = data.mediums[title[KEY_SERVER_CONFIG_TITLE_MEDIUM]]}
+        <tr class="row">
+          <!-- TODO: Note accessibility improvements from using th over td.  -->
+          <th class="cell title" scope="row">
+            {titleName}
+          </th>
+          <td class="cell medium">
+            {mediumName(medium[KEY_SERVER_CONFIG_MEDIUM_VALUE])}
+          </td>
+          <td class="cell rating">
+            <StarRating rating={log[KEY_SERVER_CONFIG_LOG_RATING]} />
+          </td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
 </div>
 
 <style>
-  :root {
-    --cover-image-width: 100px;
+  .container {
+    margin-block: var(--series-table-margin-block);
+    border: 1px solid var(--header-divider-color);
+    border-radius: var(--series-table-border-radius);
+    overflow: hidden;
+    background: var(--background-color);
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--cover-image-width), 1fr));
-    gap: 16px 12px;
-    margin-top: 16px;
+  .table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: auto;
   }
 
-  .grid-item {
-    display: flex;
-    flex-direction: column;
+  .cell {
+    padding-block: var(--series-table-cell-padding-block);
+    padding-inline: var(--series-table-cell-padding-inline);
   }
 
-  .grid-item-cover-image {
-    --cover-image-border-radius: 4px;
+  .cell {
+    text-align: start;
+  }
+
+  .header {
+    font-weight: 600;
+    color: var(--series-table-header-text-color);
+    background: var(--series-table-header-background-color);
+    border-bottom: 1px solid var(--header-divider-color);
+  }
+
+  .row:not(:last-child) .cell {
+    border-bottom: 1px solid var(--series-table-row-divider-color);
+  }
+
+  .title-col {
+    width: 100%;
+  }
+
+  .medium-col {
+    width: auto;
+  }
+
+  .rating-col {
+    width: auto;
   }
 
   .title {
-    --line-height: 1.5rem;
-    --line-count: 2;
-    margin-top: calc(var(--line-height) / 3);
+    text-align: start;
+    font-weight: 400;
   }
 
-  .medium {
-    font-variant-caps: all-petite-caps;
-    font-weight: 600;
-    /* TODO: Name. */
-    color: hsl(0deg 0% 60%);
+  @media (max-width: 500px) {
+    .container {
+      overflow-x: auto;
+    }
+
+    .table {
+      min-width: var(--series-table-min-width);
+    }
   }
 </style>

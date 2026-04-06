@@ -710,7 +710,7 @@
 "server.config.link.resource.anidb.id" = 7
 
 [["server.config.links"]]
-"server.config.link.title" = "raise-the-rf-lantern"
+"server.config.link.title" = "raise-the-red-lantern"
 "server.config.link.resource" = "mydramalist"
 "server.config.link.resource.mydramalist.id" = 3647
 

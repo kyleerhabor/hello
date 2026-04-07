@@ -6,8 +6,8 @@
 
   const STAR_SIZE = 16;
   const { rating } = $props();
-  const fullStars = () => Math.floor(rating / 2);
-  const isHalfStar = () => !isEven(rating);
+  const fullStars = $derived(Math.floor(rating / 2));
+  const isHalfStar = $derived(!isEven(rating));
 </script>
 
 <div class="container">
@@ -19,11 +19,10 @@
     {/each}
   </div>
   <div class="stars rating">
-    {#each { length: fullStars() }}
+    {#each { length: fullStars }}
       <Star size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
     {/each}
-
-    {#if isHalfStar()}
+    {#if isHalfStar}
       <StarHalf size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
     {/if}
   </div>

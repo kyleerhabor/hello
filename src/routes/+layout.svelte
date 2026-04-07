@@ -7,26 +7,27 @@
     PUBLIC_SOCIAL_GITHUB_URL,
     PUBLIC_NAME,
   } from "$env/static/public";
+    import { resolve } from "$app/paths";
 
 	let { children } = $props();
 </script>
 
 <div class="header-parent">
   <header class="header container">
-    <a class="name-link" href="/">
+    <a class="name-link" href={resolve("/")}>
       <h1 class="name">{PUBLIC_NAME}</h1>
     </a>
     <nav>
       <ul class="navigation">
         <li>
-          <a href="/series">Series Recs.</a>
+          <a href={resolve("/series")}>Series Recs.</a>
         </li>
         <li>|</li>
         <li>
           <a href="mailto:{PUBLIC_SOCIAL_EMAIL_ADDRESS}">Email</a>
         </li>
         <li>
-          <a href={PUBLIC_SOCIAL_GITHUB_URL} target="_blank">GitHub</a>
+          <a href={PUBLIC_SOCIAL_GITHUB_URL} rel="external" target="_blank">GitHub</a>
         </li>
       </ul>
     </nav>

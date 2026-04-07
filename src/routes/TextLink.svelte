@@ -4,11 +4,12 @@
   import { page } from "$app/state";
 
   const { href, title, children } = $props();
-  const isLocal = () => isLocalURL(href, page.url);
+  const isLocal = $derived(isLocalURL(href, page.url));
 </script>
 
-<Link isLocal={isLocal()}>
-  <a {href} {title} target={isLocal() ? "_self" : "_blank"}>
+<Link isLocal={isLocal}>
+  <!-- TODO: Figure out how to silence this lint. -->
+  <a href={isLocal ? resolve(href) : href} {title} target={isLocal ? "_self" : "_blank"}>
     {@render children?.()}
   </a>
 </Link>

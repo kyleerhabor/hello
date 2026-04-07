@@ -1,11 +1,12 @@
 <script>
-  import StarRating from "../StarRating.svelte";
   import { PUBLIC_NAME } from "$env/static/public";
   import {
+    KEY_SERVER_DATA_LOG_ID,
     KEY_SERVER_DATA_LOG_RATING,
     KEY_SERVER_DATA_LOG_TITLE,
     KEY_SERVER_DATA_MEDIUM_VALUE,
     KEY_SERVER_DATA_RESOURCE_VALUE,
+    KEY_SERVER_DATA_TITLE_LINK_ID,
     KEY_SERVER_DATA_TITLE_LINK_RESOURCE,
     KEY_SERVER_DATA_TITLE_LINK_RESOURCE_ANIDB_ID,
     KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID,
@@ -33,6 +34,7 @@
     SERVER_DATA_RESOURCE_VALUE_NOVELUPDATES,
   } from "$lib/index";
   import "../../style/main.css";
+  import StarRating from "../StarRating.svelte";
 
   const { data } = $props();
 
@@ -135,7 +137,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each data[KEY_SERVER_PAGE_SERIES_LOGS] as log}
+      {#each data[KEY_SERVER_PAGE_SERIES_LOGS] as log (log[KEY_SERVER_DATA_LOG_ID])}
         {@const title = data[KEY_SERVER_PAGE_SERIES_TITLES][log[KEY_SERVER_DATA_LOG_TITLE]]}
         {@const name = title[KEY_SERVER_DATA_TITLE_NAME]}
         {@const medium = data[KEY_SERVER_PAGE_SERIES_MEDIUMS][title[KEY_SERVER_DATA_TITLE_MEDIUM]]}
@@ -151,12 +153,12 @@
             <StarRating rating={log[KEY_SERVER_DATA_LOG_RATING]} />
           </td>
           <td class="cell links">
-            {#each title[KEY_SERVER_DATA_TITLE_LINKS] as link}
+            {#each title[KEY_SERVER_DATA_TITLE_LINKS] as link (link[KEY_SERVER_DATA_TITLE_LINK_ID])}
               {@const resource = data[KEY_SERVER_PAGE_SERIES_RESOURCES][link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE]]}
               {@const name = resourceName(resource[KEY_SERVER_DATA_RESOURCE_VALUE])}
               {@const url = resourceURL(resource[KEY_SERVER_DATA_RESOURCE_VALUE], link)}
               <div>
-                <a href={url} target="_blank">
+                <a href={url} rel="external" target="_blank">
                   {name}
                 </a>
               </div>

@@ -1,7 +1,6 @@
 name: GitHub Pages
 on:
   push:
-    # We could rely on other conditions, like releases, but I think this is fine in practice.
     branches:
       - main
   workflow_dispatch:

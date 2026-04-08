@@ -33,7 +33,7 @@
     position: relative;
     display: inline-block;
     width: max-content;
-    line-height: 0;
+    vertical-align: middle;
   }
 
   .stars {

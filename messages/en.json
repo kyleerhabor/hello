@@ -1,0 +1,21 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"series_medium_film": "Film",
+	"series_medium_animation": "Animation",
+	"series_medium_anime": "Anime",
+	"series_medium_donghua": "Donghua",
+	"series_medium_novel": "Novel",
+	"series_medium_comics": "Comics",
+	"series_medium_manga": "Manga",
+	"series_medium_manhua": "Manhua",
+	"series_medium_manhwa": "Manhwa",
+	"series_link_anidb": "AniDB",
+	"series_link_mangaupdates": "MangaUpdates",
+	"series_link_novelupdates": "Novel Updates",
+	"series_link_mydramalist": "MyDramaList",
+	"series_page_title": "Series Recs. | {name}",
+	"series_column_title": "Title",
+	"series_column_medium": "Medium",
+	"series_column_rating": "Rating",
+	"series_column_links": "Links"
+}

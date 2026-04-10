@@ -1,6 +1,6 @@
 <script>
   import Link from "./Link.svelte";
-  import { isLocalURL } from "$lib/index";
+  import { isLocalURL } from "$lib";
   import { page } from "$app/state";
 
   const { href, title, children } = $props();

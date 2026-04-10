@@ -1,5 +1,5 @@
 <script>
-  import { isEven } from "$lib/index";
+  import { isEven } from "$lib";
   import { PUBLIC_STAR_COLOR } from "$env/static/public";
   import Star from "lucide-svelte/icons/star";
   import StarHalf from "lucide-svelte/icons/star-half";

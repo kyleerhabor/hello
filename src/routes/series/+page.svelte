@@ -1,102 +1,105 @@
 <script>
   import { PUBLIC_NAME } from "$env/static/public";
   import {
-    KEY_SERVER_DATA_LOG_ID,
-    KEY_SERVER_DATA_LOG_RATING,
-    KEY_SERVER_DATA_LOG_TITLE,
-    KEY_SERVER_DATA_MEDIUM_VALUE,
-    KEY_SERVER_DATA_RESOURCE_VALUE,
-    KEY_SERVER_DATA_TITLE_LINK_ID,
-    KEY_SERVER_DATA_TITLE_LINK_RESOURCE,
-    KEY_SERVER_DATA_TITLE_LINK_RESOURCE_ANIDB_ID,
-    KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID,
-    KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID,
-    KEY_SERVER_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG,
-    KEY_SERVER_DATA_TITLE_LINKS,
-    KEY_SERVER_DATA_TITLE_MEDIUM,
-    KEY_SERVER_DATA_TITLE_NAME,
-    KEY_SERVER_PAGE_SERIES_LOGS,
-    KEY_SERVER_PAGE_SERIES_MEDIUMS,
-    KEY_SERVER_PAGE_SERIES_RESOURCES,
-    KEY_SERVER_PAGE_SERIES_TITLES,
-    SERVER_DATA_MEDIUM_VALUE_ANIMATION,
-    SERVER_DATA_MEDIUM_VALUE_ANIME,
-    SERVER_DATA_MEDIUM_VALUE_COMICS,
-    SERVER_DATA_MEDIUM_VALUE_DONGHUA,
-    SERVER_DATA_MEDIUM_VALUE_FILM,
-    SERVER_DATA_MEDIUM_VALUE_MANGA,
-    SERVER_DATA_MEDIUM_VALUE_MANHUA,
-    SERVER_DATA_MEDIUM_VALUE_MANHWA,
-    SERVER_DATA_MEDIUM_VALUE_NOVEL,
-    SERVER_DATA_RESOURCE_VALUE_ANIDB,
-    SERVER_DATA_RESOURCE_VALUE_MANGAUPDATES,
-    SERVER_DATA_RESOURCE_VALUE_MYDRAMALIST,
-    SERVER_DATA_RESOURCE_VALUE_NOVELUPDATES,
-  } from "$lib/index";
+    DATA_MEDIUM_VALUE_ANIMATION,
+    DATA_MEDIUM_VALUE_ANIME,
+    DATA_MEDIUM_VALUE_COMICS,
+    DATA_MEDIUM_VALUE_DONGHUA,
+    DATA_MEDIUM_VALUE_FILM,
+    DATA_MEDIUM_VALUE_MANGA,
+    DATA_MEDIUM_VALUE_MANHUA,
+    DATA_MEDIUM_VALUE_MANHWA,
+    DATA_MEDIUM_VALUE_NOVEL,
+    DATA_RESOURCE_VALUE_ANIDB,
+    DATA_RESOURCE_VALUE_MANGAUPDATES,
+    DATA_RESOURCE_VALUE_MYDRAMALIST,
+    DATA_RESOURCE_VALUE_NOVELUPDATES,
+  } from "$lib";
+  import {
+    KEY_DATA_LOG_ID,
+    KEY_DATA_LOG_RATING,
+    KEY_DATA_LOG_TITLE,
+    KEY_DATA_MEDIUM_VALUE,
+    KEY_DATA_RESOURCE_VALUE,
+    KEY_DATA_TITLE_LINK_ID,
+    KEY_DATA_TITLE_LINK_RESOURCE,
+    KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID,
+    KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID,
+    KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID,
+    KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG,
+    KEY_DATA_TITLE_LINKS,
+    KEY_DATA_TITLE_MEDIUM,
+    KEY_DATA_TITLE_NAME,
+    KEY_PAGE_SERIES_LOGS,
+    KEY_PAGE_SERIES_MEDIUMS,
+    KEY_PAGE_SERIES_RESOURCES,
+    KEY_PAGE_SERIES_TITLES,
+  } from "../series";
   import "../../style/main.css";
   import StarRating from "../StarRating.svelte";
+  import { m } from "$lib/paraglide/messages";
 
   const { data } = $props();
 
   function mediumName(value) {
     switch (value) {
-      case SERVER_DATA_MEDIUM_VALUE_FILM:
-        return "Film";
-      case SERVER_DATA_MEDIUM_VALUE_ANIMATION:
-        return "Animation";
-      case SERVER_DATA_MEDIUM_VALUE_ANIME:
-        return "Anime";
-      case SERVER_DATA_MEDIUM_VALUE_DONGHUA:
-        return "Donghua";
-      case SERVER_DATA_MEDIUM_VALUE_NOVEL:
-        return "Novel";
-      case SERVER_DATA_MEDIUM_VALUE_COMICS:
-        return "Comics";
-      case SERVER_DATA_MEDIUM_VALUE_MANGA:
-        return "Manga";
-      case SERVER_DATA_MEDIUM_VALUE_MANHUA:
-        return "Manhua";
-      case SERVER_DATA_MEDIUM_VALUE_MANHWA:
-        return "Manhwa";
+      case DATA_MEDIUM_VALUE_FILM:
+        return m.series_medium_film();
+      case DATA_MEDIUM_VALUE_ANIMATION:
+        return m.series_medium_animation();
+      case DATA_MEDIUM_VALUE_ANIME:
+        return m.series_medium_anime();
+      case DATA_MEDIUM_VALUE_DONGHUA:
+        return m.series_medium_donghua();
+      case DATA_MEDIUM_VALUE_NOVEL:
+        return m.series_medium_novel();
+      case DATA_MEDIUM_VALUE_COMICS:
+        return m.series_medium_comics();
+      case DATA_MEDIUM_VALUE_MANGA:
+        return m.series_medium_manga();
+      case DATA_MEDIUM_VALUE_MANHUA:
+        return m.series_medium_manhua();
+      case DATA_MEDIUM_VALUE_MANHWA:
+        return m.series_medium_manhwa();
     }
   }
 
   function resourceName(value) {
     switch (value) {
-      case SERVER_DATA_RESOURCE_VALUE_ANIDB:
-        return "AniDB";
-      case SERVER_DATA_RESOURCE_VALUE_MANGAUPDATES:
-        return "MangaUpdates";
-      case SERVER_DATA_RESOURCE_VALUE_NOVELUPDATES:
-        return "Novel Updates";
-      case SERVER_DATA_RESOURCE_VALUE_MYDRAMALIST:
-        return "MyDramaList";
+      case DATA_RESOURCE_VALUE_ANIDB:
+        return m.series_link_anidb();
+      case DATA_RESOURCE_VALUE_MANGAUPDATES:
+        return m.series_link_mangaupdates();
+      case DATA_RESOURCE_VALUE_NOVELUPDATES:
+        return m.series_link_novelupdates();
+      case DATA_RESOURCE_VALUE_MYDRAMALIST:
+        return m.series_link_mydramalist();
     }
   }
 
   function anidbURL(link) {
-    const id = link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE_ANIDB_ID];
+    const id = link[KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID];
     const url = new URL(`anime/${id}`, "https://anidb.net/");
 
     return url;
   }
 
   function mangaupdatesURL(link) {
-    const id = link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID];
+    const id = link[KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID];
     const url = new URL(`series/${id}`, "https://www.mangaupdates.com/");
 
     return url;
   }
 
   function novelupdatesURL(link) {
-    const id = link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG];
+    const id = link[KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG];
     const url = new URL(`series/${id}`, "https://www.novelupdates.com/");
 
     return url;
   }
 
   function mydramalistURL(link) {
-    const id = link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID];
+    const id = link[KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID];
     const url = new URL(`${id}`, "https://mydramalist.com/");
 
     return url;
@@ -104,20 +107,22 @@
 
   function resourceURL(value, link) {
     switch (value) {
-      case SERVER_DATA_RESOURCE_VALUE_ANIDB:
+      case DATA_RESOURCE_VALUE_ANIDB:
         return anidbURL(link);
-      case SERVER_DATA_RESOURCE_VALUE_MANGAUPDATES:
+      case DATA_RESOURCE_VALUE_MANGAUPDATES:
         return mangaupdatesURL(link);
-      case SERVER_DATA_RESOURCE_VALUE_NOVELUPDATES:
+      case DATA_RESOURCE_VALUE_NOVELUPDATES:
         return novelupdatesURL(link);
-      case SERVER_DATA_RESOURCE_VALUE_MYDRAMALIST:
+      case DATA_RESOURCE_VALUE_MYDRAMALIST:
         return mydramalistURL(link);
     }
   }
 </script>
 
 <svelte:head>
-  <title>Series Recs. | {PUBLIC_NAME}</title>
+  <title>
+    {m.series_page_title({ name: PUBLIC_NAME })}
+  </title>
 </svelte:head>
 
 <div class="container">
@@ -130,33 +135,41 @@
     </colgroup>
     <thead>
       <tr class="row">
-        <th scope="col" class="cell header">Title</th>
-        <th scope="col" class="cell header">Medium</th>
-        <th scope="col" class="cell header">Rating</th>
-        <th scope="col" class="cell header">Links</th>
+        <th scope="col" class="cell header">
+          {m.series_column_title()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_medium()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_rating()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_links()}
+        </th>
       </tr>
     </thead>
     <tbody>
-      {#each data[KEY_SERVER_PAGE_SERIES_LOGS] as log (log[KEY_SERVER_DATA_LOG_ID])}
-        {@const title = data[KEY_SERVER_PAGE_SERIES_TITLES][log[KEY_SERVER_DATA_LOG_TITLE]]}
-        {@const name = title[KEY_SERVER_DATA_TITLE_NAME]}
-        {@const medium = data[KEY_SERVER_PAGE_SERIES_MEDIUMS][title[KEY_SERVER_DATA_TITLE_MEDIUM]]}
+      {#each data[KEY_PAGE_SERIES_LOGS] as log (log[KEY_DATA_LOG_ID])}
+        {@const title = data[KEY_PAGE_SERIES_TITLES][log[KEY_DATA_LOG_TITLE]]}
+        {@const name = title[KEY_DATA_TITLE_NAME]}
+        {@const medium = data[KEY_PAGE_SERIES_MEDIUMS][title[KEY_DATA_TITLE_MEDIUM]]}
         <tr class="row">
           <!-- TODO: Note accessibility improvements from using th over td.  -->
           <th class="cell title" scope="row">
             {name}
           </th>
           <td class="cell medium">
-            {mediumName(medium[KEY_SERVER_DATA_MEDIUM_VALUE])}
+            {mediumName(medium[KEY_DATA_MEDIUM_VALUE])}
           </td>
           <td class="cell rating">
-            <StarRating rating={log[KEY_SERVER_DATA_LOG_RATING]} />
+            <StarRating rating={log[KEY_DATA_LOG_RATING]} />
           </td>
           <td class="cell links">
-            {#each title[KEY_SERVER_DATA_TITLE_LINKS] as link (link[KEY_SERVER_DATA_TITLE_LINK_ID])}
-              {@const resource = data[KEY_SERVER_PAGE_SERIES_RESOURCES][link[KEY_SERVER_DATA_TITLE_LINK_RESOURCE]]}
-              {@const name = resourceName(resource[KEY_SERVER_DATA_RESOURCE_VALUE])}
-              {@const url = resourceURL(resource[KEY_SERVER_DATA_RESOURCE_VALUE], link)}
+            {#each title[KEY_DATA_TITLE_LINKS] as link (link[KEY_DATA_TITLE_LINK_ID])}
+              {@const resource = data[KEY_PAGE_SERIES_RESOURCES][link[KEY_DATA_TITLE_LINK_RESOURCE]]}
+              {@const name = resourceName(resource[KEY_DATA_RESOURCE_VALUE])}
+              {@const url = resourceURL(resource[KEY_DATA_RESOURCE_VALUE], link)}
               <div>
                 <a href={url} rel="external" target="_blank">
                   {name}

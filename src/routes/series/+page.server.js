@@ -1,117 +1,75 @@
+import * as lib from "$lib";
 import data from "$lib/config.toml?raw";
-import {
-  KEY_SERVER_CONFIG_DATA_LINKS,
-  KEY_SERVER_CONFIG_DATA_LINK_RESOURCE,
-  KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_ANIDB_ID,
-  KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_MANGAUPDATES_ID,
-  KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_MYDRAMALIST_ID,
-  KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_NOVELUPDATES_SLUG,
-  KEY_SERVER_CONFIG_DATA_LINK_TITLE,
-  KEY_SERVER_CONFIG_DATA_LOGS,
-  KEY_SERVER_CONFIG_DATA_LOG_RATING,
-  KEY_SERVER_CONFIG_DATA_LOG_TITLE,
-  KEY_SERVER_CONFIG_DATA_MEDIUMS,
-  KEY_SERVER_CONFIG_DATA_MEDIUM_ID,
-  KEY_SERVER_CONFIG_DATA_MEDIUM_VALUE,
-  KEY_SERVER_CONFIG_DATA_RESOURCES,
-  KEY_SERVER_CONFIG_DATA_RESOURCE_ID,
-  KEY_SERVER_CONFIG_DATA_RESOURCE_VALUE,
-  KEY_SERVER_CONFIG_DATA_TITLES,
-  KEY_SERVER_CONFIG_DATA_TITLE_ID,
-  KEY_SERVER_CONFIG_DATA_TITLE_MEDIUM,
-  KEY_SERVER_CONFIG_DATA_TITLE_NAME,
-  KEY_SERVER_DATA_LOG_ID,
-  KEY_SERVER_DATA_LOG_RATING,
-  KEY_SERVER_DATA_LOG_TITLE,
-  KEY_SERVER_DATA_MEDIUM_ID,
-  KEY_SERVER_DATA_MEDIUM_VALUE,
-  KEY_SERVER_DATA_RESOURCE_ID,
-  KEY_SERVER_DATA_RESOURCE_VALUE,
-  KEY_SERVER_DATA_TITLE_ID,
-  KEY_SERVER_DATA_TITLE_LINKS,
-  KEY_SERVER_DATA_TITLE_LINK_ID,
-  KEY_SERVER_DATA_TITLE_LINK_RESOURCE,
-  KEY_SERVER_DATA_TITLE_LINK_RESOURCE_ANIDB_ID,
-  KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID,
-  KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID,
-  KEY_SERVER_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG,
-  KEY_SERVER_DATA_TITLE_MEDIUM,
-  KEY_SERVER_DATA_TITLE_NAME,
-  KEY_SERVER_PAGE_SERIES_LOGS,
-  KEY_SERVER_PAGE_SERIES_MEDIUMS,
-  KEY_SERVER_PAGE_SERIES_RESOURCES,
-  KEY_SERVER_PAGE_SERIES_TITLES,
-  key,
-  unique,
-} from "$lib/index";
-import * as R from "ramda";
+import { once, prop } from "ramda";
 import toml from "smol-toml";
+import * as series from "../series";
 
-const parseData = R.once(data => toml.parse(data));
+const parseData = once(data => toml.parse(data));
 
 function logTitle(titles, log) {
-  return titles[log[KEY_SERVER_CONFIG_DATA_LOG_TITLE]];
+  return titles[log[lib.KEY_DATA_LOG_TITLE]];
 }
 
 function titleMedium(mediums, title) {
-  return mediums[title[KEY_SERVER_DATA_TITLE_MEDIUM]];
+  return mediums[title[lib.KEY_DATA_TITLE_MEDIUM]];
 }
 
 /** @type {import('./$types').PageServerLoad]} */
 export function load() {
   const d = parseData(data);
-  const mediums = key(
-    R.prop(KEY_SERVER_DATA_MEDIUM_ID),
-    d[KEY_SERVER_CONFIG_DATA_MEDIUMS].map((medium) => ({
-      [KEY_SERVER_DATA_MEDIUM_ID]: medium[KEY_SERVER_CONFIG_DATA_MEDIUM_ID],
-      [KEY_SERVER_DATA_MEDIUM_VALUE]: medium[KEY_SERVER_CONFIG_DATA_MEDIUM_VALUE],
+  const mediums = lib.key(
+    prop(series.KEY_DATA_MEDIUM_ID),
+    d[lib.KEY_DATA_MEDIUMS].map((medium) => ({
+      [series.KEY_DATA_MEDIUM_ID]: medium[lib.KEY_DATA_MEDIUM_ID],
+      [series.KEY_DATA_MEDIUM_VALUE]: medium[lib.KEY_DATA_MEDIUM_VALUE],
     })),
   );
 
-  const titles = key(
-    R.prop(KEY_SERVER_DATA_TITLE_ID),
-    d[KEY_SERVER_CONFIG_DATA_TITLES].map((title) => {
-      const id = title[KEY_SERVER_CONFIG_DATA_TITLE_ID];
+  const titles = lib.key(
+    prop(series.KEY_DATA_TITLE_ID),
+    d[lib.KEY_DATA_TITLES].map((title) => {
+      const id = title[lib.KEY_DATA_TITLE_ID];
 
       return {
-        [KEY_SERVER_DATA_TITLE_ID]: id,
-        [KEY_SERVER_DATA_TITLE_NAME]: title[KEY_SERVER_CONFIG_DATA_TITLE_NAME],
-        [KEY_SERVER_DATA_TITLE_MEDIUM]: title[KEY_SERVER_CONFIG_DATA_TITLE_MEDIUM],
-        [KEY_SERVER_DATA_TITLE_LINKS]: d[KEY_SERVER_CONFIG_DATA_LINKS]
-          .filter((link) => link[KEY_SERVER_CONFIG_DATA_LINK_TITLE] == id)
+        [series.KEY_DATA_TITLE_ID]: id,
+        [series.KEY_DATA_TITLE_NAME]: title[lib.KEY_DATA_TITLE_NAME],
+        [series.KEY_DATA_TITLE_MEDIUM]: title[lib.KEY_DATA_TITLE_MEDIUM],
+        [series.KEY_DATA_TITLE_LINKS]: d[lib.KEY_DATA_LINKS]
+          .filter((link) => link[lib.KEY_DATA_LINK_TITLE] == id)
           .map((link, i) => ({
-            [KEY_SERVER_DATA_TITLE_LINK_ID]: i,
-            [KEY_SERVER_DATA_TITLE_LINK_RESOURCE]: link[KEY_SERVER_CONFIG_DATA_LINK_RESOURCE],
-            [KEY_SERVER_DATA_TITLE_LINK_RESOURCE_ANIDB_ID]: link[KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_ANIDB_ID],
-            [KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID]: link[KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_MANGAUPDATES_ID],
-            [KEY_SERVER_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG]: link[KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_NOVELUPDATES_SLUG],
-            [KEY_SERVER_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID]: link[KEY_SERVER_CONFIG_DATA_LINK_RESOURCE_MYDRAMALIST_ID],
+            [series.KEY_DATA_TITLE_LINK_ID]: i,
+            [series.KEY_DATA_TITLE_LINK_RESOURCE]: link[lib.KEY_DATA_LINK_RESOURCE],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID]: link[lib.KEY_DATA_LINK_RESOURCE_ANIDB_ID],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID]: link[lib.KEY_DATA_LINK_RESOURCE_MANGAUPDATES_ID],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG]: link[lib.KEY_DATA_LINK_RESOURCE_NOVELUPDATES_SLUG],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID]: link[lib.KEY_DATA_LINK_RESOURCE_MYDRAMALIST_ID],
           })),
       };
     }),
   );
 
   return {
-    [KEY_SERVER_PAGE_SERIES_MEDIUMS]: mediums,
-    [KEY_SERVER_PAGE_SERIES_RESOURCES]: key(
-      R.prop(KEY_SERVER_DATA_RESOURCE_ID),
-      d[KEY_SERVER_CONFIG_DATA_RESOURCES].map((resource) => ({
-        [KEY_SERVER_DATA_RESOURCE_ID]: resource[KEY_SERVER_CONFIG_DATA_RESOURCE_ID],
-        [KEY_SERVER_DATA_RESOURCE_VALUE]: resource[KEY_SERVER_CONFIG_DATA_RESOURCE_VALUE],
+    [series.KEY_PAGE_SERIES_MEDIUMS]: mediums,
+    [series.KEY_PAGE_SERIES_RESOURCES]: lib.key(
+      prop(series.KEY_DATA_RESOURCE_ID),
+      d[lib.KEY_DATA_RESOURCES].map((resource) => ({
+        [series.KEY_DATA_RESOURCE_ID]: resource[lib.KEY_DATA_RESOURCE_ID],
+        [series.KEY_DATA_RESOURCE_VALUE]: resource[lib.KEY_DATA_RESOURCE_VALUE],
       })),
     ),
-    [KEY_SERVER_PAGE_SERIES_TITLES]: titles,
-    [KEY_SERVER_PAGE_SERIES_LOGS]: unique(R.prop(KEY_SERVER_CONFIG_DATA_LOG_TITLE), d[KEY_SERVER_CONFIG_DATA_LOGS].toReversed())
+    [series.KEY_PAGE_SERIES_TITLES]: titles,
+    [series.KEY_PAGE_SERIES_LOGS]: lib.unique(prop(lib.KEY_DATA_LOG_TITLE), d[lib.KEY_DATA_LOGS].toReversed())
       .sort((a, b) =>
-        b[KEY_SERVER_CONFIG_DATA_LOG_RATING] - a[KEY_SERVER_CONFIG_DATA_LOG_RATING]
-        || logTitle(titles, a)[KEY_SERVER_DATA_TITLE_NAME].localeCompare(logTitle(titles, b)[KEY_SERVER_DATA_TITLE_NAME])
+        b[lib.KEY_DATA_LOG_RATING] - a[lib.KEY_DATA_LOG_RATING]
+        || logTitle(titles, a)[lib.KEY_DATA_TITLE_NAME].localeCompare(logTitle(titles, b)[lib.KEY_DATA_TITLE_NAME])
         // eslint-disable-next-line @stylistic/comma-dangle
-        || titleMedium(mediums, logTitle(titles, a))[KEY_SERVER_DATA_MEDIUM_VALUE] - titleMedium(mediums, logTitle(titles, b))[KEY_SERVER_DATA_MEDIUM_VALUE]
+        || titleMedium(mediums, logTitle(titles, a))[lib.KEY_DATA_MEDIUM_VALUE] - titleMedium(mediums, logTitle(titles, b))[lib.KEY_DATA_MEDIUM_VALUE]
       )
       .map((log, i) => ({
-        [KEY_SERVER_DATA_LOG_ID]: i,
-        [KEY_SERVER_DATA_LOG_TITLE]: log[KEY_SERVER_CONFIG_DATA_LOG_TITLE],
-        [KEY_SERVER_DATA_LOG_RATING]: log[KEY_SERVER_CONFIG_DATA_LOG_RATING],
+        [series.KEY_DATA_LOG_ID]: i,
+        [series.KEY_DATA_LOG_TITLE]: log[lib.KEY_DATA_LOG_TITLE],
+        [series.KEY_DATA_LOG_RATING]: log[lib.KEY_DATA_LOG_RATING],
       })),
   };
 }
+

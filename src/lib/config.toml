@@ -1,1119 +1,1119 @@
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "film"
-"server.config.data.medium.value" = 0
+[["data.mediums"]]
+"data.medium.id" = "film"
+"data.medium.value" = 0
 
 # I consider animation a subset of film, but distinct enough to warrant its own medium.
 #
 # This medium is not referenced, but could be in the future.
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "animation"
-"server.config.data.medium.value" = 1
+[["data.mediums"]]
+"data.medium.id" = "animation"
+"data.medium.value" = 1
 
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "anime"
-"server.config.data.medium.value" = 2
+[["data.mediums"]]
+"data.medium.id" = "anime"
+"data.medium.value" = 2
 
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "donghua"
-"server.config.data.medium.value" = 3
+[["data.mediums"]]
+"data.medium.id" = "donghua"
+"data.medium.value" = 3
 
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "novel"
-"server.config.data.medium.value" = 4
+[["data.mediums"]]
+"data.medium.id" = "novel"
+"data.medium.value" = 4
 
 # This medium is not referenced, but could be in the future.
-[["server.config.data.mediums"]]
-"server.config.data.mediums.id" = "comics"
-"server.config.data.mediums.value" = 5
-
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "manga"
-"server.config.data.medium.value" = 6
-
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "manhua"
-"server.config.data.medium.value" = 7
-
-[["server.config.data.mediums"]]
-"server.config.data.medium.id" = "manhwa"
-"server.config.data.medium.value" = 8
-
-[["server.config.data.resources"]]
-"server.config.data.resource.id" = "anidb"
-"server.config.data.resource.value" = 0
-
-[["server.config.data.resources"]]
-"server.config.data.resource.id" = "mangaupdates"
-"server.config.data.resource.value" = 1
-
-[["server.config.data.resources"]]
-"server.config.data.resource.id" = "novelupdates"
-"server.config.data.resource.value" = 2
-
-[["server.config.data.resources"]]
-"server.config.data.resource.id" = "mydramalist"
-"server.config.data.resource.value" = 3
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "a-brides-story"
-"server.config.data.title.name" = "A Bride's Story"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "ai-ren"
-"server.config.data.title.name" = "Ai-Ren"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "akira"
-"server.config.data.title.name" = "Akira"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "banner-of-the-stars-anime"
-"server.config.data.title.name" = "Banner of the Stars"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "banner-of-the-stars-novel"
-"server.config.data.title.name" = "Banner of the Stars"
-"server.config.data.title.medium" = "novel"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "blade-of-the-immortal"
-"server.config.data.title.name" = "Blade of the Immortal"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "blood-on-the-tracks"
-"server.config.data.title.name" = "Blood on the Tracks"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "bungaku-shoujo"
-"server.config.data.title.name" = "Bungaku Shoujo"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "bunny-drop"
-"server.config.data.title.name" = "Bunny Drop"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "castle-in-the-sky"
-"server.config.data.title.name" = "Castle in the Sky"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "cowboy-bebop"
-"server.config.data.title.name" = "Cowboy Bebop"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "crest-of-the-stars-anime"
-"server.config.data.title.name" = "Crest of the Stars"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "crest-of-the-stars-novel"
-"server.config.data.title.name" = "Crest of the Stars"
-"server.config.data.title.medium" = "novel"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "eden-of-the-east"
-"server.config.data.title.name" = "Eden of the East"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "memories-of-emanon"
-"server.config.data.title.name" = "Memories of Emanon"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "wandering-emanon"
-"server.config.data.title.name" = "Wandering Emanon"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "ergo-proxy"
-"server.config.data.title.name" = "Ergo Proxy"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "eureka-seven"
-"server.config.data.title.name" = "Eureka Seven"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "from-the-new-world"
-"server.config.data.title.name" = "From the New World"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "galaxy-express-999"
-"server.config.data.title.name" = "Galaxy Express 999"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "genshiken"
-"server.config.data.title.name" = "Genshiken"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "girls-last-tour"
-"server.config.data.title.name" = "Girls' Last Tour"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "gurren-lagann"
-"server.config.data.title.name" = "Gurren Lagann"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "haibane-renmei"
-"server.config.data.title.name" = "Haibane Renmei"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "heaven-officials-blessing"
-"server.config.data.title.name" = "Heaven Official's Blessing"
-"server.config.data.title.medium" = "donghua"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "heavenly-delusion"
-"server.config.data.title.name" = "Heavenly Delusion"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "heesu-in-class-2"
-"server.config.data.title.name" = "Heesu in Class 2"
-"server.config.data.title.medium" = "manhwa"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "hell-girl"
-"server.config.data.title.name" = "Hell Girl"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "hirayasumi"
-"server.config.data.title.name" = "Hirayasumi"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "humanity-has-declined"
-"server.config.data.title.name" = "Humanity Has Declined"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "journal-with-witch"
-"server.config.data.title.name" = "Journal with Witch"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "kaiba"
-"server.config.data.title.name" = "Kaiba"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "katanagatari"
-"server.config.data.title.name" = "Katanagatari"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "key-the-metal-idol"
-"server.config.data.title.name" = "Key the Metal Idol"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "kikis-delivery-service"
-"server.config.data.title.name" = "Kiki's Delivery Service"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "kinos-journey-anime"
-"server.config.data.title.name" = "Kino's Journey"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "kinos-journey-novel"
-"server.config.data.title.name" = "Kino's Journey"
-"server.config.data.title.medium" = "novel"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "land-of-the-lustrous-anime"
-"server.config.data.title.name" = "Land of the Lustrous"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "land-of-the-lustrous-manga"
-"server.config.data.title.name" = "Land of the Lustrous"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "legend-of-the-galactic-heroes"
-"server.config.data.title.name" = "Legend of the Galactic Heroes"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "link-click"
-"server.config.data.title.name" = "Link Click"
-"server.config.data.title.medium" = "donghua"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "living-for-the-day-after-tomorrow"
-"server.config.data.title.name" = "Living for the Day After Tomorrow"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "made-in-abyss-anime"
-"server.config.data.title.name" = "Made in Abyss"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "made-in-abyss-manga"
-"server.config.data.title.name" = "Made in Abyss"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "millennium-actress"
-"server.config.data.title.name" = "Millennium Actress"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "mob-psycho-100"
-"server.config.data.title.name" = "Mob Psycho 100"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "mononoke"
-"server.config.data.title.name" = "Mononoke"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "moribito-guardian-of-the-spirit"
-"server.config.data.title.name" = "Moribito: Guardian of the Spirit"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "mushishi"
-"server.config.data.title.name" = "Mushishi"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "nausicaa-of-the-valley-of-the-wind"
-"server.config.data.title.name" = "Nausicaä of the Valley of the Wind"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "niea-under-7"
-"server.config.data.title.name" = "NieA Under 7"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "noir"
-"server.config.data.title.name" = "Noir"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "now-and-then-here-and-there"
-"server.config.data.title.name" = "Now and Then, Here and There"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "outlaw-star"
-"server.config.data.title.name" = "Outlaw Star"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "ping-pong-the-animation"
-"server.config.data.title.name" = "Ping Pong the Animation"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "princess-mononoke"
-"server.config.data.title.name" = "Princess Mononoke"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "raise-the-red-lantern"
-"server.config.data.title.name" = "Raise the Red Lantern"
-"server.config.data.title.medium" = "film"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "samurai-champloo"
-"server.config.data.title.name" = "Samurai Champloo"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "samurai-x-trust-and-betrayal"
-"server.config.data.title.name" = "Samurai X: Trust & Betrayal"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "shishunki-bitter-change"
-"server.config.data.title.name" = "Shishunki Bitter Change"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "solanin"
-"server.config.data.title.name" = "Solanin"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "soloist-in-a-cage"
-"server.config.data.title.name" = "Soloist in a Cage"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "song-of-the-long-march"
-"server.config.data.title.name" = "Song of the Long March"
-"server.config.data.title.medium" = "manhua"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "sonny-boy"
-"server.config.data.title.name" = "Sonny Boy"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "space-dandy"
-"server.config.data.title.name" = "Space Dandy"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "spice-and-wolf"
-"server.config.data.title.name" = "Spice and Wolf"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "the-case-of-hana-and-alice"
-"server.config.data.title.name" = "The Case of Hana & Alice"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "the-irresponsible-captain-tylor"
-"server.config.data.title.name" = "The Irresponsible Captain Tylor"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "the-music-of-marie"
-"server.config.data.title.name" = "The Music of Marie"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "the-summer-hikaru-died"
-"server.config.data.title.name" = "The Summer Hikaru Died"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "the-tale-of-the-princess-kaguya"
-"server.config.data.title.name" = "The Tale of the Princess Kaguya"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "trigun"
-"server.config.data.title.name" = "Trigun"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "violet-evergarden"
-"server.config.data.title.name" = "Violet Evergarden"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "yugo-the-negotiator"
-"server.config.data.title.name" = "Yugo The Negotiator"
-"server.config.data.title.medium" = "anime"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "witch-hat-atelier"
-"server.config.data.title.name" = "Witch Hat Atelier"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.titles"]]
-"server.config.data.title.id" = "wonder-cat-kyuu-chan"
-"server.config.data.title.name" = "Wonder Cat Kyuu-chan"
-"server.config.data.title.medium" = "manga"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "a-brides-story"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "9knig0a"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "ai-ren"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "j34nugp"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "akira"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 28
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "banner-of-the-stars-anime"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 4
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "banner-of-the-stars-novel"
-"server.config.data.link.resource" = "novelupdates"
-"server.config.data.link.resource.novelupdates.slug" = "seikai-no-senki"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "blade-of-the-immortal"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "dhtyiyk"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "blood-on-the-tracks"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "1l6iro1"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "bungaku-shoujo"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 6959
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "bunny-drop"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 8211
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "castle-in-the-sky"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 331
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "cowboy-bebop"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 23
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "crest-of-the-stars-anime"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 1
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "crest-of-the-stars-novel"
-"server.config.data.link.resource" = "novelupdates"
-"server.config.data.link.resource.novelupdates.slug" = "seikai-no-monshou"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "eden-of-the-east"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 6238
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "ergo-proxy"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 3302
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "eureka-seven"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 2826
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "from-the-new-world"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 9002
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "galaxy-express-999"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 484
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "genshiken"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 1783
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "girls-last-tour"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "txtyi0t"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "gurren-lagann"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 4575
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "haibane-renmei"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 271
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "heaven-officials-blessing"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 15648
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "heavenly-delusion"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 17671
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "heesu-in-class-2"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "tekt6hg"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "hell-girl"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 3291
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "hirayasumi"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "0477u6m"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "humanity-has-declined"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 8276
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "journal-with-witch"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 18610
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "kaiba"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 5673
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "katanagatari"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 6613
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "key-the-metal-idol"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 302
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "kikis-delivery-service"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 286
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "kinos-journey-anime"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 575
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "kinos-journey-novel"
-"server.config.data.link.resource" = "novelupdates"
-"server.config.data.link.resource.novelupdates.slug" = "kino-no-tabi-the-beautiful-world"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "land-of-the-lustrous-anime"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 13165
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "land-of-the-lustrous-manga"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "al1i9l2"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "legend-of-the-galactic-heroes"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 584
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "link-click"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 16290
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "living-for-the-day-after-tomorrow"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 4339
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "made-in-abyss-anime"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 12681
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "made-in-abyss-manga"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "aippxsa"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "memories-of-emanon"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "pd39206"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "millennium-actress"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 570
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "mob-psycho-100"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 11803
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "mononoke"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 5113
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "moribito-guardian-of-the-spirit"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 4403
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "mushishi"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 3433
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "nausicaa-of-the-valley-of-the-wind"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "mpruuyl"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "niea-under-7"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 46
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "noir"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 13
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "now-and-then-here-and-there"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 114
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "outlaw-star"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 171
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "ping-pong-the-animation"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 10400
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "princess-mononoke"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 7
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "raise-the-red-lantern"
-"server.config.data.link.resource" = "mydramalist"
-"server.config.data.link.resource.mydramalist.id" = 3647
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "samurai-champloo"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 1543
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "samurai-x-trust-and-betrayal"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 73
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "shishunki-bitter-change"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "xr8u1mi"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "solanin"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "9x44hfp"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "soloist-in-a-cage"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "4vpr2by"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "song-of-the-long-march"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "tkrf8sc"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "sonny-boy"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 16282
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "space-dandy"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 10027
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "spice-and-wolf"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 5406
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "the-case-of-hana-and-alice"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 10886
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "the-irresponsible-captain-tylor"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 18
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "the-music-of-marie"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "z5x9z9p"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "the-summer-hikaru-died"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "4ipwoed"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "the-tale-of-the-princess-kaguya"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 9515
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "trigun"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 53
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "violet-evergarden"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 12138
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "wandering-emanon"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "epithia"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "witch-hat-atelier"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "c8mp52y"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "wonder-cat-kyuu-chan"
-"server.config.data.link.resource" = "mangaupdates"
-"server.config.data.link.resource.mangaupdates.id" = "3bwjr4i"
-
-[["server.config.data.links"]]
-"server.config.data.link.title" = "yugo-the-negotiator"
-"server.config.data.link.resource" = "anidb"
-"server.config.data.link.resource.anidb.id" = 1429
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "spice-and-wolf"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "the-music-of-marie"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "eureka-seven"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "shishunki-bitter-change"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "eden-of-the-east"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "kinos-journey-anime"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "kinos-journey-novel"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "solanin"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "akira"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "haibane-renmei"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "song-of-the-long-march"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "legend-of-the-galactic-heroes"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "sonny-boy"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "samurai-champloo"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "the-tale-of-the-princess-kaguya"
-"server.config.data.log.rating" = 10
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "key-the-metal-idol"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "hirayasumi"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "heavenly-delusion"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "trigun"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "heesu-in-class-2"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "genshiken"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "mushishi"
-"server.config.data.log.rating" = 10
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "ping-pong-the-animation"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "the-case-of-hana-and-alice"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "mononoke"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "katanagatari"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "space-dandy"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "from-the-new-world"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "girls-last-tour"
-"server.config.data.log.rating" = 10
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "blood-on-the-tracks"
-"server.config.data.log.rating" = 10
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "hell-girl"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "link-click"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "the-summer-hikaru-died"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "blade-of-the-immortal"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "crest-of-the-stars-anime"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "banner-of-the-stars-anime"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "crest-of-the-stars-novel"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "banner-of-the-stars-novel"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "noir"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "millennium-actress"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "the-irresponsible-captain-tylor"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "princess-mononoke"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "castle-in-the-sky"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "made-in-abyss-anime"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "made-in-abyss-manga"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "land-of-the-lustrous-anime"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "land-of-the-lustrous-manga"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "witch-hat-atelier"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "nausicaa-of-the-valley-of-the-wind"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "kaiba"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "galaxy-express-999"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "samurai-x-trust-and-betrayal"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "bunny-drop"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "living-for-the-day-after-tomorrow"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "violet-evergarden"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "niea-under-7"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "mob-psycho-100"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "raise-the-red-lantern"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "a-brides-story"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "cowboy-bebop"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "heaven-officials-blessing"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "moribito-guardian-of-the-spirit"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "bungaku-shoujo"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "humanity-has-declined"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "outlaw-star"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "memories-of-emanon"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "wandering-emanon"
-"server.config.data.log.rating" = 9
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "ergo-proxy"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "kikis-delivery-service"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "now-and-then-here-and-there"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "yugo-the-negotiator"
-"server.config.data.log.rating" = 7
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "journal-with-witch"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "ai-ren"
-"server.config.data.log.rating" = 10
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "soloist-in-a-cage"
-"server.config.data.log.rating" = 6
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "gurren-lagann"
-"server.config.data.log.rating" = 8
-
-[["server.config.data.logs"]]
-"server.config.data.log.title" = "wonder-cat-kyuu-chan"
-"server.config.data.log.rating" = 6
+[["data.mediums"]]
+"data.mediums.id" = "comics"
+"data.mediums.value" = 5
+
+[["data.mediums"]]
+"data.medium.id" = "manga"
+"data.medium.value" = 6
+
+[["data.mediums"]]
+"data.medium.id" = "manhua"
+"data.medium.value" = 7
+
+[["data.mediums"]]
+"data.medium.id" = "manhwa"
+"data.medium.value" = 8
+
+[["data.resources"]]
+"data.resource.id" = "anidb"
+"data.resource.value" = 0
+
+[["data.resources"]]
+"data.resource.id" = "mangaupdates"
+"data.resource.value" = 1
+
+[["data.resources"]]
+"data.resource.id" = "novelupdates"
+"data.resource.value" = 2
+
+[["data.resources"]]
+"data.resource.id" = "mydramalist"
+"data.resource.value" = 3
+
+[["data.titles"]]
+"data.title.id" = "a-brides-story"
+"data.title.name" = "A Bride's Story"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "ai-ren"
+"data.title.name" = "Ai-Ren"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "akira"
+"data.title.name" = "Akira"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "banner-of-the-stars-anime"
+"data.title.name" = "Banner of the Stars"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "banner-of-the-stars-novel"
+"data.title.name" = "Banner of the Stars"
+"data.title.medium" = "novel"
+
+[["data.titles"]]
+"data.title.id" = "blade-of-the-immortal"
+"data.title.name" = "Blade of the Immortal"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "blood-on-the-tracks"
+"data.title.name" = "Blood on the Tracks"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "bungaku-shoujo"
+"data.title.name" = "Bungaku Shoujo"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "bunny-drop"
+"data.title.name" = "Bunny Drop"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "castle-in-the-sky"
+"data.title.name" = "Castle in the Sky"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "cowboy-bebop"
+"data.title.name" = "Cowboy Bebop"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "crest-of-the-stars-anime"
+"data.title.name" = "Crest of the Stars"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "crest-of-the-stars-novel"
+"data.title.name" = "Crest of the Stars"
+"data.title.medium" = "novel"
+
+[["data.titles"]]
+"data.title.id" = "eden-of-the-east"
+"data.title.name" = "Eden of the East"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "memories-of-emanon"
+"data.title.name" = "Memories of Emanon"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "wandering-emanon"
+"data.title.name" = "Wandering Emanon"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "ergo-proxy"
+"data.title.name" = "Ergo Proxy"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "eureka-seven"
+"data.title.name" = "Eureka Seven"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "from-the-new-world"
+"data.title.name" = "From the New World"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "galaxy-express-999"
+"data.title.name" = "Galaxy Express 999"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "genshiken"
+"data.title.name" = "Genshiken"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "girls-last-tour"
+"data.title.name" = "Girls' Last Tour"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "gurren-lagann"
+"data.title.name" = "Gurren Lagann"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "haibane-renmei"
+"data.title.name" = "Haibane Renmei"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "heaven-officials-blessing"
+"data.title.name" = "Heaven Official's Blessing"
+"data.title.medium" = "donghua"
+
+[["data.titles"]]
+"data.title.id" = "heavenly-delusion"
+"data.title.name" = "Heavenly Delusion"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "heesu-in-class-2"
+"data.title.name" = "Heesu in Class 2"
+"data.title.medium" = "manhwa"
+
+[["data.titles"]]
+"data.title.id" = "hell-girl"
+"data.title.name" = "Hell Girl"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "hirayasumi"
+"data.title.name" = "Hirayasumi"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "humanity-has-declined"
+"data.title.name" = "Humanity Has Declined"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "journal-with-witch"
+"data.title.name" = "Journal with Witch"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "kaiba"
+"data.title.name" = "Kaiba"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "katanagatari"
+"data.title.name" = "Katanagatari"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "key-the-metal-idol"
+"data.title.name" = "Key the Metal Idol"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "kikis-delivery-service"
+"data.title.name" = "Kiki's Delivery Service"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "kinos-journey-anime"
+"data.title.name" = "Kino's Journey"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "kinos-journey-novel"
+"data.title.name" = "Kino's Journey"
+"data.title.medium" = "novel"
+
+[["data.titles"]]
+"data.title.id" = "land-of-the-lustrous-anime"
+"data.title.name" = "Land of the Lustrous"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "land-of-the-lustrous-manga"
+"data.title.name" = "Land of the Lustrous"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "legend-of-the-galactic-heroes"
+"data.title.name" = "Legend of the Galactic Heroes"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "link-click"
+"data.title.name" = "Link Click"
+"data.title.medium" = "donghua"
+
+[["data.titles"]]
+"data.title.id" = "living-for-the-day-after-tomorrow"
+"data.title.name" = "Living for the Day After Tomorrow"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "made-in-abyss-anime"
+"data.title.name" = "Made in Abyss"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "made-in-abyss-manga"
+"data.title.name" = "Made in Abyss"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "millennium-actress"
+"data.title.name" = "Millennium Actress"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "mob-psycho-100"
+"data.title.name" = "Mob Psycho 100"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "mononoke"
+"data.title.name" = "Mononoke"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "moribito-guardian-of-the-spirit"
+"data.title.name" = "Moribito: Guardian of the Spirit"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "mushishi"
+"data.title.name" = "Mushishi"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "nausicaa-of-the-valley-of-the-wind"
+"data.title.name" = "Nausicaä of the Valley of the Wind"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "niea-under-7"
+"data.title.name" = "NieA Under 7"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "noir"
+"data.title.name" = "Noir"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "now-and-then-here-and-there"
+"data.title.name" = "Now and Then, Here and There"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "outlaw-star"
+"data.title.name" = "Outlaw Star"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "ping-pong-the-animation"
+"data.title.name" = "Ping Pong the Animation"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "princess-mononoke"
+"data.title.name" = "Princess Mononoke"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "raise-the-red-lantern"
+"data.title.name" = "Raise the Red Lantern"
+"data.title.medium" = "film"
+
+[["data.titles"]]
+"data.title.id" = "samurai-champloo"
+"data.title.name" = "Samurai Champloo"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "samurai-x-trust-and-betrayal"
+"data.title.name" = "Samurai X: Trust & Betrayal"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "shishunki-bitter-change"
+"data.title.name" = "Shishunki Bitter Change"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "solanin"
+"data.title.name" = "Solanin"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "soloist-in-a-cage"
+"data.title.name" = "Soloist in a Cage"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "song-of-the-long-march"
+"data.title.name" = "Song of the Long March"
+"data.title.medium" = "manhua"
+
+[["data.titles"]]
+"data.title.id" = "sonny-boy"
+"data.title.name" = "Sonny Boy"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "space-dandy"
+"data.title.name" = "Space Dandy"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "spice-and-wolf"
+"data.title.name" = "Spice and Wolf"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "the-case-of-hana-and-alice"
+"data.title.name" = "The Case of Hana & Alice"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "the-irresponsible-captain-tylor"
+"data.title.name" = "The Irresponsible Captain Tylor"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "the-music-of-marie"
+"data.title.name" = "The Music of Marie"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "the-summer-hikaru-died"
+"data.title.name" = "The Summer Hikaru Died"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "the-tale-of-the-princess-kaguya"
+"data.title.name" = "The Tale of the Princess Kaguya"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "trigun"
+"data.title.name" = "Trigun"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "violet-evergarden"
+"data.title.name" = "Violet Evergarden"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "yugo-the-negotiator"
+"data.title.name" = "Yugo The Negotiator"
+"data.title.medium" = "anime"
+
+[["data.titles"]]
+"data.title.id" = "witch-hat-atelier"
+"data.title.name" = "Witch Hat Atelier"
+"data.title.medium" = "manga"
+
+[["data.titles"]]
+"data.title.id" = "wonder-cat-kyuu-chan"
+"data.title.name" = "Wonder Cat Kyuu-chan"
+"data.title.medium" = "manga"
+
+[["data.links"]]
+"data.link.title" = "a-brides-story"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "9knig0a"
+
+[["data.links"]]
+"data.link.title" = "ai-ren"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "j34nugp"
+
+[["data.links"]]
+"data.link.title" = "akira"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 28
+
+[["data.links"]]
+"data.link.title" = "banner-of-the-stars-anime"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 4
+
+[["data.links"]]
+"data.link.title" = "banner-of-the-stars-novel"
+"data.link.resource" = "novelupdates"
+"data.link.resource.novelupdates.slug" = "seikai-no-senki"
+
+[["data.links"]]
+"data.link.title" = "blade-of-the-immortal"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "dhtyiyk"
+
+[["data.links"]]
+"data.link.title" = "blood-on-the-tracks"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "1l6iro1"
+
+[["data.links"]]
+"data.link.title" = "bungaku-shoujo"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 6959
+
+[["data.links"]]
+"data.link.title" = "bunny-drop"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 8211
+
+[["data.links"]]
+"data.link.title" = "castle-in-the-sky"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 331
+
+[["data.links"]]
+"data.link.title" = "cowboy-bebop"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 23
+
+[["data.links"]]
+"data.link.title" = "crest-of-the-stars-anime"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 1
+
+[["data.links"]]
+"data.link.title" = "crest-of-the-stars-novel"
+"data.link.resource" = "novelupdates"
+"data.link.resource.novelupdates.slug" = "seikai-no-monshou"
+
+[["data.links"]]
+"data.link.title" = "eden-of-the-east"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 6238
+
+[["data.links"]]
+"data.link.title" = "ergo-proxy"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 3302
+
+[["data.links"]]
+"data.link.title" = "eureka-seven"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 2826
+
+[["data.links"]]
+"data.link.title" = "from-the-new-world"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 9002
+
+[["data.links"]]
+"data.link.title" = "galaxy-express-999"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 484
+
+[["data.links"]]
+"data.link.title" = "genshiken"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 1783
+
+[["data.links"]]
+"data.link.title" = "girls-last-tour"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "txtyi0t"
+
+[["data.links"]]
+"data.link.title" = "gurren-lagann"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 4575
+
+[["data.links"]]
+"data.link.title" = "haibane-renmei"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 271
+
+[["data.links"]]
+"data.link.title" = "heaven-officials-blessing"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 15648
+
+[["data.links"]]
+"data.link.title" = "heavenly-delusion"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 17671
+
+[["data.links"]]
+"data.link.title" = "heesu-in-class-2"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "tekt6hg"
+
+[["data.links"]]
+"data.link.title" = "hell-girl"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 3291
+
+[["data.links"]]
+"data.link.title" = "hirayasumi"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "0477u6m"
+
+[["data.links"]]
+"data.link.title" = "humanity-has-declined"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 8276
+
+[["data.links"]]
+"data.link.title" = "journal-with-witch"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 18610
+
+[["data.links"]]
+"data.link.title" = "kaiba"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 5673
+
+[["data.links"]]
+"data.link.title" = "katanagatari"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 6613
+
+[["data.links"]]
+"data.link.title" = "key-the-metal-idol"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 302
+
+[["data.links"]]
+"data.link.title" = "kikis-delivery-service"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 286
+
+[["data.links"]]
+"data.link.title" = "kinos-journey-anime"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 575
+
+[["data.links"]]
+"data.link.title" = "kinos-journey-novel"
+"data.link.resource" = "novelupdates"
+"data.link.resource.novelupdates.slug" = "kino-no-tabi-the-beautiful-world"
+
+[["data.links"]]
+"data.link.title" = "land-of-the-lustrous-anime"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 13165
+
+[["data.links"]]
+"data.link.title" = "land-of-the-lustrous-manga"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "al1i9l2"
+
+[["data.links"]]
+"data.link.title" = "legend-of-the-galactic-heroes"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 584
+
+[["data.links"]]
+"data.link.title" = "link-click"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 16290
+
+[["data.links"]]
+"data.link.title" = "living-for-the-day-after-tomorrow"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 4339
+
+[["data.links"]]
+"data.link.title" = "made-in-abyss-anime"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 12681
+
+[["data.links"]]
+"data.link.title" = "made-in-abyss-manga"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "aippxsa"
+
+[["data.links"]]
+"data.link.title" = "memories-of-emanon"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "pd39206"
+
+[["data.links"]]
+"data.link.title" = "millennium-actress"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 570
+
+[["data.links"]]
+"data.link.title" = "mob-psycho-100"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 11803
+
+[["data.links"]]
+"data.link.title" = "mononoke"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 5113
+
+[["data.links"]]
+"data.link.title" = "moribito-guardian-of-the-spirit"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 4403
+
+[["data.links"]]
+"data.link.title" = "mushishi"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 3433
+
+[["data.links"]]
+"data.link.title" = "nausicaa-of-the-valley-of-the-wind"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "mpruuyl"
+
+[["data.links"]]
+"data.link.title" = "niea-under-7"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 46
+
+[["data.links"]]
+"data.link.title" = "noir"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 13
+
+[["data.links"]]
+"data.link.title" = "now-and-then-here-and-there"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 114
+
+[["data.links"]]
+"data.link.title" = "outlaw-star"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 171
+
+[["data.links"]]
+"data.link.title" = "ping-pong-the-animation"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 10400
+
+[["data.links"]]
+"data.link.title" = "princess-mononoke"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 7
+
+[["data.links"]]
+"data.link.title" = "raise-the-red-lantern"
+"data.link.resource" = "mydramalist"
+"data.link.resource.mydramalist.id" = 3647
+
+[["data.links"]]
+"data.link.title" = "samurai-champloo"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 1543
+
+[["data.links"]]
+"data.link.title" = "samurai-x-trust-and-betrayal"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 73
+
+[["data.links"]]
+"data.link.title" = "shishunki-bitter-change"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "xr8u1mi"
+
+[["data.links"]]
+"data.link.title" = "solanin"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "9x44hfp"
+
+[["data.links"]]
+"data.link.title" = "soloist-in-a-cage"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "4vpr2by"
+
+[["data.links"]]
+"data.link.title" = "song-of-the-long-march"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "tkrf8sc"
+
+[["data.links"]]
+"data.link.title" = "sonny-boy"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 16282
+
+[["data.links"]]
+"data.link.title" = "space-dandy"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 10027
+
+[["data.links"]]
+"data.link.title" = "spice-and-wolf"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 5406
+
+[["data.links"]]
+"data.link.title" = "the-case-of-hana-and-alice"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 10886
+
+[["data.links"]]
+"data.link.title" = "the-irresponsible-captain-tylor"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 18
+
+[["data.links"]]
+"data.link.title" = "the-music-of-marie"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "z5x9z9p"
+
+[["data.links"]]
+"data.link.title" = "the-summer-hikaru-died"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "4ipwoed"
+
+[["data.links"]]
+"data.link.title" = "the-tale-of-the-princess-kaguya"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 9515
+
+[["data.links"]]
+"data.link.title" = "trigun"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 53
+
+[["data.links"]]
+"data.link.title" = "violet-evergarden"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 12138
+
+[["data.links"]]
+"data.link.title" = "wandering-emanon"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "epithia"
+
+[["data.links"]]
+"data.link.title" = "witch-hat-atelier"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "c8mp52y"
+
+[["data.links"]]
+"data.link.title" = "wonder-cat-kyuu-chan"
+"data.link.resource" = "mangaupdates"
+"data.link.resource.mangaupdates.id" = "3bwjr4i"
+
+[["data.links"]]
+"data.link.title" = "yugo-the-negotiator"
+"data.link.resource" = "anidb"
+"data.link.resource.anidb.id" = 1429
+
+[["data.logs"]]
+"data.log.title" = "spice-and-wolf"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "the-music-of-marie"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "eureka-seven"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "shishunki-bitter-change"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "eden-of-the-east"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "kinos-journey-anime"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "kinos-journey-novel"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "solanin"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "akira"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "haibane-renmei"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "song-of-the-long-march"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "legend-of-the-galactic-heroes"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "sonny-boy"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "samurai-champloo"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "the-tale-of-the-princess-kaguya"
+"data.log.rating" = 10
+
+[["data.logs"]]
+"data.log.title" = "key-the-metal-idol"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "hirayasumi"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "heavenly-delusion"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "trigun"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "heesu-in-class-2"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "genshiken"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "mushishi"
+"data.log.rating" = 10
+
+[["data.logs"]]
+"data.log.title" = "ping-pong-the-animation"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "the-case-of-hana-and-alice"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "mononoke"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "katanagatari"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "space-dandy"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "from-the-new-world"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "girls-last-tour"
+"data.log.rating" = 10
+
+[["data.logs"]]
+"data.log.title" = "blood-on-the-tracks"
+"data.log.rating" = 10
+
+[["data.logs"]]
+"data.log.title" = "hell-girl"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "link-click"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "the-summer-hikaru-died"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "blade-of-the-immortal"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "crest-of-the-stars-anime"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "banner-of-the-stars-anime"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "crest-of-the-stars-novel"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "banner-of-the-stars-novel"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "noir"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "millennium-actress"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "the-irresponsible-captain-tylor"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "princess-mononoke"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "castle-in-the-sky"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "made-in-abyss-anime"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "made-in-abyss-manga"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "land-of-the-lustrous-anime"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "land-of-the-lustrous-manga"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "witch-hat-atelier"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "nausicaa-of-the-valley-of-the-wind"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "kaiba"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "galaxy-express-999"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "samurai-x-trust-and-betrayal"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "bunny-drop"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "living-for-the-day-after-tomorrow"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "violet-evergarden"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "niea-under-7"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "mob-psycho-100"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "raise-the-red-lantern"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "a-brides-story"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "cowboy-bebop"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "heaven-officials-blessing"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "moribito-guardian-of-the-spirit"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "bungaku-shoujo"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "humanity-has-declined"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "outlaw-star"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "memories-of-emanon"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "wandering-emanon"
+"data.log.rating" = 9
+
+[["data.logs"]]
+"data.log.title" = "ergo-proxy"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "kikis-delivery-service"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "now-and-then-here-and-there"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "yugo-the-negotiator"
+"data.log.rating" = 7
+
+[["data.logs"]]
+"data.log.title" = "journal-with-witch"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "ai-ren"
+"data.log.rating" = 10
+
+[["data.logs"]]
+"data.log.title" = "soloist-in-a-cage"
+"data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "gurren-lagann"
+"data.log.rating" = 8
+
+[["data.logs"]]
+"data.log.title" = "wonder-cat-kyuu-chan"
+"data.log.rating" = 6

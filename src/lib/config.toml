@@ -87,6 +87,186 @@
 [["data.localizations"]]
 "data.localization.id" = "crest-of-the-stars-name"
 
+[["data.localizations"]]
+"data.localization.id" = "eden-of-the-east-name"
+
+[["data.localizations"]]
+"data.localization.id" = "ergo-proxy-name"
+
+[["data.localizations"]]
+"data.localization.id" = "eureka-seven-name"
+
+[["data.localizations"]]
+"data.localization.id" = "from-the-new-world-name"
+
+[["data.localizations"]]
+"data.localization.id" = "galaxy-express-999-name"
+
+[["data.localizations"]]
+"data.localization.id" = "genshiken-name"
+
+[["data.localizations"]]
+"data.localization.id" = "girls-last-tour-name"
+
+[["data.localizations"]]
+"data.localization.id" = "gurren-lagann-name"
+
+[["data.localizations"]]
+"data.localization.id" = "haibane-renmei-name"
+
+[["data.localizations"]]
+"data.localization.id" = "heaven-officials-blessing-name"
+
+[["data.localizations"]]
+"data.localization.id" = "heavenly-delusion-name"
+
+[["data.localizations"]]
+"data.localization.id" = "heesu-in-class-2-name"
+
+[["data.localizations"]]
+"data.localization.id" = "hell-girl-name"
+
+[["data.localizations"]]
+"data.localization.id" = "hirayasumi-name"
+
+[["data.localizations"]]
+"data.localization.id" = "humanity-has-declined-name"
+
+[["data.localizations"]]
+"data.localization.id" = "journal-with-witch-name"
+
+[["data.localizations"]]
+"data.localization.id" = "kaiba-name"
+
+[["data.localizations"]]
+"data.localization.id" = "katanagatari-name"
+
+[["data.localizations"]]
+"data.localization.id" = "key-the-metal-idol-name"
+
+[["data.localizations"]]
+"data.localization.id" = "kikis-delivery-service-name"
+
+[["data.localizations"]]
+"data.localization.id" = "kinos-journey-name"
+
+[["data.localizations"]]
+"data.localization.id" = "land-of-the-lustrous-name"
+
+[["data.localizations"]]
+"data.localization.id" = "legend-of-the-galactic-heroes-name"
+
+[["data.localizations"]]
+"data.localization.id" = "link-click-name"
+
+[["data.localizations"]]
+"data.localization.id" = "living-for-the-day-after-tomorrow-name"
+
+[["data.localizations"]]
+"data.localization.id" = "made-in-abyss-name"
+
+[["data.localizations"]]
+"data.localization.id" = "memories-of-emanon-name"
+
+[["data.localizations"]]
+"data.localization.id" = "millennium-actress-name"
+
+[["data.localizations"]]
+"data.localization.id" = "mob-psycho-100-name"
+
+[["data.localizations"]]
+"data.localization.id" = "mononoke-name"
+
+[["data.localizations"]]
+"data.localization.id" = "moribito-guardian-of-the-spirit-name"
+
+[["data.localizations"]]
+"data.localization.id" = "mushishi-name"
+
+[["data.localizations"]]
+"data.localization.id" = "nausicaa-of-the-valley-of-the-wind-name"
+
+[["data.localizations"]]
+"data.localization.id" = "niea-under-7-name"
+
+[["data.localizations"]]
+"data.localization.id" = "noir-name"
+
+[["data.localizations"]]
+"data.localization.id" = "now-and-then-here-and-there-name"
+
+[["data.localizations"]]
+"data.localization.id" = "outlaw-star-name"
+
+[["data.localizations"]]
+"data.localization.id" = "ping-pong-the-animation-name"
+
+[["data.localizations"]]
+"data.localization.id" = "princess-mononoke-name"
+
+[["data.localizations"]]
+"data.localization.id" = "raise-the-red-lantern-name"
+
+[["data.localizations"]]
+"data.localization.id" = "samurai-champloo-name"
+
+[["data.localizations"]]
+"data.localization.id" = "samurai-x-trust-and-betrayal-name"
+
+[["data.localizations"]]
+"data.localization.id" = "shishunki-bitter-change-name"
+
+[["data.localizations"]]
+"data.localization.id" = "solanin-name"
+
+[["data.localizations"]]
+"data.localization.id" = "soloist-in-a-cage-name"
+
+[["data.localizations"]]
+"data.localization.id" = "song-of-the-long-march-name"
+
+[["data.localizations"]]
+"data.localization.id" = "sonny-boy-name"
+
+[["data.localizations"]]
+"data.localization.id" = "space-dandy-name"
+
+[["data.localizations"]]
+"data.localization.id" = "spice-and-wolf-name"
+
+[["data.localizations"]]
+"data.localization.id" = "the-case-of-hana-and-alice-name"
+
+[["data.localizations"]]
+"data.localization.id" = "the-irresponsible-captain-tylor-name"
+
+[["data.localizations"]]
+"data.localization.id" = "the-music-of-marie-name"
+
+[["data.localizations"]]
+"data.localization.id" = "the-summer-hikaru-died-name"
+
+[["data.localizations"]]
+"data.localization.id" = "the-tale-of-the-princess-kaguya-name"
+
+[["data.localizations"]]
+"data.localization.id" = "trigun-name"
+
+[["data.localizations"]]
+"data.localization.id" = "violet-evergarden-name"
+
+[["data.localizations"]]
+"data.localization.id" = "yugo-the-negotiator-name"
+
+[["data.localizations"]]
+"data.localization.id" = "wandering-emanon-name"
+
+[["data.localizations"]]
+"data.localization.id" = "witch-hat-atelier-name"
+
+[["data.localizations"]]
+"data.localization.id" = "wonder-cat-kyuu-chan-name"
+
 [["data.localization.messages"]]
 "data.localization.message.localization" = "a-brides-story-name"
 "data.localization.message.locale" = "en"
@@ -142,401 +322,684 @@
 "data.localization.message.locale" = "en"
 "data.localization.message.message" = "Crest of the Stars"
 
-# TODO: Remove data.title.name.
-#
-# For localized titles, I keep it since sorting still depends on it.
+[["data.localization.messages"]]
+"data.localization.message.localization" = "eden-of-the-east-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Eden of the East"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "ergo-proxy-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Ergo Proxy"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "eureka-seven-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Eureka Seven"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "from-the-new-world-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "From the New World"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "galaxy-express-999-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Galaxy Express 999"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "genshiken-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Genshiken"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "girls-last-tour-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Girls' Last Tour"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "gurren-lagann-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Gurren Lagann"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "haibane-renmei-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Haibane Renmei"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "heaven-officials-blessing-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Heaven Official's Blessing"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "heavenly-delusion-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Heavenly Delusion"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "heesu-in-class-2-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Heesu in Class 2"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "hell-girl-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Hell Girl"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "hirayasumi-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Hirayasumi"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "humanity-has-declined-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Humanity Has Declined"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "journal-with-witch-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Journal with Witch"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "kaiba-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Kaiba"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "katanagatari-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Katanagatari"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "key-the-metal-idol-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Key the Metal Idol"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "kikis-delivery-service-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Kiki's Delivery Service"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "kinos-journey-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Kino's Journey"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "land-of-the-lustrous-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Land of the Lustrous"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "legend-of-the-galactic-heroes-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Legend of the Galactic Heroes"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "link-click-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Link Click"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "living-for-the-day-after-tomorrow-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Living for the Day After Tomorrow"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "made-in-abyss-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Made in Abyss"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "memories-of-emanon-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Memories of Emanon"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "millennium-actress-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Millennium Actress"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "mob-psycho-100-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Mob Psycho 100"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "mononoke-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Mononoke"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "moribito-guardian-of-the-spirit-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Moribito: Guardian of the Spirit"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "mushishi-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Mushishi"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "nausicaa-of-the-valley-of-the-wind-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Nausicaä of the Valley of the Wind"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "niea-under-7-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "NieA Under 7"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "noir-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Noir"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "now-and-then-here-and-there-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Now and Then, Here and There"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "outlaw-star-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Outlaw Star"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "ping-pong-the-animation-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Ping Pong the Animation"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "princess-mononoke-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Princess Mononoke"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "raise-the-red-lantern-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Raise the Red Lantern"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "samurai-champloo-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Samurai Champloo"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "samurai-x-trust-and-betrayal-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Samurai X: Trust & Betrayal"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "shishunki-bitter-change-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Shishunki Bitter Change"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "solanin-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Solanin"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "soloist-in-a-cage-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Soloist in a Cage"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "song-of-the-long-march-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Song of the Long March"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "sonny-boy-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Sonny Boy"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "space-dandy-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Space Dandy"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "spice-and-wolf-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Spice and Wolf"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "the-case-of-hana-and-alice-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "The Case of Hana & Alice"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "the-irresponsible-captain-tylor-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "The Irresponsible Captain Tylor"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "the-music-of-marie-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "The Music of Marie"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "the-summer-hikaru-died-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "The Summer Hikaru Died"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "the-tale-of-the-princess-kaguya-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "The Tale of the Princess Kaguya"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "trigun-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Trigun"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "violet-evergarden-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Violet Evergarden"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "yugo-the-negotiator-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Yugo The Negotiator"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "wandering-emanon-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Wandering Emanon"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "witch-hat-atelier-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Witch Hat Atelier"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "wonder-cat-kyuu-chan-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Wonder Cat Kyuu-chan"
 
 [["data.titles"]]
 "data.title.id" = "a-brides-story"
-"data.title.name" = "A Bride's Story"
-"data.title.name.localization" = "a-brides-story-name"
+"data.title.name" = "a-brides-story-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "ai-ren"
-"data.title.name" = "Ai-Ren"
-"data.title.name.localization" = "ai-ren-name"
+"data.title.name" = "ai-ren-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "akira"
-"data.title.name" = "Akira"
-"data.title.name.localization" = "akira-name"
+"data.title.name" = "akira-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "banner-of-the-stars-anime"
-"data.title.name" = "Banner of the Stars"
-"data.title.name.localization" = "banner-of-the-stars-name"
+"data.title.name" = "banner-of-the-stars-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "banner-of-the-stars-novel"
-"data.title.name" = "Banner of the Stars"
-"data.title.name.localization" = "banner-of-the-stars-name"
+"data.title.name" = "banner-of-the-stars-name"
 "data.title.medium" = "novel"
 
 [["data.titles"]]
 "data.title.id" = "blade-of-the-immortal"
-"data.title.name" = "Blade of the Immortal"
-"data.title.name.localization" = "blade-of-the-immortal-name"
+"data.title.name" = "blade-of-the-immortal-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "blood-on-the-tracks"
-"data.title.name" = "Blood on the Tracks"
-"data.title.name.localization" = "blood-on-the-tracks-name"
+"data.title.name" = "blood-on-the-tracks-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "bungaku-shoujo"
-"data.title.name" = "Bungaku Shoujo"
-"data.title.name.localization" = "bungaku-shoujo-name"
+"data.title.name" = "bungaku-shoujo-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "bunny-drop"
-"data.title.name" = "Bunny Drop"
-"data.title.name.localization" = "bunny-drop-name"
+"data.title.name" = "bunny-drop-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "castle-in-the-sky"
-"data.title.name" = "Castle in the Sky"
-"data.title.name.localization" = "castle-in-the-sky-name"
+"data.title.name" = "castle-in-the-sky-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "cowboy-bebop"
-"data.title.name" = "Cowboy Bebop"
-"data.title.name.localization" = "cowboy-bebop-name"
+"data.title.name" = "cowboy-bebop-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "crest-of-the-stars-anime"
-"data.title.name" = "Crest of the Stars"
-"data.title.name.localization" = "crest-of-the-stars-name"
+"data.title.name" = "crest-of-the-stars-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "crest-of-the-stars-novel"
-"data.title.name" = "Crest of the Stars"
-"data.title.name.localization" = "crest-of-the-stars-name"
+"data.title.name" = "crest-of-the-stars-name"
 "data.title.medium" = "novel"
 
 [["data.titles"]]
 "data.title.id" = "eden-of-the-east"
-"data.title.name" = "Eden of the East"
+"data.title.name" = "eden-of-the-east-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "ergo-proxy"
-"data.title.name" = "Ergo Proxy"
+"data.title.name" = "ergo-proxy-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "eureka-seven"
-"data.title.name" = "Eureka Seven"
+"data.title.name" = "eureka-seven-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "from-the-new-world"
-"data.title.name" = "From the New World"
+"data.title.name" = "from-the-new-world-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "galaxy-express-999"
-"data.title.name" = "Galaxy Express 999"
+"data.title.name" = "galaxy-express-999-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "genshiken"
-"data.title.name" = "Genshiken"
+"data.title.name" = "genshiken-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "girls-last-tour"
-"data.title.name" = "Girls' Last Tour"
+"data.title.name" = "girls-last-tour-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "gurren-lagann"
-"data.title.name" = "Gurren Lagann"
+"data.title.name" = "gurren-lagann-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "haibane-renmei"
-"data.title.name" = "Haibane Renmei"
+"data.title.name" = "haibane-renmei-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "heaven-officials-blessing"
-"data.title.name" = "Heaven Official's Blessing"
+"data.title.name" = "heaven-officials-blessing-name"
 "data.title.medium" = "donghua"
 
 [["data.titles"]]
 "data.title.id" = "heavenly-delusion"
-"data.title.name" = "Heavenly Delusion"
+"data.title.name" = "heavenly-delusion-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "heesu-in-class-2"
-"data.title.name" = "Heesu in Class 2"
+"data.title.name" = "heesu-in-class-2-name"
 "data.title.medium" = "manhwa"
 
 [["data.titles"]]
 "data.title.id" = "hell-girl"
-"data.title.name" = "Hell Girl"
+"data.title.name" = "hell-girl-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "hirayasumi"
-"data.title.name" = "Hirayasumi"
+"data.title.name" = "hirayasumi-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "humanity-has-declined"
-"data.title.name" = "Humanity Has Declined"
+"data.title.name" = "humanity-has-declined-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "journal-with-witch"
-"data.title.name" = "Journal with Witch"
+"data.title.name" = "journal-with-witch-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "kaiba"
-"data.title.name" = "Kaiba"
+"data.title.name" = "kaiba-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "katanagatari"
-"data.title.name" = "Katanagatari"
+"data.title.name" = "katanagatari-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "key-the-metal-idol"
-"data.title.name" = "Key the Metal Idol"
+"data.title.name" = "key-the-metal-idol-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "kikis-delivery-service"
-"data.title.name" = "Kiki's Delivery Service"
+"data.title.name" = "kikis-delivery-service-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "kinos-journey-anime"
-"data.title.name" = "Kino's Journey"
+"data.title.name" = "kinos-journey-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "kinos-journey-novel"
-"data.title.name" = "Kino's Journey"
+"data.title.name" = "kinos-journey-name"
 "data.title.medium" = "novel"
 
 [["data.titles"]]
 "data.title.id" = "land-of-the-lustrous-anime"
-"data.title.name" = "Land of the Lustrous"
+"data.title.name" = "land-of-the-lustrous-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "land-of-the-lustrous-manga"
-"data.title.name" = "Land of the Lustrous"
+"data.title.name" = "land-of-the-lustrous-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "legend-of-the-galactic-heroes"
-"data.title.name" = "Legend of the Galactic Heroes"
+"data.title.name" = "legend-of-the-galactic-heroes-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "link-click"
-"data.title.name" = "Link Click"
+"data.title.name" = "link-click-name"
 "data.title.medium" = "donghua"
 
 [["data.titles"]]
 "data.title.id" = "living-for-the-day-after-tomorrow"
-"data.title.name" = "Living for the Day After Tomorrow"
+"data.title.name" = "living-for-the-day-after-tomorrow-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "made-in-abyss-anime"
-"data.title.name" = "Made in Abyss"
+"data.title.name" = "made-in-abyss-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "made-in-abyss-manga"
-"data.title.name" = "Made in Abyss"
+"data.title.name" = "made-in-abyss-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "memories-of-emanon"
-"data.title.name" = "Memories of Emanon"
+"data.title.name" = "memories-of-emanon-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "millennium-actress"
-"data.title.name" = "Millennium Actress"
+"data.title.name" = "millennium-actress-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "mob-psycho-100"
-"data.title.name" = "Mob Psycho 100"
+"data.title.name" = "mob-psycho-100-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "mononoke"
-"data.title.name" = "Mononoke"
+"data.title.name" = "mononoke-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "moribito-guardian-of-the-spirit"
-"data.title.name" = "Moribito: Guardian of the Spirit"
+"data.title.name" = "moribito-guardian-of-the-spirit-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "mushishi"
-"data.title.name" = "Mushishi"
+"data.title.name" = "mushishi-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "nausicaa-of-the-valley-of-the-wind"
-"data.title.name" = "Nausicaä of the Valley of the Wind"
+"data.title.name" = "nausicaa-of-the-valley-of-the-wind-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "niea-under-7"
-"data.title.name" = "NieA Under 7"
+"data.title.name" = "niea-under-7-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "noir"
-"data.title.name" = "Noir"
+"data.title.name" = "noir-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "now-and-then-here-and-there"
-"data.title.name" = "Now and Then, Here and There"
+"data.title.name" = "now-and-then-here-and-there-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "outlaw-star"
-"data.title.name" = "Outlaw Star"
+"data.title.name" = "outlaw-star-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "ping-pong-the-animation"
-"data.title.name" = "Ping Pong the Animation"
+"data.title.name" = "ping-pong-the-animation-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "princess-mononoke"
-"data.title.name" = "Princess Mononoke"
+"data.title.name" = "princess-mononoke-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "raise-the-red-lantern"
-"data.title.name" = "Raise the Red Lantern"
+"data.title.name" = "raise-the-red-lantern-name"
 "data.title.medium" = "film"
 
 [["data.titles"]]
 "data.title.id" = "samurai-champloo"
-"data.title.name" = "Samurai Champloo"
+"data.title.name" = "samurai-champloo-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "samurai-x-trust-and-betrayal"
-"data.title.name" = "Samurai X: Trust & Betrayal"
+"data.title.name" = "samurai-x-trust-and-betrayal-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "shishunki-bitter-change"
-"data.title.name" = "Shishunki Bitter Change"
+"data.title.name" = "shishunki-bitter-change-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "solanin"
-"data.title.name" = "Solanin"
+"data.title.name" = "solanin-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "soloist-in-a-cage"
-"data.title.name" = "Soloist in a Cage"
+"data.title.name" = "soloist-in-a-cage-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "song-of-the-long-march"
-"data.title.name" = "Song of the Long March"
+"data.title.name" = "song-of-the-long-march-name"
 "data.title.medium" = "manhua"
 
 [["data.titles"]]
 "data.title.id" = "sonny-boy"
-"data.title.name" = "Sonny Boy"
+"data.title.name" = "sonny-boy-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "space-dandy"
-"data.title.name" = "Space Dandy"
+"data.title.name" = "space-dandy-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "spice-and-wolf"
-"data.title.name" = "Spice and Wolf"
+"data.title.name" = "spice-and-wolf-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "the-case-of-hana-and-alice"
-"data.title.name" = "The Case of Hana & Alice"
+"data.title.name" = "the-case-of-hana-and-alice-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "the-irresponsible-captain-tylor"
-"data.title.name" = "The Irresponsible Captain Tylor"
+"data.title.name" = "the-irresponsible-captain-tylor-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "the-music-of-marie"
-"data.title.name" = "The Music of Marie"
+"data.title.name" = "the-music-of-marie-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "the-summer-hikaru-died"
-"data.title.name" = "The Summer Hikaru Died"
+"data.title.name" = "the-summer-hikaru-died-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "the-tale-of-the-princess-kaguya"
-"data.title.name" = "The Tale of the Princess Kaguya"
+"data.title.name" = "the-tale-of-the-princess-kaguya-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "trigun"
-"data.title.name" = "Trigun"
+"data.title.name" = "trigun-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "violet-evergarden"
-"data.title.name" = "Violet Evergarden"
+"data.title.name" = "violet-evergarden-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "yugo-the-negotiator"
-"data.title.name" = "Yugo The Negotiator"
+"data.title.name" = "yugo-the-negotiator-name"
 "data.title.medium" = "anime"
 
 [["data.titles"]]
 "data.title.id" = "wandering-emanon"
-"data.title.name" = "Wandering Emanon"
+"data.title.name" = "wandering-emanon-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "witch-hat-atelier"
-"data.title.name" = "Witch Hat Atelier"
+"data.title.name" = "witch-hat-atelier-name"
 "data.title.medium" = "manga"
 
 [["data.titles"]]
 "data.title.id" = "wonder-cat-kyuu-chan"
-"data.title.name" = "Wonder Cat Kyuu-chan"
+"data.title.name" = "wonder-cat-kyuu-chan-name"
 "data.title.medium" = "manga"
 
 [["data.title.links"]]

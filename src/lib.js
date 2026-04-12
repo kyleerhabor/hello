@@ -26,8 +26,6 @@ export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "data.localization.message.
 export const KEY_DATA_TITLES = "data.titles";
 export const KEY_DATA_TITLE_ID = "data.title.id";
 export const KEY_DATA_TITLE_NAME = "data.title.name";
-// TODO: Replace name with this.
-export const KEY_DATA_TITLE_NAME_LOCALIZATION = "data.title.name.localization";
 export const KEY_DATA_TITLE_MEDIUM = "data.title.medium";
 export const KEY_DATA_TITLE_LINKS = "data.title.links";
 export const KEY_DATA_TITLE_LINK_TITLE = "data.title.link.title";

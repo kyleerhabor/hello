@@ -35,7 +35,6 @@
     KEY_DATA_TITLE_LINKS,
     KEY_DATA_TITLE_MEDIUM,
     KEY_DATA_TITLE_NAME,
-    KEY_DATA_TITLE_NAME_LOCALIZATION,
     KEY_PAGE_SERIES_LOCALIZATIONS,
     KEY_PAGE_SERIES_LOGS,
     KEY_PAGE_SERIES_MEDIUMS,
@@ -124,13 +123,7 @@
   }
 
   function titleName(title) {
-    const localization = title[KEY_DATA_TITLE_NAME_LOCALIZATION];
-
-    if (localization === undefined) {
-      return title[KEY_DATA_TITLE_NAME];
-    }
-
-    const messages = data[KEY_PAGE_SERIES_LOCALIZATIONS][localization][KEY_DATA_LOCALIZATION_MESSAGES];
+    const messages = data[KEY_PAGE_SERIES_LOCALIZATIONS][title[KEY_DATA_TITLE_NAME]][KEY_DATA_LOCALIZATION_MESSAGES];
     // I haven't tested whether or not this works with other locales.
     const locale = getLocale();
     const message = messages[locale] ?? messages[baseLocale];
@@ -173,7 +166,6 @@
     <tbody>
       {#each data[KEY_PAGE_SERIES_LOGS] as log (log[KEY_DATA_LOG_ID])}
         {@const title = data[KEY_PAGE_SERIES_TITLES][log[KEY_DATA_LOG_TITLE]]}
-        {@const name = title[KEY_DATA_TITLE_NAME]}
         {@const medium = data[KEY_PAGE_SERIES_MEDIUMS][title[KEY_DATA_TITLE_MEDIUM]]}
         <tr class="row">
           <!-- TODO: Note accessibility improvements from using th over td.  -->

@@ -11,7 +11,7 @@ function logTitle(titles, log) {
   return titles[log[lib.KEY_DATA_LOG_TITLE]];
 }
 
-function titleName(title, localizations) {
+function titleName(localizations, title) {
   return localizations[title[series.KEY_DATA_TITLE_NAME]];
 }
 
@@ -93,7 +93,7 @@ export function load() {
     [series.KEY_PAGE_SERIES_TITLES]: titles,
     [series.KEY_PAGE_SERIES_LOGS]: lib.unique(prop(lib.KEY_DATA_LOG_TITLE), d[lib.KEY_DATA_LOGS].toReversed())
       .sort((a, b) => b[lib.KEY_DATA_LOG_RATING] - a[lib.KEY_DATA_LOG_RATING]
-        || localizationMessage(titleName(logTitle(titles, a), localizations), locale).localeCompare(localizationMessage(titleName(logTitle(titles, b), localizations), locale))
+        || localizationMessage(titleName(localizations, logTitle(titles, a)), locale).localeCompare(localizationMessage(titleName(localizations, logTitle(titles, b)), locale))
         // eslint-disable-next-line @stylistic/comma-dangle
         || titleMedium(mediums, logTitle(titles, a))[lib.KEY_DATA_MEDIUM_VALUE] - titleMedium(mediums, logTitle(titles, b))[lib.KEY_DATA_MEDIUM_VALUE]
       )

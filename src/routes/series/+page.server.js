@@ -29,22 +29,24 @@ export function load() {
     prop(series.KEY_DATA_TITLE_ID),
     d[lib.KEY_DATA_TITLES].map((title) => {
       const id = title[lib.KEY_DATA_TITLE_ID];
-
-      return {
+      const result = {
         [series.KEY_DATA_TITLE_ID]: id,
         [series.KEY_DATA_TITLE_NAME]: title[lib.KEY_DATA_TITLE_NAME],
+        [series.KEY_DATA_TITLE_NAME_LOCALIZATION]: title[lib.KEY_DATA_TITLE_NAME_LOCALIZATION],
         [series.KEY_DATA_TITLE_MEDIUM]: title[lib.KEY_DATA_TITLE_MEDIUM],
-        [series.KEY_DATA_TITLE_LINKS]: d[lib.KEY_DATA_LINKS]
-          .filter((link) => link[lib.KEY_DATA_LINK_TITLE] == id)
+        [series.KEY_DATA_TITLE_LINKS]: d[lib.KEY_DATA_TITLE_LINKS]
+          .filter((link) => link[lib.KEY_DATA_TITLE_LINK_TITLE] == id)
           .map((link, i) => ({
             [series.KEY_DATA_TITLE_LINK_ID]: i,
-            [series.KEY_DATA_TITLE_LINK_RESOURCE]: link[lib.KEY_DATA_LINK_RESOURCE],
-            [series.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID]: link[lib.KEY_DATA_LINK_RESOURCE_ANIDB_ID],
-            [series.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID]: link[lib.KEY_DATA_LINK_RESOURCE_MANGAUPDATES_ID],
-            [series.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG]: link[lib.KEY_DATA_LINK_RESOURCE_NOVELUPDATES_SLUG],
-            [series.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID]: link[lib.KEY_DATA_LINK_RESOURCE_MYDRAMALIST_ID],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE]: link[lib.KEY_DATA_TITLE_LINK_RESOURCE],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID]: link[lib.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ID],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID]: link[lib.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_ID],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG]: link[lib.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SLUG],
+            [series.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID]: link[lib.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID],
           })),
       };
+
+      return result;
     }),
   );
 
@@ -56,6 +58,26 @@ export function load() {
         [series.KEY_DATA_RESOURCE_ID]: resource[lib.KEY_DATA_RESOURCE_ID],
         [series.KEY_DATA_RESOURCE_VALUE]: resource[lib.KEY_DATA_RESOURCE_VALUE],
       })),
+    ),
+    [series.KEY_PAGE_SERIES_LOCALIZATIONS]: lib.key(
+      prop(series.KEY_DATA_LOCALIZATION_ID),
+      d[lib.KEY_DATA_LOCALIZATIONS].map((localization) => {
+        const id = localization[lib.KEY_DATA_LOCALIZATION_ID];
+        const result = {
+          [series.KEY_DATA_LOCALIZATION_ID]: id,
+          [series.KEY_DATA_LOCALIZATION_MESSAGES]: lib.key(
+            prop(series.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE),
+            d[lib.KEY_DATA_LOCALIZATION_MESSAGES]
+              .filter((message) => message[lib.KEY_DATA_LOCALIZATION_MESSAGE_LOCALIZATION] == id)
+              .map((message) => ({
+                [series.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE]: message[lib.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE],
+                [series.KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE]: message[lib.KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE],
+              })),
+          ),
+        };
+
+        return result;
+      }),
     ),
     [series.KEY_PAGE_SERIES_TITLES]: titles,
     [series.KEY_PAGE_SERIES_LOGS]: lib.unique(prop(lib.KEY_DATA_LOG_TITLE), d[lib.KEY_DATA_LOGS].toReversed())

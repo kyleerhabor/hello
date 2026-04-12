@@ -1,14 +1,20 @@
 
 export const KEY_PAGE_SERIES_MEDIUMS = "page.series.mediums";
 export const KEY_PAGE_SERIES_RESOURCES = "page.series.resources";
+export const KEY_PAGE_SERIES_LOCALIZATIONS = "page.series.localizations";
 export const KEY_PAGE_SERIES_TITLES = "page.series.titles";
 export const KEY_PAGE_SERIES_LOGS = "page.series.logs";
 export const KEY_DATA_MEDIUM_ID = "data.medium.id";
 export const KEY_DATA_MEDIUM_VALUE = "data.medium.value";
 export const KEY_DATA_RESOURCE_ID = "data.resource.id";
 export const KEY_DATA_RESOURCE_VALUE = "data.resource.value";
+export const KEY_DATA_LOCALIZATION_ID = "data.localizations.id";
+export const KEY_DATA_LOCALIZATION_MESSAGES = "data.localization.messages";
+export const KEY_DATA_LOCALIZATION_MESSAGE_LOCALE = "data.localization.message.locale";
+export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "data.localization.message.message";
 export const KEY_DATA_TITLE_ID = "data.title.id";
 export const KEY_DATA_TITLE_NAME = "data.title.name";
+export const KEY_DATA_TITLE_NAME_LOCALIZATION = "data.title.name.localization";
 export const KEY_DATA_TITLE_MEDIUM = "data.title.medium";
 export const KEY_DATA_TITLE_LINKS = "data.title.links";
 export const KEY_DATA_TITLE_LINK_ID = "data.title.link.id";

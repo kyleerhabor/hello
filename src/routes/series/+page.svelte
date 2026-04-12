@@ -15,7 +15,12 @@
     DATA_RESOURCE_VALUE_MYDRAMALIST,
     DATA_RESOURCE_VALUE_NOVELUPDATES,
   } from "$lib";
+  import { m } from "$lib/paraglide/messages";
+  import { baseLocale, getLocale } from "$lib/paraglide/runtime";
+  import "../../style/main.css";
   import {
+    KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE,
+    KEY_DATA_LOCALIZATION_MESSAGES,
     KEY_DATA_LOG_ID,
     KEY_DATA_LOG_RATING,
     KEY_DATA_LOG_TITLE,
@@ -30,14 +35,14 @@
     KEY_DATA_TITLE_LINKS,
     KEY_DATA_TITLE_MEDIUM,
     KEY_DATA_TITLE_NAME,
+    KEY_DATA_TITLE_NAME_LOCALIZATION,
+    KEY_PAGE_SERIES_LOCALIZATIONS,
     KEY_PAGE_SERIES_LOGS,
     KEY_PAGE_SERIES_MEDIUMS,
     KEY_PAGE_SERIES_RESOURCES,
     KEY_PAGE_SERIES_TITLES,
   } from "../series";
-  import "../../style/main.css";
   import StarRating from "../StarRating.svelte";
-  import { m } from "$lib/paraglide/messages";
 
   const { data } = $props();
 
@@ -117,6 +122,22 @@
         return mydramalistURL(link);
     }
   }
+
+  function titleName(title) {
+    const localization = title[KEY_DATA_TITLE_NAME_LOCALIZATION];
+
+    if (localization === undefined) {
+      return title[KEY_DATA_TITLE_NAME];
+    }
+
+    const messages = data[KEY_PAGE_SERIES_LOCALIZATIONS][localization][KEY_DATA_LOCALIZATION_MESSAGES];
+    // I haven't tested whether or not this works with other locales.
+    const locale = getLocale();
+    const message = messages[locale] ?? messages[baseLocale];
+    const result = message[KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE];
+
+    return result;
+  }
 </script>
 
 <svelte:head>
@@ -157,7 +178,7 @@
         <tr class="row">
           <!-- TODO: Note accessibility improvements from using th over td.  -->
           <th class="cell title" scope="row">
-            {name}
+            {titleName(title)}
           </th>
           <td class="cell medium">
             {mediumName(medium[KEY_DATA_MEDIUM_VALUE])}

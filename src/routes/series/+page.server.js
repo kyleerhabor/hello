@@ -8,7 +8,7 @@ import { getLocale } from "$lib/paraglide/runtime";
 const parseData = once(data => toml.parse(data));
 
 function logTitle(titles, log) {
-  return titles[log[lib.KEY_DATA_LOG_TITLE]];
+  return titles[log[series.KEY_DATA_LOG_TITLE]];
 }
 
 function titleName(localizations, title) {
@@ -92,16 +92,16 @@ export function load() {
     [series.KEY_PAGE_SERIES_LOCALIZATIONS]: localizations,
     [series.KEY_PAGE_SERIES_TITLES]: titles,
     [series.KEY_PAGE_SERIES_LOGS]: lib.unique(prop(lib.KEY_DATA_LOG_TITLE), d[lib.KEY_DATA_LOGS].toReversed())
-      .sort((a, b) => b[lib.KEY_DATA_LOG_RATING] - a[lib.KEY_DATA_LOG_RATING]
-        || localizationMessage(titleName(localizations, logTitle(titles, a)), locale).localeCompare(localizationMessage(titleName(localizations, logTitle(titles, b)), locale))
-        // eslint-disable-next-line @stylistic/comma-dangle
-        || titleMedium(mediums, logTitle(titles, a))[lib.KEY_DATA_MEDIUM_VALUE] - titleMedium(mediums, logTitle(titles, b))[lib.KEY_DATA_MEDIUM_VALUE]
-      )
       .map((log, i) => ({
         [series.KEY_DATA_LOG_ID]: i,
         [series.KEY_DATA_LOG_TITLE]: log[lib.KEY_DATA_LOG_TITLE],
         [series.KEY_DATA_LOG_RATING]: log[lib.KEY_DATA_LOG_RATING],
-      })),
+      }))
+      .sort((a, b) => b[lib.KEY_DATA_LOG_RATING] - a[lib.KEY_DATA_LOG_RATING]
+        || localizationMessage(titleName(localizations, logTitle(titles, a)), locale).localeCompare(localizationMessage(titleName(localizations, logTitle(titles, b)), locale))
+        // eslint-disable-next-line @stylistic/comma-dangle
+        || titleMedium(mediums, logTitle(titles, a))[lib.KEY_DATA_MEDIUM_VALUE] - titleMedium(mediums, logTitle(titles, b))[lib.KEY_DATA_MEDIUM_VALUE]
+      ),
   };
 
   return result;

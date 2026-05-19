@@ -16,8 +16,8 @@
   Hi!
 </p>
 <p>
-  I'm Kyle Erhabor, a software developer based in Boston, MA, with a Bachelor of Science in Computer Science from
-  Suffolk University. I spend my days researching and developing software.
+  I'm Kyle Erhabor, a software developer based in Boston, MA, who holds a Bachelor of Science in Computer Science with a
+  minor in Pure Mathematics from Suffolk University. I spend my days researching and developing software.
 </p>
 <p>
   My current interests are in application development and systems programming for Apple's Darwin platform. Some notable

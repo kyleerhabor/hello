@@ -1,3 +1,4 @@
+<svelte:options runes={true} />
 <script>
   import TextLink from "./TextLink.svelte";
   import {

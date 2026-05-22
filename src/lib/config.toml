@@ -267,6 +267,9 @@
 [["data.localizations"]]
 "data.localization.id" = "wonder-cat-kyuu-chan-name"
 
+[["data.localizations"]]
+"data.localization.id" = "aria-name"
+
 [["data.localization.messages"]]
 "data.localization.message.localization" = "a-brides-story-name"
 "data.localization.message.locale" = "en"
@@ -621,6 +624,11 @@
 "data.localization.message.localization" = "wonder-cat-kyuu-chan-name"
 "data.localization.message.locale" = "en"
 "data.localization.message.message" = "Wonder Cat Kyuu-chan"
+
+[["data.localization.messages"]]
+"data.localization.message.localization" = "aria-name"
+"data.localization.message.locale" = "en"
+"data.localization.message.message" = "Aria"
 
 [["data.titles"]]
 "data.title.id" = "a-brides-story"
@@ -1002,6 +1010,11 @@
 "data.title.name" = "wonder-cat-kyuu-chan-name"
 "data.title.medium" = "manga"
 
+[["data.titles"]]
+"data.title.id" = "aria"
+"data.title.name" = "aria-name"
+"data.title.medium" = "anime"
+
 [["data.title.links"]]
 "data.title.link.title" = "a-brides-story"
 "data.title.link.resource" = "mangaupdates"
@@ -1382,6 +1395,11 @@
 "data.title.link.resource" = "anidb"
 "data.title.link.resource.anidb.id" = 1429
 
+[["data.title.links"]]
+"data.title.link.title" = "aria"
+"data.title.link.resource" = "anidb"
+"data.title.link.resource.anidb.id" = 2659
+
 [["data.logs"]]
 "data.log.title" = "spice-and-wolf"
 "data.log.rating" = 7
@@ -1685,3 +1703,7 @@
 [["data.logs"]]
 "data.log.title" = "wonder-cat-kyuu-chan"
 "data.log.rating" = 6
+
+[["data.logs"]]
+"data.log.title" = "aria"
+"data.log.rating" = 7

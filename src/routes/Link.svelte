@@ -9,7 +9,7 @@
   <span>
     {@render children()}
   </span>
-  <span class:hide={isLocal}>
+  <span class:hidden={isLocal}>
     <ExternalLink size="14px" />
   </span>
 </span>

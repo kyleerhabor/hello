@@ -12,7 +12,7 @@
   <title>{PUBLIC_NAME}</title>
 </svelte:head>
 
-<!-- TODO: Figure out how to use AsciiDoc -->
+<!-- TODO: Figure out how to use AsciiDoc or Markdown -->
 <p>
   Hi!
 </p>

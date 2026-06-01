@@ -3,6 +3,7 @@
   --background-color-dark: hsl(0deg 0% 12%);
   --header-divider-color-light: hsl(30deg 0% 60%);
   --header-divider-color-dark: hsl(30deg 0% 40%);
+  --series-header-table-gap: 1rem;
   --series-table-header-text-color-light: hsl(0deg 0% 50%);
   --series-table-header-text-color-dark: hsl(0deg 0% 65%);
   --series-table-header-background-color-light: hsl(0deg 0% 98%);

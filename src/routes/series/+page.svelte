@@ -17,7 +17,6 @@
   } from "$lib";
   import { m } from "$lib/paraglide/messages";
   import { baseLocale, getLocale } from "$lib/paraglide/runtime";
-  import "../../style/main.css";
   import {
     KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE,
     KEY_DATA_LOCALIZATION_MESSAGES,
@@ -139,66 +138,81 @@
   </title>
 </svelte:head>
 
-<div class="container">
-  <table class="table">
-    <colgroup>
-      <col class="title-column" />
-      <col class="medium-column" />
-      <col class="rating-column" />
-      <col class="links-column" />
-    </colgroup>
-    <thead>
-      <tr class="row">
-        <th scope="col" class="cell header">
-          {m.series_column_title()}
-        </th>
-        <th scope="col" class="cell header">
-          {m.series_column_medium()}
-        </th>
-        <th scope="col" class="cell header">
-          {m.series_column_rating()}
-        </th>
-        <th scope="col" class="cell header">
-          {m.series_column_links()}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      {#each data[KEY_PAGE_SERIES_LOGS] as log (log[KEY_DATA_LOG_ID])}
-        {@const title = data[KEY_PAGE_SERIES_TITLES][log[KEY_DATA_LOG_TITLE]]}
-        {@const medium = data[KEY_PAGE_SERIES_MEDIUMS][title[KEY_DATA_TITLE_MEDIUM]]}
+<div class="page">
+  <div class="page-header">
+    <h1>{m.series_page_header_title()}</h1>
+    <p>{m.series_page_header_description()}</p>
+  </div>
+  <div class="table-outline">
+    <table class="table">
+      <colgroup>
+        <col class="title-column" />
+        <col class="medium-column" />
+        <col class="rating-column" />
+        <col class="links-column" />
+      </colgroup>
+      <thead>
         <tr class="row">
-          <!-- TODO: Note accessibility improvements from using th over td.  -->
-          <th class="cell title" scope="row">
-            {titleName(title)}
+          <th scope="col" class="cell header">
+            {m.series_column_title()}
           </th>
-          <td class="cell medium">
-            {mediumName(medium[KEY_DATA_MEDIUM_VALUE])}
-          </td>
-          <td class="cell rating">
-            <StarRating rating={log[KEY_DATA_LOG_RATING]} />
-          </td>
-          <td class="cell links">
-            {#each title[KEY_DATA_TITLE_LINKS] as link (link[KEY_DATA_TITLE_LINK_ID])}
-              {@const resource = data[KEY_PAGE_SERIES_RESOURCES][link[KEY_DATA_TITLE_LINK_RESOURCE]]}
-              {@const name = resourceName(resource[KEY_DATA_RESOURCE_VALUE])}
-              {@const url = resourceURL(resource[KEY_DATA_RESOURCE_VALUE], link)}
-              <div>
-                <a href={url} rel="external" target="_blank">
-                  {name}
-                </a>
-              </div>
-            {/each}
-          </td>
+          <th scope="col" class="cell header">
+            {m.series_column_medium()}
+          </th>
+          <th scope="col" class="cell header">
+            {m.series_column_rating()}
+          </th>
+          <th scope="col" class="cell header">
+            {m.series_column_links()}
+          </th>
         </tr>
-      {/each}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {#each data[KEY_PAGE_SERIES_LOGS] as log (log[KEY_DATA_LOG_ID])}
+          {@const title = data[KEY_PAGE_SERIES_TITLES][log[KEY_DATA_LOG_TITLE]]}
+          {@const medium =
+            data[KEY_PAGE_SERIES_MEDIUMS][title[KEY_DATA_TITLE_MEDIUM]]}
+          <tr class="row">
+            <!-- TODO: Note accessibility improvements from using th over td.  -->
+            <th class="cell title" scope="row">
+              {titleName(title)}
+            </th>
+            <td class="cell medium">
+              {mediumName(medium[KEY_DATA_MEDIUM_VALUE])}
+            </td>
+            <td class="cell rating">
+              <StarRating rating={log[KEY_DATA_LOG_RATING]} />
+            </td>
+            <td class="cell links">
+              {#each title[KEY_DATA_TITLE_LINKS] as link (link[KEY_DATA_TITLE_LINK_ID])}
+                {@const resource =
+                  data[KEY_PAGE_SERIES_RESOURCES][link[KEY_DATA_TITLE_LINK_RESOURCE]]}
+                {@const name = resourceName(resource[KEY_DATA_RESOURCE_VALUE])}
+                {@const url = resourceURL(resource[KEY_DATA_RESOURCE_VALUE], link)}
+                <div>
+                  <a href={url} rel="external" target="_blank">
+                    {name}
+                  </a>
+                </div>
+              {/each}
+            </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
+  </div>
 </div>
 
 <style>
-  .container {
+  .page {
     margin-block: var(--series-table-margin-block);
+  }
+
+  .page-header {
+    margin-block-end: var(--series-header-table-gap);
+  }
+
+  .table-outline {
     border: 1px solid var(--header-divider-color);
     border-radius: var(--series-table-border-radius);
     overflow: hidden;
@@ -251,7 +265,7 @@
   }
 
   @media (max-width: 500px) {
-    .container {
+    .table-outline {
       overflow-x: auto;
     }
 

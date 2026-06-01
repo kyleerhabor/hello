@@ -1,3 +1,6 @@
+@import "./cssremedy.css";
+@import "./app.css";
+
 :root {
   --background-color: var(--background-color-light);
   --header-divider-color: var(--header-divider-color-light);
@@ -16,11 +19,16 @@
   }
 }
 
+h1 {
+  /* TODO: Extract this magic number. */
+  margin-block: 0.25em;
+}
+
 a {
   color: inherit;
 }
 
-.hide {
+.hidden {
   display: none;
 }
 

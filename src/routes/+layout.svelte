@@ -7,8 +7,6 @@
 	  PUBLIC_SOCIAL_GITHUB_URL,
 	} from "$env/static/public";
 	import { locales, localizeHref } from "$lib/paraglide/runtime";
-	import "../app.css";
-	import "../style/cssremedy.css";
 	import "../style/main.css";
 
 	let { children } = $props();

@@ -1688,9 +1688,9 @@
 "data.log.title" = "journal-with-witch"
 "data.log.rating" = 8
 
-[["data.logs"]]
-"data.log.title" = "ai-ren"
-"data.log.rating" = 10
+# [["data.logs"]]
+# "data.log.title" = "ai-ren"
+# "data.log.rating" = 10
 
 [["data.logs"]]
 "data.log.title" = "soloist-in-a-cage"

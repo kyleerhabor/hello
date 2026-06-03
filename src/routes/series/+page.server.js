@@ -1,4 +1,3 @@
-import { key, unique } from "$lib/index";
 import { getLocale } from "$lib/paraglide/runtime";
 import * as client from "$lib/server";
 import * as server from "$lib/server/index";

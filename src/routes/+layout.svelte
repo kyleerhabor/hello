@@ -21,6 +21,11 @@
     </a>
 		<nav>
 			<ul class="navigation">
+				<!-- <li>
+					<a href="{resolve("/cv")}">
+						CV
+					</a>
+				</li> -->
 				<li>
           <a href={resolve("/series")}>
             Series Recs.

@@ -1,3 +1,166 @@
+"data.cv.name" = "Kyle Erhabor"
+"data.cv.title" = "Software Developer"
+
+[["data.resources"]]
+"data.resource.id" = "anidb-anime"
+"data.resource.value" = 0
+
+[["data.resources"]]
+"data.resource.id" = "mangaupdates-series"
+"data.resource.value" = 1
+
+[["data.resources"]]
+"data.resource.id" = "novelupdates-series"
+"data.resource.value" = 2
+
+[["data.resources"]]
+"data.resource.id" = "mydramalist"
+"data.resource.value" = 3
+
+[["data.resources"]]
+"data.resource.id" = "email"
+"data.resource.value" = 4
+
+[["data.resources"]]
+"data.resource.id" = "github-user"
+"data.resource.value" = 5
+
+[["data.resources"]]
+"data.resource.id" = "github-repository"
+"data.resource.value" = 6
+
+[["data.resources"]]
+"data.resource.id" = "linkedin-user"
+"data.resource.value" = 7
+
+[["data.date-statuses"]]
+"data.date-status.id" = "completed"
+"data.date-status.value" = 0
+
+[["data.date-statuses"]]
+"data.date-status.id" = "present"
+"data.date-status.value" = 1
+
+[["data.date-statuses"]]
+"data.date-status.id" = "expected"
+"data.date-status.value" = 2
+
+[["data.cv.contacts"]]
+"data.cv.contact.resource" = "email"
+"data.cv.contact.resource.email.address" = "kyleerhabor@gmail.com"
+
+[["data.cv.contacts"]]
+"data.cv.contact.resource" = "github-user"
+"data.cv.contact.resource.github-user.username" = "kyleerhabor"
+
+[["data.cv.contacts"]]
+"data.cv.contact.resource" = "linkedin-user"
+"data.cv.contact.resource.linkedin.username" = "kyleerhabor"
+
+[["data.cv.experiences"]]
+"data.cv.experience.title" = "Software Developer"
+"data.cv.experience.organization" = "Fidelity Investments"
+"data.cv.experience.location" = "Merrimack, NH"
+"data.cv.experience.start-date" = "2026-08"
+"data.cv.experience.start-date-status" = "expected"
+
+[["data.cv.experiences"]]
+"data.cv.experience.title" = "Software Developer Intern"
+"data.cv.experience.organization" = "Fidelity Investments"
+"data.cv.experience.location" = "Merrimack, NH"
+"data.cv.experience.start-date" = "2025-06"
+"data.cv.experience.start-date-status" = "completed"
+"data.cv.experience.end-date" = "2022-08"
+"data.cv.experience.end-date-status" = "completed"
+
+[["data.cv.experiences"]]
+"data.cv.experience.title" = "IT Technician"
+"data.cv.experience.organization" = "Town of Milton"
+"data.cv.experience.location" = "Milton, MA"
+"data.cv.experience.start-date" = "2022-06"
+"data.cv.experience.start-date-status" = "completed"
+"data.cv.experience.end-date" = "2022-09"
+"data.cv.experience.end-date-status" = "completed"
+
+[["data.cv.activities"]]
+"data.cv.activity.title" = "Technical Lead"
+"data.cv.activity.organization" = "Suffolk Programming, AI & Research Club (SPARC)"
+"data.cv.activity.location" = "Boston, MA"
+"data.cv.activity.start-date" = "2025-09"
+"data.cv.activity.start-date-status" = "completed"
+"data.cv.activity.end-date" = "2026-05"
+"data.cv.activity.end-date-status" = "completed"
+
+[["data.cv.activities"]]
+"data.cv.activity.title" = "Lead Software Developer"
+"data.cv.activity.organization" = "Suffolk University Computational Science & Mathematics Association (CSMA)"
+"data.cv.activity.location" = "Boston, MA"
+"data.cv.activity.start-date" = "2025-01"
+"data.cv.activity.start-date-status" = "completed"
+"data.cv.activity.end-date" = "2025-05"
+"data.cv.activity.end-date-status" = "completed"
+
+[["data.cv.activities"]]
+"data.cv.activity.title" = "Web Developer"
+"data.cv.activity.organization" = "Suffolk University Computer Science Club"
+"data.cv.activity.location" = "Boston, MA"
+"data.cv.activity.start-date" = "2024-01"
+"data.cv.activity.start-date-status" = "completed"
+"data.cv.activity.end-date" = "2024-05"
+"data.cv.activity.end-date-status" = "completed"
+
+[["data.cv.projects"]]
+"data.cv.project.id" = "sampled"
+"data.cv.project.name" = "Sampled"
+"data.cv.project.start-date" = "2024-10"
+"data.cv.project.start-date-status" = "completed"
+
+[["data.cv.projects"]]
+"data.cv.project.id" = "advance"
+"data.cv.project.name" = "Advance"
+"data.cv.project.start-date" = "2023-08"
+"data.cv.project.start-date-status" = "completed"
+
+[["data.cv.projects"]]
+"data.cv.project.id" = "hello"
+"data.cv.project.name" = "Hello"
+"data.cv.project.start-date" = "2023-07"
+"data.cv.project.start-date-status" = "completed"
+
+[["data.cv.project.links"]]
+"data.cv.project.link.project" = "sampled"
+"data.cv.project.link.resource" = "github-repository"
+"data.cv.project.link.resource.github-repository.username" = "kyleerhabor"
+"data.cv.project.link.resource.github-repository.repository" = "sampled"
+
+[["data.cv.project.links"]]
+"data.cv.project.link.project" = "advance"
+"data.cv.project.link.resource" = "github-repository"
+"data.cv.project.link.resource.github-repository.username" = "kyleerhabor"
+"data.cv.project.link.resource.github-repository.repository" = "advance"
+
+[["data.cv.project.links"]]
+"data.cv.project.link.project" = "hello"
+"data.cv.project.link.resource" = "github-repository"
+"data.cv.project.link.resource.github-repository.username" = "kyleerhabor"
+"data.cv.project.link.resource.github-repository.repository" = "hello"
+
+[["data.cv.educations"]]
+"data.cv.education.id" = "suffolk-university-bachelors"
+"data.cv.education.organization" = "Suffolk University"
+"data.cv.education.location" = "Boston, MA"
+"data.cv.education.degree" = "Bachelor of Science"
+"data.cv.education.end-date" = "2026-05"
+"data.cv.education.end-date-status" = "completed"
+
+[["data.cv.education.majors"]]
+"data.cv.education.major.education" = "suffolk-university-bachelors"
+"data.cv.education.major.name" = "Computer Science"
+
+[["data.cv.education.minors"]]
+"data.cv.education.minor.education" = "suffolk-university-bachelors"
+"data.cv.education.minor.name" = "Pure Mathematics"
+
 [["data.mediums"]]
 "data.medium.id" = "film"
 "data.medium.value" = 0
@@ -37,22 +200,6 @@
 [["data.mediums"]]
 "data.medium.id" = "manhwa"
 "data.medium.value" = 8
-
-[["data.resources"]]
-"data.resource.id" = "anidb"
-"data.resource.value" = 0
-
-[["data.resources"]]
-"data.resource.id" = "mangaupdates"
-"data.resource.value" = 1
-
-[["data.resources"]]
-"data.resource.id" = "novelupdates"
-"data.resource.value" = 2
-
-[["data.resources"]]
-"data.resource.id" = "mydramalist"
-"data.resource.value" = 3
 
 [["data.localizations"]]
 "data.localization.id" = "a-brides-story-name"
@@ -1017,278 +1164,278 @@
 
 [["data.title.links"]]
 "data.title.link.title" = "a-brides-story"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "9knig0a"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "9knig0a"
 
 [["data.title.links"]]
 "data.title.link.title" = "ai-ren"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "j34nugp"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "j34nugp"
 
 [["data.title.links"]]
 "data.title.link.title" = "akira"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 28
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 28
 
 [["data.title.links"]]
 "data.title.link.title" = "banner-of-the-stars-anime"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 4
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 4
 
 [["data.title.links"]]
 "data.title.link.title" = "banner-of-the-stars-novel"
-"data.title.link.resource" = "novelupdates"
-"data.title.link.resource.novelupdates.slug" = "seikai-no-senki"
+"data.title.link.resource" = "novelupdates-series"
+"data.title.link.resource.novelupdates-series.slug" = "seikai-no-senki"
 
 [["data.title.links"]]
 "data.title.link.title" = "blade-of-the-immortal"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "dhtyiyk"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "dhtyiyk"
 
 [["data.title.links"]]
 "data.title.link.title" = "blood-on-the-tracks"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "1l6iro1"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "1l6iro1"
 
 [["data.title.links"]]
 "data.title.link.title" = "bungaku-shoujo"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 6959
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 6959
 
 [["data.title.links"]]
 "data.title.link.title" = "bunny-drop"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 8211
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 8211
 
 [["data.title.links"]]
 "data.title.link.title" = "castle-in-the-sky"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 331
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 331
 
 [["data.title.links"]]
 "data.title.link.title" = "cowboy-bebop"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 23
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 23
 
 [["data.title.links"]]
 "data.title.link.title" = "crest-of-the-stars-anime"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 1
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 1
 
 [["data.title.links"]]
 "data.title.link.title" = "crest-of-the-stars-novel"
-"data.title.link.resource" = "novelupdates"
-"data.title.link.resource.novelupdates.slug" = "seikai-no-monshou"
+"data.title.link.resource" = "novelupdates-series"
+"data.title.link.resource.novelupdates-series.slug" = "seikai-no-monshou"
 
 [["data.title.links"]]
 "data.title.link.title" = "eden-of-the-east"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 6238
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 6238
 
 [["data.title.links"]]
 "data.title.link.title" = "ergo-proxy"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 3302
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 3302
 
 [["data.title.links"]]
 "data.title.link.title" = "eureka-seven"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 2826
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 2826
 
 [["data.title.links"]]
 "data.title.link.title" = "from-the-new-world"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 9002
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 9002
 
 [["data.title.links"]]
 "data.title.link.title" = "galaxy-express-999"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 484
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 484
 
 [["data.title.links"]]
 "data.title.link.title" = "genshiken"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 1783
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 1783
 
 [["data.title.links"]]
 "data.title.link.title" = "girls-last-tour"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "txtyi0t"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "txtyi0t"
 
 [["data.title.links"]]
 "data.title.link.title" = "gurren-lagann"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 4575
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 4575
 
 [["data.title.links"]]
 "data.title.link.title" = "haibane-renmei"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 271
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 271
 
 [["data.title.links"]]
 "data.title.link.title" = "heaven-officials-blessing"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 15648
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 15648
 
 [["data.title.links"]]
 "data.title.link.title" = "heavenly-delusion"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 17671
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 17671
 
 [["data.title.links"]]
 "data.title.link.title" = "heesu-in-class-2"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "tekt6hg"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "tekt6hg"
 
 [["data.title.links"]]
 "data.title.link.title" = "hell-girl"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 3291
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 3291
 
 [["data.title.links"]]
 "data.title.link.title" = "hirayasumi"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "0477u6m"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "0477u6m"
 
 [["data.title.links"]]
 "data.title.link.title" = "humanity-has-declined"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 8276
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 8276
 
 [["data.title.links"]]
 "data.title.link.title" = "journal-with-witch"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 18610
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 18610
 
 [["data.title.links"]]
 "data.title.link.title" = "kaiba"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 5673
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 5673
 
 [["data.title.links"]]
 "data.title.link.title" = "katanagatari"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 6613
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 6613
 
 [["data.title.links"]]
 "data.title.link.title" = "key-the-metal-idol"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 302
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 302
 
 [["data.title.links"]]
 "data.title.link.title" = "kikis-delivery-service"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 286
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 286
 
 [["data.title.links"]]
 "data.title.link.title" = "kinos-journey-anime"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 575
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 575
 
 [["data.title.links"]]
 "data.title.link.title" = "kinos-journey-novel"
-"data.title.link.resource" = "novelupdates"
-"data.title.link.resource.novelupdates.slug" = "kino-no-tabi-the-beautiful-world"
+"data.title.link.resource" = "novelupdates-series"
+"data.title.link.resource.novelupdates-series.slug" = "kino-no-tabi-the-beautiful-world"
 
 [["data.title.links"]]
 "data.title.link.title" = "land-of-the-lustrous-anime"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 13165
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 13165
 
 [["data.title.links"]]
 "data.title.link.title" = "land-of-the-lustrous-manga"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "al1i9l2"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "al1i9l2"
 
 [["data.title.links"]]
 "data.title.link.title" = "legend-of-the-galactic-heroes"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 584
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 584
 
 [["data.title.links"]]
 "data.title.link.title" = "link-click"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 16290
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 16290
 
 [["data.title.links"]]
 "data.title.link.title" = "living-for-the-day-after-tomorrow"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 4339
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 4339
 
 [["data.title.links"]]
 "data.title.link.title" = "made-in-abyss-anime"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 12681
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 12681
 
 [["data.title.links"]]
 "data.title.link.title" = "made-in-abyss-manga"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "aippxsa"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "aippxsa"
 
 [["data.title.links"]]
 "data.title.link.title" = "memories-of-emanon"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "pd39206"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "pd39206"
 
 [["data.title.links"]]
 "data.title.link.title" = "millennium-actress"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 570
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 570
 
 [["data.title.links"]]
 "data.title.link.title" = "mob-psycho-100"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 11803
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 11803
 
 [["data.title.links"]]
 "data.title.link.title" = "mononoke"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 5113
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 5113
 
 [["data.title.links"]]
 "data.title.link.title" = "moribito-guardian-of-the-spirit"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 4403
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 4403
 
 [["data.title.links"]]
 "data.title.link.title" = "mushishi"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 3433
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 3433
 
 [["data.title.links"]]
 "data.title.link.title" = "nausicaa-of-the-valley-of-the-wind"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "mpruuyl"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "mpruuyl"
 
 [["data.title.links"]]
 "data.title.link.title" = "niea-under-7"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 46
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 46
 
 [["data.title.links"]]
 "data.title.link.title" = "noir"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 13
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 13
 
 [["data.title.links"]]
 "data.title.link.title" = "now-and-then-here-and-there"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 114
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 114
 
 [["data.title.links"]]
 "data.title.link.title" = "outlaw-star"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 171
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 171
 
 [["data.title.links"]]
 "data.title.link.title" = "ping-pong-the-animation"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 10400
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 10400
 
 [["data.title.links"]]
 "data.title.link.title" = "princess-mononoke"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 7
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 7
 
 [["data.title.links"]]
 "data.title.link.title" = "raise-the-red-lantern"
@@ -1297,108 +1444,108 @@
 
 [["data.title.links"]]
 "data.title.link.title" = "samurai-champloo"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 1543
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 1543
 
 [["data.title.links"]]
 "data.title.link.title" = "samurai-x-trust-and-betrayal"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 73
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 73
 
 [["data.title.links"]]
 "data.title.link.title" = "shishunki-bitter-change"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "xr8u1mi"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "xr8u1mi"
 
 [["data.title.links"]]
 "data.title.link.title" = "solanin"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "9x44hfp"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "9x44hfp"
 
 [["data.title.links"]]
 "data.title.link.title" = "soloist-in-a-cage"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "4vpr2by"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "4vpr2by"
 
 [["data.title.links"]]
 "data.title.link.title" = "song-of-the-long-march"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "tkrf8sc"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "tkrf8sc"
 
 [["data.title.links"]]
 "data.title.link.title" = "sonny-boy"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 16282
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 16282
 
 [["data.title.links"]]
 "data.title.link.title" = "space-dandy"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 10027
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 10027
 
 [["data.title.links"]]
 "data.title.link.title" = "spice-and-wolf"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 5406
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 5406
 
 [["data.title.links"]]
 "data.title.link.title" = "the-case-of-hana-and-alice"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 10886
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 10886
 
 [["data.title.links"]]
 "data.title.link.title" = "the-irresponsible-captain-tylor"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 18
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 18
 
 [["data.title.links"]]
 "data.title.link.title" = "the-music-of-marie"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "z5x9z9p"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "z5x9z9p"
 
 [["data.title.links"]]
 "data.title.link.title" = "the-summer-hikaru-died"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "4ipwoed"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "4ipwoed"
 
 [["data.title.links"]]
 "data.title.link.title" = "the-tale-of-the-princess-kaguya"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 9515
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 9515
 
 [["data.title.links"]]
 "data.title.link.title" = "trigun"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 53
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 53
 
 [["data.title.links"]]
 "data.title.link.title" = "violet-evergarden"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 12138
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 12138
 
 [["data.title.links"]]
 "data.title.link.title" = "wandering-emanon"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "epithia"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "epithia"
 
 [["data.title.links"]]
 "data.title.link.title" = "witch-hat-atelier"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "c8mp52y"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "c8mp52y"
 
 [["data.title.links"]]
 "data.title.link.title" = "wonder-cat-kyuu-chan"
-"data.title.link.resource" = "mangaupdates"
-"data.title.link.resource.mangaupdates.id" = "3bwjr4i"
+"data.title.link.resource" = "mangaupdates-series"
+"data.title.link.resource.mangaupdates-series.id" = "3bwjr4i"
 
 [["data.title.links"]]
 "data.title.link.title" = "yugo-the-negotiator"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 1429
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 1429
 
 [["data.title.links"]]
 "data.title.link.title" = "aria"
-"data.title.link.resource" = "anidb"
-"data.title.link.resource.anidb.id" = 2659
+"data.title.link.resource" = "anidb-anime"
+"data.title.link.resource.anidb-anime.id" = 2659
 
 [["data.logs"]]
 "data.log.title" = "spice-and-wolf"

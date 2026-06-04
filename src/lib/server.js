@@ -35,6 +35,7 @@ export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "data.localization.message.
 // CV
 export const KEY_DATA_CV_NAME = "data.cv.name";
 export const KEY_DATA_CV_TITLE = "data.cv.title";
+export const KEY_DATA_CV_LOCATION = "cv.location";
 
 // CV Contacts
 export const KEY_DATA_CV_CONTACTS = "data.cv.contacts";
@@ -123,6 +124,3 @@ export const KEY_DATA_LOGS = "data.logs";
 export const KEY_DATA_LOG_ID = "data.log.id";
 export const KEY_DATA_LOG_TITLE = "data.log.title";
 export const KEY_DATA_LOG_RATING = "data.log.rating";
-
-// Pages
-export const KEY_PAGE_CV = "page.cv";

@@ -148,8 +148,8 @@
       </thead>
       <tbody>
         {#each logs as log (log[server.KEY_DATA_LOG_ID])}
-          {@const title = data[server.KEY_DATA_TITLES][log[server.KEY_DATA_LOG_TITLE]]}
-          {@const mediumDisplay = { value: title[server.KEY_DATA_TITLE_MEDIUM] }}
+          {const title = $derived(data[server.KEY_DATA_TITLES][log[server.KEY_DATA_LOG_TITLE]])}
+          {const mediumDisplay = $derived({ value: title[server.KEY_DATA_TITLE_MEDIUM] })}
           <tr class="row">
             <!-- TODO: Note accessibility improvements from using th over td.  -->
             <th class="cell title" scope="row">
@@ -163,13 +163,16 @@
             </td>
             <td class="cell links">
               {#each title[server.KEY_DATA_TITLE_LINKS] as link (link[server.KEY_DATA_TITLE_LINK_ID])}
-                {@const linkDisplay = {
-                  resource: link[server.KEY_DATA_TITLE_LINK_RESOURCE],
-                  anidbAnimeID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ANIME_ID],
-                  mangaupdatesSeriesID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_SERIES_ID],
-                  novelupdatesSeriesSlug: link[server.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SERIES_SLUG],
-                  mydramalistID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID],
-                }}
+                {const linkDisplay = $derived(
+                  {
+                    resource: link[server.KEY_DATA_TITLE_LINK_RESOURCE],
+                    anidbAnimeID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ANIME_ID],
+                    mangaupdatesSeriesID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_SERIES_ID],
+                    novelupdatesSeriesSlug: link[server.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SERIES_SLUG],
+                    mydramalistID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID],
+                  },
+                // eslint-disable-next-line @stylistic/semi
+                )}
                 <div>
                   <a href={displayLinkURL(linkDisplay)} rel="external" target="_blank">
                     {displayLinkName(linkDisplay)}

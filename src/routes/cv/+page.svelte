@@ -141,34 +141,45 @@
 </svelte:head>
 
 <div class="page">
-  <h1>{data[server.KEY_PAGE_CV][server.KEY_DATA_CV_NAME]}</h1>
-  <p>{data[server.KEY_PAGE_CV][server.KEY_DATA_CV_TITLE]}</p>
+  <h1>{data[server.KEY_DATA_CV_NAME]}</h1>
+  <p>{data[server.KEY_DATA_CV_TITLE]}</p>
   <ol>
-    {#each data[server.KEY_PAGE_CV][server.KEY_DATA_CV_CONTACTS] as contact (contact[server.KEY_DATA_CV_CONTACT_ID])}
-      {@const contactDisplay = {
-        resource: contact[server.KEY_DATA_CV_CONTACT_RESOURCE],
-        emailAddress: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_EMAIL_ADDRESS],
-        githubUsername: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_GITHUB_USER_USERNAME],
-        linkedinUsername: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_LINKEDIN_USERNAME],
-      }}
-      <a href="{displayContactURL(contactDisplay)}">
-        {displayContactName(contactDisplay)}
-      </a>
+    <li>
+      {data[server.KEY_DATA_CV_LOCATION]}
+    </li>
+    {#each data[server.KEY_DATA_CV_CONTACTS] as contact (contact[server.KEY_DATA_CV_CONTACT_ID])}
+      {const contactDisplay = $derived(
+        {
+          resource: contact[server.KEY_DATA_CV_CONTACT_RESOURCE],
+          emailAddress: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_EMAIL_ADDRESS],
+          githubUsername: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_GITHUB_USER_USERNAME],
+          linkedinUsername: contact[server.KEY_DATA_CV_CONTACT_RESOURCE_LINKEDIN_USERNAME],
+        },
+      // eslint-disable-next-line @stylistic/semi
+      )}
+      <li>
+        <a href="{displayContactURL(contactDisplay)}">
+          {displayContactName(contactDisplay)}
+        </a>
+      </li>
     {/each}
   </ol>
   <h2>{m.proud_early_porpoise_fold()}</h2>
   <ol>
-    {#each data[server.KEY_PAGE_CV][server.KEY_DATA_CV_EXPERIENCES] as exp (exp[server.KEY_DATA_CV_EXPERIENCE_ID])}
-      {@const date = {
-        start: {
-          date: exp[server.KEY_DATA_CV_EXPERIENCE_START_DATE],
-          status: exp[server.KEY_DATA_CV_EXPERIENCE_START_DATE_STATUS],
+    {#each data[server.KEY_DATA_CV_EXPERIENCES] as exp (exp[server.KEY_DATA_CV_EXPERIENCE_ID])}
+      {const date = $derived(
+        {
+          start: {
+            date: exp[server.KEY_DATA_CV_EXPERIENCE_START_DATE],
+            status: exp[server.KEY_DATA_CV_EXPERIENCE_START_DATE_STATUS],
+          },
+          end: {
+            date: exp[server.KEY_DATA_CV_EXPERIENCE_END_DATE],
+            status: exp[server.KEY_DATA_CV_EXPERIENCE_END_DATE_STATUS],
+          },
         },
-        end: {
-          date: exp[server.KEY_DATA_CV_EXPERIENCE_END_DATE],
-          status: exp[server.KEY_DATA_CV_EXPERIENCE_END_DATE_STATUS],
-        },
-      }}
+      // eslint-disable-next-line @stylistic/semi
+      )}
       <li>
         <h3>{exp[server.KEY_DATA_CV_EXPERIENCE_TITLE]}</h3>
         <p>{exp[server.KEY_DATA_CV_EXPERIENCE_ORGANIZATION]}</p>
@@ -179,17 +190,20 @@
   </ol>
   <h2>Activities</h2>
   <ol>
-    {#each data[server.KEY_PAGE_CV][server.KEY_DATA_CV_ACTIVITIES] as activity (activity[server.KEY_DATA_CV_ACTIVITY_ID])}
-      {@const date = {
-        start: {
-          date: activity[server.KEY_DATA_CV_ACTIVITY_START_DATE],
-          status: activity[server.KEY_DATA_CV_ACTIVITY_START_DATE_STATUS],
+    {#each data[server.KEY_DATA_CV_ACTIVITIES] as activity (activity[server.KEY_DATA_CV_ACTIVITY_ID])}
+      {const date = $derived(
+        {
+          start: {
+            date: activity[server.KEY_DATA_CV_ACTIVITY_START_DATE],
+            status: activity[server.KEY_DATA_CV_ACTIVITY_START_DATE_STATUS],
+          },
+          end: {
+            date: activity[server.KEY_DATA_CV_ACTIVITY_END_DATE],
+            status: activity[server.KEY_DATA_CV_ACTIVITY_END_DATE_STATUS],
+          },
         },
-        end: {
-          date: activity[server.KEY_DATA_CV_ACTIVITY_END_DATE],
-          status: activity[server.KEY_DATA_CV_ACTIVITY_END_DATE_STATUS],
-        },
-      }}
+      // eslint-disable-next-line @stylistic/semi
+      )}
       <li>
         <h3>{activity[server.KEY_DATA_CV_ACTIVITY_TITLE]}</h3>
         <p>{activity[server.KEY_DATA_CV_ACTIVITY_ORGANIZATION]}</p>
@@ -200,27 +214,33 @@
   </ol>
   <h2>Projects</h2>
   <ol>
-    {#each data[server.KEY_PAGE_CV][server.KEY_DATA_CV_PROJECTS] as project (project[server.KEY_DATA_CV_PROJECT_ID])}
-      {@const date = {
-        start: {
-          date: project[server.KEY_DATA_CV_PROJECT_START_DATE],
-          status: project[server.KEY_DATA_CV_PROJECT_START_DATE_STATUS],
+    {#each data[server.KEY_DATA_CV_PROJECTS] as project (project[server.KEY_DATA_CV_PROJECT_ID])}
+      {const date = $derived(
+        {
+          start: {
+            date: project[server.KEY_DATA_CV_PROJECT_START_DATE],
+            status: project[server.KEY_DATA_CV_PROJECT_START_DATE_STATUS],
+          },
+          end: {
+            date: project[server.KEY_DATA_CV_PROJECT_END_DATE],
+            status: project[server.KEY_DATA_CV_PROJECT_END_DATE_STATUS],
+          },
         },
-        end: {
-          date: project[server.KEY_DATA_CV_PROJECT_END_DATE],
-          status: project[server.KEY_DATA_CV_PROJECT_END_DATE_STATUS],
-        },
-      }}
+      // eslint-disable-next-line @stylistic/semi
+      )}
       <li>
         <h3>{project[server.KEY_DATA_CV_PROJECT_NAME]}</h3>
         <p>{displayDate(date)}</p>
         <ol>
           {#each project[server.KEY_DATA_CV_PROJECT_LINKS] as link (link[server.KEY_DATA_CV_PROJECT_LINK_ID])}
-            {@const projectDisplay = {
-              resource: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE],
-              githubUsername: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE_GITHUB_REPOSITORY_USERNAME],
-              githubRepository: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE_GITHUB_REPOSITORY_REPOSITORY],
-            }}
+            {const projectDisplay = $derived(
+              {
+                resource: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE],
+                githubUsername: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE_GITHUB_REPOSITORY_USERNAME],
+                githubRepository: link[server.KEY_DATA_CV_PROJECT_LINK_RESOURCE_GITHUB_REPOSITORY_REPOSITORY],
+              },
+            // eslint-disable-next-line @stylistic/semi
+            )}
             <li>
               <a href="{displayProjectURL(projectDisplay)}">
                 {displayProjectName(projectDisplay)}
@@ -233,17 +253,20 @@
   </ol>
   <h2>Education</h2>
   <ol>
-    {#each data[server.KEY_PAGE_CV][server.KEY_DATA_CV_EDUCATIONS] as education (education[server.KEY_DATA_CV_EDUCATION_ID])}
-      {@const date = {
-        start: {
-          date: education[server.KEY_DATA_CV_EDUCATION_START_DATE],
-          status: education[server.KEY_DATA_CV_EDUCATION_START_DATE_STATUS],
+    {#each data[server.KEY_DATA_CV_EDUCATIONS] as education (education[server.KEY_DATA_CV_EDUCATION_ID])}
+      {const date = $derived(
+        {
+          start: {
+            date: education[server.KEY_DATA_CV_EDUCATION_START_DATE],
+            status: education[server.KEY_DATA_CV_EDUCATION_START_DATE_STATUS],
+          },
+          end: {
+            date: education[server.KEY_DATA_CV_EDUCATION_END_DATE],
+            status: education[server.KEY_DATA_CV_EDUCATION_END_DATE_STATUS],
+          },
         },
-        end: {
-          date: education[server.KEY_DATA_CV_EDUCATION_END_DATE],
-          status: education[server.KEY_DATA_CV_EDUCATION_END_DATE_STATUS],
-        },
-      }}
+      // eslint-disable-next-line @stylistic/semi
+      )}
       <li>
         <h3>{education[server.KEY_DATA_CV_EDUCATION_ORGANIZATION]}</h3>
         <p>{education[server.KEY_DATA_CV_EDUCATION_LOCATION]}</p>

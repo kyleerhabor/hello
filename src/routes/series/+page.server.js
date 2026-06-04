@@ -15,8 +15,8 @@ export function load() {
       data[server.KEY_DATA_LOCALIZATIONS].map((localization) => {
         const id = localization[server.KEY_DATA_LOCALIZATION_ID];
         const result = {
-          [server.KEY_DATA_LOCALIZATION_ID]: id,
-          [server.KEY_DATA_LOCALIZATION_MESSAGES]: R.indexBy(
+          [client.KEY_DATA_LOCALIZATION_ID]: id,
+          [client.KEY_DATA_LOCALIZATION_MESSAGES]: R.indexBy(
             R.prop(client.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE),
             data[server.KEY_DATA_LOCALIZATION_MESSAGES]
               .filter((message) => message[server.KEY_DATA_LOCALIZATION_MESSAGE_LOCALIZATION] == id)

@@ -1,9 +1,5 @@
-export function isZero(x) {
-  return x === 0;
-}
-
 export function isEven(x) {
-  return isZero(x % 2);
+  return x % 2 === 0;
 }
 
 export function isLocalURL(url, base) {

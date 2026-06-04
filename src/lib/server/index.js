@@ -114,12 +114,7 @@ export const KEY_DATA_LOGS = "logs";
 export const KEY_DATA_LOG_TITLE = "log.title";
 export const KEY_DATA_LOG_RATING = "log.rating";
 
-const parseData = R.once(() => toml.parse(data));
-
-export function parseConfig() {
-  return parseData();
-}
-
+export const parseConfig = R.once(() => toml.parse(data));
 export const resource = R.curry((id, resources) => R.path([id, KEY_DATA_RESOURCE_VALUE], resources));
 export const dateStatus = R.curry((id, statuses) => R.path([id, KEY_DATA_DATE_STATUS_VALUE], statuses));
 export const medium = R.curry((id, mediums) => R.path([id, KEY_DATA_MEDIUM_VALUE], mediums));

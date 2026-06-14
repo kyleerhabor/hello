@@ -6,7 +6,7 @@ import * as R from "ramda";
 /** @type {import('./$types').PageServerLoad]} */
 export function load() {
   const locale = getLocale();
-  const data = server.parseConfig();
+  const data = server.parseData();
   const resources = R.indexBy(R.prop(server.KEY_DATA_RESOURCE_ID), data[server.KEY_DATA_RESOURCES]);
   const mediums = R.indexBy(R.prop(server.KEY_DATA_MEDIUM_ID), data[server.KEY_DATA_MEDIUMS]);  
   const result = {

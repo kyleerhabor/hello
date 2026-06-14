@@ -418,6 +418,12 @@
 [["localizations"]]
 "localization.id" = "aria-name"
 
+[["localizations"]]
+"localization.id" = "erin-name"
+
+[["localizations"]]
+"localization.id" = "great-teacher-onizuka-name"
+
 [["localization.messages"]]
 "localization.message.localization" = "a-brides-story-name"
 "localization.message.locale" = "en"
@@ -777,6 +783,16 @@
 "localization.message.localization" = "aria-name"
 "localization.message.locale" = "en"
 "localization.message.message" = "Aria"
+
+[["localization.messages"]]
+"localization.message.localization" = "erin-name"
+"localization.message.locale" = "en"
+"localization.message.message" = "Erin"
+
+[["localization.messages"]]
+"localization.message.localization" = "great-teacher-onizuka-name"
+"localization.message.locale" = "en"
+"localization.message.message" = "Great Teacher Onizuka"
 
 [["titles"]]
 "title.id" = "a-brides-story"
@@ -1161,6 +1177,16 @@
 [["titles"]]
 "title.id" = "aria"
 "title.name" = "aria-name"
+"title.medium" = "anime"
+
+[["titles"]]
+"title.id" = "erin"
+"title.name" = "erin-name"
+"title.medium" = "anime"
+
+[["titles"]]
+"title.id" = "great-teacher-onizuka"
+"title.name" = "great-teacher-onizuka-name"
 "title.medium" = "anime"
 
 [["title.links"]]
@@ -1548,6 +1574,16 @@
 "title.link.resource" = "anidb-anime"
 "title.link.resource.anidb-anime.id" = 2659
 
+[["title.links"]]
+"title.link.title" = "erin"
+"title.link.resource" = "anidb-anime"
+"title.link.resource.anidb-anime.id" = 6187
+
+[["title.links"]]
+"title.link.title" = "great-teacher-onizuka"
+"title.link.resource" = "anidb-anime"
+"title.link.resource.anidb-anime.id" = 191
+
 [["logs"]]
 "log.title" = "spice-and-wolf"
 "log.rating" = 7
@@ -1855,3 +1891,11 @@
 [["logs"]]
 "log.title" = "aria"
 "log.rating" = 7
+
+[["logs"]]
+"log.title" = "erin"
+"log.rating" = 8
+
+[["logs"]]
+"log.title" = "great-teacher-onizuka"
+"log.rating" = 8

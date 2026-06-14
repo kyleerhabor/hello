@@ -4,7 +4,7 @@ import * as R from "ramda";
 
 /** @type {import('./$types').PageServerLoad]} */
 export function load() {
-  const data = server.parseConfig();
+  const data = server.parseData();
   const resources = R.indexBy(R.prop(server.KEY_DATA_RESOURCE_ID), data[server.KEY_DATA_RESOURCES]);
   const dateStatuses = R.indexBy(R.prop(server.KEY_DATA_DATE_STATUS_ID), data[server.KEY_DATA_DATE_STATUSES]);
   const result = {

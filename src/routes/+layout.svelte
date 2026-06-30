@@ -6,6 +6,7 @@
 	  PUBLIC_SOCIAL_EMAIL_ADDRESS,
 	  PUBLIC_SOCIAL_GITHUB_URL,
 	} from "$env/static/public";
+	import { m } from "$lib/paraglide/messages";
 	import { locales, localizeHref } from "$lib/paraglide/runtime";
 	import "../style/main.css";
 
@@ -13,7 +14,7 @@
 </script>
 
 <div class="header-parent">
-	<header class="header container">
+	<header class="container header">
 		<a class="name-link" href={resolve("/")}>
       <h1 class="name">
         {PUBLIC_NAME}
@@ -27,8 +28,13 @@
 					</a>
 				</li> -->
 				<li>
+          <a href={resolve("/articles")}>
+            {m.nav_link_articles()}
+          </a>
+        </li>
+				<li>
           <a href={resolve("/series")}>
-            Series Recs.
+            {m.nav_link_series()}
           </a>
         </li>
 				<li>
@@ -36,19 +42,19 @@
         </li>
 				<li>
           <a href="mailto:{PUBLIC_SOCIAL_EMAIL_ADDRESS}">
-            Email
+            {m.nav_link_email()}
           </a>
         </li>
 				<li>
 					<a href={PUBLIC_SOCIAL_GITHUB_URL} rel="external" target="_blank">
-            GitHub
+            {m.nav_link_github()}
           </a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 </div>
-<main class="container">
+<main class="container content">
   {@render children()}
 </main>
 <div style="display:none">
@@ -68,9 +74,9 @@
 	}
 
 	.container {
-		max-width: 800px;
+    max-width: var(--page-max-width);
 		margin: auto;
-		padding-inline: 16px;
+	  padding-inline: var(--page-padding-inline);
 	}
 
 	.header-parent {
@@ -78,8 +84,8 @@
 		top: 0;
 		background-color: var(--background-color);
 		z-index: 1;
-		opacity: 0.95;
-		border-bottom: 1px solid var(--header-divider-color);
+		opacity: var(--header-opacity);
+		border-bottom: var(--border-width) solid var(--separator-color);
 	}
 
 	.header {
@@ -87,7 +93,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 8px;
+		gap: var(--header-gap);
 	}
 
 	@media (min-width: 400px) {
@@ -107,7 +113,7 @@
 	}
 
 	.name {
-		font-size: 1.25em;
+	  font-size: var(--font-size-xl);
 		font-weight: normal;
 		margin-block-end: 0;
 	}
@@ -120,7 +126,7 @@
 
 	.navigation {
 		display: flex;
-		gap: 6px;
+		gap: var(--nav-gap);
 		padding-inline-start: 0;
 		margin-block-start: 0;
 	}
@@ -129,5 +135,9 @@
 		.navigation {
 			margin-block-start: revert;
 		}
+	}
+
+	.content {
+    margin-block: var(--spacing-base);
 	}
 </style>

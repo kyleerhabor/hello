@@ -25,6 +25,8 @@ export const DATA_MEDIUM_VALUE_MANHUA = 7;
 export const DATA_MEDIUM_VALUE_MANHWA = 8;
 
 // Localizations
+//
+// TODO: Remove.
 export const KEY_DATA_LOCALIZATIONS = "data.localizations";
 export const KEY_DATA_LOCALIZATION_ID = "data.localization.id";
 export const KEY_DATA_LOCALIZATION_MESSAGES = "data.localization.messages";
@@ -32,10 +34,13 @@ export const KEY_DATA_LOCALIZATION_MESSAGE_ID = "data.localization.message.id";
 export const KEY_DATA_LOCALIZATION_MESSAGE_LOCALE = "data.localization.message.locale";
 export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "data.localization.message.message";
 
+// Home
+export const KEY_DATA_HOME_CONTENT = "data.home.content";
+
 // CV
 export const KEY_DATA_CV_NAME = "data.cv.name";
 export const KEY_DATA_CV_TITLE = "data.cv.title";
-export const KEY_DATA_CV_LOCATION = "cv.location";
+export const KEY_DATA_CV_LOCATION = "data.cv.location";
 
 // CV Contacts
 export const KEY_DATA_CV_CONTACTS = "data.cv.contacts";
@@ -124,3 +129,10 @@ export const KEY_DATA_LOGS = "data.logs";
 export const KEY_DATA_LOG_ID = "data.log.id";
 export const KEY_DATA_LOG_TITLE = "data.log.title";
 export const KEY_DATA_LOG_RATING = "data.log.rating";
+
+// Articles
+export const KEY_DATA_ARTICLES = "data.articles";
+export const KEY_DATA_ARTICLE_ID = "data.article.id";
+export const KEY_DATA_ARTICLE_TITLE = "data.article.title";
+export const KEY_DATA_ARTICLE_DATE = "data.article.date";
+export const KEY_DATA_ARTICLE_CONTENT = "data.article.content";

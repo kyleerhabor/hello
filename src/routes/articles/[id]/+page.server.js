@@ -1,0 +1,29 @@
+import * as client from "$lib/server";
+import * as server from "$lib/server/index";
+import { render, renderArticle } from "$lib/server/markdown";
+import { error } from "@sveltejs/kit";
+
+const modules = import.meta.glob("/src/lib/server/resources/articles/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+});
+
+export async function load({ params }) {
+  const data = server.parseData();
+  const article = data[server.KEY_DATA_ARTICLES]
+    .find((article) => article[server.KEY_DATA_ARTICLE_ID] === params.id);
+
+  if (!article) {
+    throw error(404);
+  }
+
+  const result = {
+    ...renderArticle(article),
+    [client.KEY_DATA_ARTICLE_CONTENT]: await render(
+      modules[`/src/lib/server/resources/articles/${article[server.KEY_DATA_ARTICLE_PATH]}.md`],
+    ),
+  };
+
+  return result;
+}

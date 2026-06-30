@@ -4,6 +4,10 @@
 	"cv_contact_email": "Email",
 	"cv_contact_github": "GitHub",
 	"cv_contact_linkedin": "LinkedIn",
+	"nav_link_articles": "Articles",
+	"nav_link_series": "Series Recs.",
+	"nav_link_email": "Email",
+	"nav_link_github": "GitHub",
 	"series_medium_film": "Film",
 	"series_medium_animation": "Animation",
 	"series_medium_anime": "Anime",
@@ -20,6 +24,20 @@
 	"series_page_title": "Series Recs. | {name}",
 	"series_page_header_title": "Series I Recommend",
 	"series_page_header_description": "A collection of films, comics, and other works you may enjoy.",
+  "articles_page_header_title": "Articles | {name}",
+  "articles_page_title": "Articles",
+  "article_page_title": "{title} | {name}",
+  "article_date": [
+		{
+			"declarations": [
+				"input date",
+				"local formattedDate = date: datetime day=numeric month=long year=numeric timeZone=UTC"
+			],
+			"match": {
+				"date=*": "{formattedDate}"
+			}
+		}
+	],
 	"series_column_title": "Title",
 	"series_column_medium": "Medium",
 	"series_column_rating": "Rating",

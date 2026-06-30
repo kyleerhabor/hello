@@ -1,16 +1,50 @@
 :root {
+  /* Colors */
+  --accent-color-light: hsl(310deg, 12%, 58%);
+  --accent-color-dark: hsl(310deg, 15%, 82%);
   --background-color-light: hsl(0deg 0% 100%);
   --background-color-dark: hsl(0deg 0% 12%);
-  --header-divider-color-light: hsl(30deg 0% 60%);
-  --header-divider-color-dark: hsl(30deg 0% 40%);
+  --background-secondary-color-light: hsl(0deg 0% 98%);
+  --background-secondary-color-dark: hsl(0deg 0% 16%);
+  --separator-color-light: hsl(30deg 0% 60%);
+  --separator-color-dark: hsl(30deg 0% 40%);
+  --separator-secondary-color-light: hsl(30deg 0% 80%);
+  --separator-secondary-color-dark: hsl(30deg 0% 28%);
+  --text-secondary-color-light: hsl(0deg 0% 45%);
+  --text-secondary-color-dark: hsl(0deg 0% 55%);
+  --text-tertiary-color-light: hsl(0deg 0% 50%);
+  --text-tertiary-color-dark: hsl(0deg 0% 65%);
+
+  /* Spacing */
+  --spacing-xs: 0.25em;
+  --spacing-sm: 0.375em;
+  --spacing-base: 1em;
+  --spacing-lg: 1.5em;
+  --spacing-xl: 2em;
+
+  /* Typography */
+  --font-size-sm: 0.9em;
+  --font-size-lg: 1.1em;
+  --font-size-xl: 1.25em;
+  --underline-offset: 2px;
+
+  /* Layout */
+  --border-width: 1px;
+  --page-max-width: 800px;
+  --page-padding-inline: 16px;
+
+  /* Header */
+  --header-gap: 8px;
+  --header-opacity: 0.95;
+
+  /* Navigation */
+  --nav-gap: 6px;
+
+  /* Articles */
+  --articles-row-gap: 1.25em;
+
+  /* Series */
   --series-header-table-gap: 1rem;
-  --series-table-header-text-color-light: hsl(0deg 0% 50%);
-  --series-table-header-text-color-dark: hsl(0deg 0% 65%);
-  --series-table-header-background-color-light: hsl(0deg 0% 98%);
-  --series-table-header-background-color-dark: hsl(0deg 0% 16%);
-  --series-table-row-divider-color-light: hsl(30deg 0% 80%);
-  --series-table-row-divider-color-dark: hsl(30deg 0% 28%);
-  --series-table-margin-block: 16px;
   --series-table-border-radius: 12px;
   --series-table-cell-padding-block: 0.625rem;
   --series-table-cell-padding-inline: 0.75rem;

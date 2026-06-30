@@ -1899,3 +1899,9 @@
 [["logs"]]
 "log.title" = "great-teacher-onizuka"
 "log.rating" = 8
+
+[["articles"]]
+"article.id" = "hello-world"
+"article.title" = "Hello..."
+"article.date" = "2026-06-29"
+"article.path" = "hello-world"

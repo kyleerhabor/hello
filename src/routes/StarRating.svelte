@@ -1,6 +1,5 @@
 <script>
   import { isEven } from "$lib/index";
-  import { PUBLIC_STAR_COLOR } from "$env/static/public";
   import Star from "lucide-svelte/icons/star";
   import StarHalf from "lucide-svelte/icons/star-half";
 
@@ -15,15 +14,15 @@
   <div class="stars">
     {#each { length: 5 }, rank}
       <!-- FIXME: strokeWidth scales in Safari -->
-      <Star size={STAR_SIZE} color={PUBLIC_STAR_COLOR} strokeWidth="2" />
+      <Star size={STAR_SIZE} color="var(--accent-color)" strokeWidth="2" />
     {/each}
   </div>
   <div class="stars rating">
     {#each { length: fullStars }}
-      <Star size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
+      <Star size={STAR_SIZE} strokeWidth="0" fill="var(--accent-color)" />
     {/each}
     {#if isHalfStar}
-      <StarHalf size={STAR_SIZE} strokeWidth="0" fill={PUBLIC_STAR_COLOR} />
+      <StarHalf size={STAR_SIZE} strokeWidth="0" fill="var(--accent-color)" />
     {/if}
   </div>
 </div>

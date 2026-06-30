@@ -117,87 +117,81 @@
   </title>
 </svelte:head>
 
-<div class="page">
-  <div class="page-header">
-    <h1>{m.series_page_header_title()}</h1>
-    <p>{m.series_page_header_description()}</p>
-  </div>
-  <div class="table-outline">
-    <table class="table">
-      <colgroup>
-        <col class="title-column" />
-        <col class="medium-column" />
-        <col class="rating-column" />
-        <col class="links-column" />
-      </colgroup>
-      <thead>
+<div class="page-header">
+  <h1>{m.series_page_header_title()}</h1>
+  <p>{m.series_page_header_description()}</p>
+</div>
+<div class="table-outline">
+  <table class="table">
+    <colgroup>
+      <col class="title-column" />
+      <col class="medium-column" />
+      <col class="rating-column" />
+      <col class="links-column" />
+    </colgroup>
+    <thead>
+      <tr class="row">
+        <th scope="col" class="cell header">
+          {m.series_column_title()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_medium()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_rating()}
+        </th>
+        <th scope="col" class="cell header">
+          {m.series_column_links()}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each logs as log (log[server.KEY_DATA_LOG_ID])}
+        {const title = $derived(data[server.KEY_DATA_TITLES][log[server.KEY_DATA_LOG_TITLE]])}
+        {const mediumDisplay = $derived({ value: title[server.KEY_DATA_TITLE_MEDIUM] })}
         <tr class="row">
-          <th scope="col" class="cell header">
-            {m.series_column_title()}
+          <!-- TODO: Note accessibility improvements from using th over td.  -->
+          <th class="cell title" scope="row">
+            {displayTitleName(title, data)}
           </th>
-          <th scope="col" class="cell header">
-            {m.series_column_medium()}
-          </th>
-          <th scope="col" class="cell header">
-            {m.series_column_rating()}
-          </th>
-          <th scope="col" class="cell header">
-            {m.series_column_links()}
-          </th>
+          <td class="cell medium">
+            {displayMediumName(mediumDisplay)}
+          </td>
+          <td class="cell rating">
+            <StarRating rating={log[server.KEY_DATA_LOG_RATING]} />
+          </td>
+          <td class="cell links">
+            {#each title[server.KEY_DATA_TITLE_LINKS] as link (link[server.KEY_DATA_TITLE_LINK_ID])}
+              {const linkDisplay = $derived(
+                {
+                  resource: link[server.KEY_DATA_TITLE_LINK_RESOURCE],
+                  anidbAnimeID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ANIME_ID],
+                  mangaupdatesSeriesID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_SERIES_ID],
+                  novelupdatesSeriesSlug: link[server.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SERIES_SLUG],
+                  mydramalistID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID],
+                },
+              // eslint-disable-next-line @stylistic/semi
+              )}
+              <div>
+                <a href={displayLinkURL(linkDisplay)} rel="external" target="_blank">
+                  {displayLinkName(linkDisplay)}
+                </a>
+              </div>
+            {/each}
+          </td>
         </tr>
-      </thead>
-      <tbody>
-        {#each logs as log (log[server.KEY_DATA_LOG_ID])}
-          {const title = $derived(data[server.KEY_DATA_TITLES][log[server.KEY_DATA_LOG_TITLE]])}
-          {const mediumDisplay = $derived({ value: title[server.KEY_DATA_TITLE_MEDIUM] })}
-          <tr class="row">
-            <!-- TODO: Note accessibility improvements from using th over td.  -->
-            <th class="cell title" scope="row">
-              {displayTitleName(title, data)}
-            </th>
-            <td class="cell medium">
-              {displayMediumName(mediumDisplay)}
-            </td>
-            <td class="cell rating">
-              <StarRating rating={log[server.KEY_DATA_LOG_RATING]} />
-            </td>
-            <td class="cell links">
-              {#each title[server.KEY_DATA_TITLE_LINKS] as link (link[server.KEY_DATA_TITLE_LINK_ID])}
-                {const linkDisplay = $derived(
-                  {
-                    resource: link[server.KEY_DATA_TITLE_LINK_RESOURCE],
-                    anidbAnimeID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_ANIDB_ANIME_ID],
-                    mangaupdatesSeriesID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MANGAUPDATES_SERIES_ID],
-                    novelupdatesSeriesSlug: link[server.KEY_DATA_TITLE_LINK_RESOURCE_NOVELUPDATES_SERIES_SLUG],
-                    mydramalistID: link[server.KEY_DATA_TITLE_LINK_RESOURCE_MYDRAMALIST_ID],
-                  },
-                // eslint-disable-next-line @stylistic/semi
-                )}
-                <div>
-                  <a href={displayLinkURL(linkDisplay)} rel="external" target="_blank">
-                    {displayLinkName(linkDisplay)}
-                  </a>
-                </div>
-              {/each}
-            </td>
-          </tr>
-        {/each}
-      </tbody>
-    </table>
-  </div>
+      {/each}
+    </tbody>
+  </table>
 </div>
 
 <style>
-  .page {
-    margin-block: var(--series-table-margin-block);
-  }
-
   .page-header {
     margin-block-end: var(--series-header-table-gap);
   }
 
   .table-outline {
-    border: 1px solid var(--header-divider-color);
+    border: var(--border-width) solid var(--separator-color);
     border-radius: var(--series-table-border-radius);
     overflow: hidden;
     background: var(--background-color);
@@ -218,13 +212,13 @@
 
   .header {
     font-weight: 600;
-    color: var(--series-table-header-text-color);
-    background: var(--series-table-header-background-color);
-    border-bottom: 1px solid var(--header-divider-color);
+    color: var(--text-tertiary-color);
+    background: var(--background-secondary-color);
+    border-bottom: var(--border-width) solid var(--separator-color);
   }
 
   .row:not(:last-child) .cell {
-    border-bottom: 1px solid var(--series-table-row-divider-color);
+    border-bottom: var(--border-width) solid var(--separator-secondary-color);
   }
 
   .title-column {
@@ -248,6 +242,7 @@
     font-weight: 400;
   }
 
+  /* Matches --series-table-min-width */
   @media (max-width: 500px) {
     .table-outline {
       overflow-x: auto;

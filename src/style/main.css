@@ -2,38 +2,71 @@
 @import "./app.css";
 
 :root {
+  --accent-color: var(--accent-color-light);
   --background-color: var(--background-color-light);
-  --header-divider-color: var(--header-divider-color-light);
-  --series-table-header-text-color: var(--series-table-header-text-color-light);
-  --series-table-header-background-color: var(--series-table-header-background-color-light);
-  --series-table-row-divider-color: var(--series-table-row-divider-color-light);
+  --background-secondary-color: var(--background-secondary-color-light);
+  --separator-color: var(--separator-color-light);
+  --separator-secondary-color: var(--separator-secondary-color-light);
+  --text-secondary-color: var(--text-secondary-color-light);
+  --text-tertiary-color: var(--text-tertiary-color-light);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --accent-color: var(--accent-color-dark);
     --background-color: var(--background-color-dark);
-    --header-divider-color: var(--header-divider-color-dark);
-    --series-table-header-text-color: var(--series-table-header-text-color-dark);
-    --series-table-header-background-color: var(--series-table-header-background-color-dark);
-    --series-table-row-divider-color: var(--series-table-row-divider-color-dark);
+    --background-secondary-color: var(--background-secondary-color-dark);
+    --separator-color: var(--separator-color-dark);
+    --separator-secondary-color: var(--separator-secondary-color-dark);
+    --text-secondary-color: var(--text-secondary-color-dark);
+    --text-tertiary-color: var(--text-tertiary-color-dark);
   }
-}
-
-h1 {
-  /* TODO: Extract this magic number. */
-  margin-block: 0.25em;
 }
 
 a {
   color: inherit;
+  text-underline-offset: var(--underline-offset);
+}
+
+.content h2 {
+  margin-block-start: var(--spacing-lg);
 }
 
 .hidden {
   display: none;
 }
 
-.line-limit {
-  height: calc(var(--line-height) * var(--line-count));
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* Shiki */
+
+pre.shiki {
+  padding: var(--spacing-base);
+  border-radius: var(--spacing-sm);
+  overflow-x: auto;
+  color: var(--shiki-light);
+  background-color: var(--background-secondary-color);
+}
+
+pre.shiki span {
+  color: var(--shiki-light);
+}
+
+pre.shiki code {
+  display: block;
+  min-width: 100%;
+  width: max-content;
+  color: var(--shiki-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  pre.shiki, pre.shiki span {
+    color: var(--shiki-dark);
+  }
+}
+
+mjx-container svg {
+  display: inline;
+}
+
+mjx-container[display="true"] svg {
+  display: block;
 }

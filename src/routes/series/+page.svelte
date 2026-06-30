@@ -117,9 +117,13 @@
   </title>
 </svelte:head>
 
-<div class="page-header">
-  <h1>{m.series_page_header_title()}</h1>
-  <p>{m.series_page_header_description()}</p>
+<div class="header">
+  <h1 class="heading">
+    {m.series_page_header_title()}
+  </h1>
+  <p>
+    {m.series_page_header_description()}
+  </p>
 </div>
 <div class="table-outline">
   <table class="table">
@@ -131,16 +135,16 @@
     </colgroup>
     <thead>
       <tr class="row">
-        <th scope="col" class="cell header">
+        <th scope="col" class="cell table-header">
           {m.series_column_title()}
         </th>
-        <th scope="col" class="cell header">
+        <th scope="col" class="cell table-header">
           {m.series_column_medium()}
         </th>
-        <th scope="col" class="cell header">
+        <th scope="col" class="cell table-header">
           {m.series_column_rating()}
         </th>
-        <th scope="col" class="cell header">
+        <th scope="col" class="cell table-header">
           {m.series_column_links()}
         </th>
       </tr>
@@ -186,8 +190,12 @@
 </div>
 
 <style>
-  .page-header {
+  .header {
     margin-block-end: var(--series-header-table-gap);
+  }
+
+  .heading {
+    margin-block: 0;
   }
 
   .table-outline {
@@ -210,7 +218,7 @@
     text-align: start;
   }
 
-  .header {
+  .table-header {
     font-weight: 600;
     color: var(--text-tertiary-color);
     background: var(--background-secondary-color);

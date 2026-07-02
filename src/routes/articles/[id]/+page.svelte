@@ -11,7 +11,6 @@
   <title>
     {m.article_page_title({ title: data[server.KEY_DATA_ARTICLE_TITLE], name: PUBLIC_NAME })}
   </title>
-  <meta name="description" content={data[server.KEY_DATA_ARTICLE_DESCRIPTION]} />
   <!-- og:image is required, but I don't care. -->
   <meta property="og:title" content={data[server.KEY_DATA_ARTICLE_TITLE]} />
   <meta property="og:type" content="article" />

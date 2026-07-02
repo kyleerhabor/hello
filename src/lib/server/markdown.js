@@ -9,6 +9,7 @@ import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 import rehypeMathjax from "rehype-mathjax";
 import remarkMath from "remark-math";
+import rehypeSlug from "rehype-slug";
 
 /**
  * Strips the first <h1> from the tree if it's the first content element.
@@ -41,12 +42,57 @@ function rehypeStripFirstH1() {
   };
 }
 
+/**
+ * @param {import("hast").Node} node
+ */
+function collectHastText(node) {
+  const stack = [node];
+  let text = "";
+
+  while (stack.length > 0) {
+    const node = stack.pop();
+
+    if (node.type === "text") {
+      text += node.value;
+    } else if (node.type === "element") {
+      stack.push(...node.children.toReversed());
+    }
+  }
+
+  return text;
+}
+
+const DEPTH = new Map([
+  ["h2", 2],
+  ["h3", 3],
+  ["h4", 4],
+  ["h5", 5],
+  ["h6", 6],
+]);
+
+/**
+ * @returns {(tree: import("hast").Root, file: import("vfile").VFile) => void}
+ */
+function rehypeExtractHeadings() {
+  return (tree, file) => {
+    file.data.headings = tree.children
+      .filter((node) => node.type === "element" && DEPTH.has(node.tagName))
+      .map((node) => ({
+        depth: DEPTH.get(node.tagName),
+        text: collectHastText(node),
+        id: node.properties.id,
+      }));
+  };
+}
+
 const processor = unified()
   .use(remarkParse)
   .use(remarkGfm)
   .use(remarkMath)
   .use(remarkRehype)
+  .use(rehypeSlug)
   .use(rehypeStripFirstH1)
+  .use(rehypeExtractHeadings)
   .use(rehypeMathjax)
   .use(rehypeShiki, {
     themes: {
@@ -62,7 +108,13 @@ const processor = unified()
   .use(rehypeStringify);
 
 export async function render(md) {
-  return String(await processor.process(md));
+  const file = await processor.process(md);
+  const result = {
+    html: String(file),
+    headings: file.data.headings,
+  };
+
+  return result;
 }
 
 export function renderArticle(article) {

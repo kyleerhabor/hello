@@ -54,7 +54,7 @@
 		</nav>
 	</header>
 </div>
-<main class="container content">
+<main>
   {@render children()}
 </main>
 <div style="display:none">
@@ -75,17 +75,24 @@
 
 	.container {
     max-width: var(--page-max-width);
-		margin: auto;
-	  padding-inline: var(--page-padding-inline);
+    margin: auto;
+    padding-inline: var(--page-padding-inline);
 	}
 
 	.header-parent {
 		position: sticky;
 		top: 0;
+		height: var(--header-height);
+		box-sizing: border-box;
+	  overflow: hidden;
 		background-color: var(--background-color);
 		z-index: 1;
 		opacity: var(--header-opacity);
 		border-bottom: var(--border-width) solid var(--separator-color);
+	}
+
+	:global(html) {
+	  scroll-padding-top: var(--header-height);
 	}
 
 	.header {
@@ -135,9 +142,5 @@
 		.navigation {
 			margin-block-start: revert;
 		}
-	}
-
-	.content {
-    margin-block: var(--spacing-base);
 	}
 </style>

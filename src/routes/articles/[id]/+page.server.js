@@ -18,12 +18,15 @@ export async function load({ params }) {
     throw error(404);
   }
 
+  const rendered = await render(
+    modules[`/src/lib/server/resources/articles/${article[server.KEY_DATA_ARTICLE_CONTENT]}`],
+  );
+
   const result = {
     ...renderArticle(article),
     [client.KEY_DATA_ARTICLE_DESCRIPTION]: article[server.KEY_DATA_ARTICLE_DESCRIPTION],
-    [client.KEY_DATA_ARTICLE_CONTENT]: await render(
-      modules[`/src/lib/server/resources/articles/${article[server.KEY_DATA_ARTICLE_CONTENT]}`],
-    ),
+    [client.KEY_DATA_ARTICLE_CONTENT]: rendered.html,
+    [client.KEY_DATA_ARTICLE_HEADINGS]: rendered.headings,
   };
 
   return result;

@@ -5,6 +5,6 @@ import * as client from "$lib/server";
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
   return {
-    [client.KEY_DATA_HOME_CONTENT]: await render(home),
+    [client.KEY_DATA_HOME_CONTENT]: (await render(home)).html,
   };
 }

@@ -18,26 +18,35 @@
   </title>
 </svelte:head>
 
-<div class="header">
-  <h1>
-    {m.articles_page_title()}
-  </h1>
+<div class="container">
+  <div class="header">
+    <h1>
+      {m.articles_page_title()}
+    </h1>
+  </div>
+  <ol class="list">
+    {#each data[KEY_DATA_ARTICLES] as article (article[KEY_DATA_ARTICLE_ID])}
+      <li class="item">
+        <a class="title"
+           href={resolve(`/articles/${article[KEY_DATA_ARTICLE_ID]}`)}>
+          {article[KEY_DATA_ARTICLE_TITLE]}
+        </a>
+        <span class="date">
+          {m.article_date({ date: article[KEY_DATA_ARTICLE_DATE] })}
+        </span>
+      </li>
+    {/each}
+  </ol>
 </div>
-<ol class="list">
-  {#each data[KEY_DATA_ARTICLES] as article (article[KEY_DATA_ARTICLE_ID])}
-    <li class="item">
-      <a class="title"
-         href={resolve(`/articles/${article[KEY_DATA_ARTICLE_ID]}`)}>
-        {article[KEY_DATA_ARTICLE_TITLE]}
-      </a>
-      <span class="date">
-        {m.article_date({ date: article[KEY_DATA_ARTICLE_DATE] })}
-      </span>
-    </li>
-  {/each}
-</ol>
 
 <style>
+  .container {
+    max-width: var(--page-max-width);
+    margin: auto;
+    padding-inline: var(--page-padding-inline);
+    margin-block-start: var(--spacing-base);
+  }
+
   .header :global(h1) {
     margin-block: 0;
   }

@@ -137,3 +137,4 @@ export const KEY_DATA_ARTICLE_TITLE = "data.article.title";
 export const KEY_DATA_ARTICLE_DATE = "data.article.date";
 export const KEY_DATA_ARTICLE_DESCRIPTION = "data.article.description";
 export const KEY_DATA_ARTICLE_CONTENT = "data.article.content";
+export const KEY_DATA_ARTICLE_HEADINGS = "data.article.headings";

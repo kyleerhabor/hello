@@ -35,7 +35,11 @@
 
   /* Header */
   --header-gap: 8px;
+  --header-height: 3.5rem;
   --header-opacity: 0.95;
+
+  /* Table of Contents */
+  --toc-indent: 1rem;
 
   /* Navigation */
   --nav-gap: 6px;

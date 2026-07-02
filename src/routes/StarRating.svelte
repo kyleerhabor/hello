@@ -1,7 +1,7 @@
 <script>
   import { isEven } from "$lib/index";
-  import Star from "lucide-svelte/icons/star";
-  import StarHalf from "lucide-svelte/icons/star-half";
+  import Star from "@lucide/svelte/icons/star";
+  import StarHalf from "@lucide/svelte/icons/star-half";
 
   const STAR_SIZE = 16;
   const { rating } = $props();

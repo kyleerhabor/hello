@@ -1,6 +1,6 @@
 Hi!
 
-I'm Kyle Erhabor, a software developer based in Boston, MA, who holds a Bachelor of Science in Computer Science with a minor in Pure Mathematics from Suffolk University. I spend my days researching and developing software.
+I'm Kyle, a software developer based in Boston, MA, who holds a Bachelor of Science in Computer Science with a minor in Pure Mathematics from Suffolk University. I spend my days researching and developing software.
 
 My current interests are in application development and systems programming for Apple's Darwin platform. Some notable works of mine are the [Sampled](https://github.com/kyleerhabor/sampled) music player app and [Advance](https://github.com/kyleerhabor/advance) image viewer app.
 

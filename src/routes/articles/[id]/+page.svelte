@@ -1,27 +1,31 @@
 <script>
   import { PUBLIC_NAME } from "$env/static/public";
   import { m } from "$lib/paraglide/messages";
-  import { KEY_DATA_ARTICLE_CONTENT, KEY_DATA_ARTICLE_DATE, KEY_DATA_ARTICLE_TITLE } from "$lib/server";
+  import * as server from "$lib/server";
 
   const { data } = $props();
 </script>
 
 <svelte:head>
   <title>
-    {m.article_page_title({ title: data[KEY_DATA_ARTICLE_TITLE], name: PUBLIC_NAME })}
+    {m.article_page_title({ title: data[server.KEY_DATA_ARTICLE_TITLE], name: PUBLIC_NAME })}
   </title>
+  <meta name="description" content={data[server.KEY_DATA_ARTICLE_DESCRIPTION]} />
+  <meta property="og:title" content={data[server.KEY_DATA_ARTICLE_TITLE]} />
+  <meta property="og:description" content={data[server.KEY_DATA_ARTICLE_DESCRIPTION]} />
+  <meta property="og:type" content="article" />
 </svelte:head>
 
 <div class="header">
   <h1>
-    {data[KEY_DATA_ARTICLE_TITLE]}
+    {data[server.KEY_DATA_ARTICLE_TITLE]}
   </h1>
-  <time class="date" datetime={data[KEY_DATA_ARTICLE_DATE]}>
-    {m.article_date({ date: data[KEY_DATA_ARTICLE_DATE] })}
+  <time class="date" datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
+    {m.article_date({ date: data[server.KEY_DATA_ARTICLE_DATE] })}
   </time>
 </div>
 <div class="body">
-  {@html data[KEY_DATA_ARTICLE_CONTENT]}
+  {@html data[server.KEY_DATA_ARTICLE_CONTENT]}
 </div>
 
 <style>

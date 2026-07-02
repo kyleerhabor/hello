@@ -1901,7 +1901,8 @@
 "log.rating" = 8
 
 [["articles"]]
-"article.id" = "hello-world"
+"article.id" = "hello"
 "article.title" = "Hello..."
 "article.date" = "2026-06-29"
-"article.path" = "hello-world"
+"article.description" = "Hello, World!"
+"article.content" = "hello.md"

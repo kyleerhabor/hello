@@ -119,7 +119,8 @@ export const KEY_DATA_ARTICLES = "articles";
 export const KEY_DATA_ARTICLE_ID = "article.id";
 export const KEY_DATA_ARTICLE_TITLE = "article.title";
 export const KEY_DATA_ARTICLE_DATE = "article.date";
-export const KEY_DATA_ARTICLE_PATH = "article.path";
+export const KEY_DATA_ARTICLE_DESCRIPTION = "article.description";
+export const KEY_DATA_ARTICLE_CONTENT = "article.content";
 
 export const parseData = R.once(() => toml.parse(data));
 export const resource = R.curry((id, resources) => R.path([id, KEY_DATA_RESOURCE_VALUE], resources));

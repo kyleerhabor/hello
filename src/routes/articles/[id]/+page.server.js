@@ -20,8 +20,9 @@ export async function load({ params }) {
 
   const result = {
     ...renderArticle(article),
+    [client.KEY_DATA_ARTICLE_DESCRIPTION]: article[server.KEY_DATA_ARTICLE_DESCRIPTION],
     [client.KEY_DATA_ARTICLE_CONTENT]: await render(
-      modules[`/src/lib/server/resources/articles/${article[server.KEY_DATA_ARTICLE_PATH]}.md`],
+      modules[`/src/lib/server/resources/articles/${article[server.KEY_DATA_ARTICLE_CONTENT]}`],
     ),
   };
 

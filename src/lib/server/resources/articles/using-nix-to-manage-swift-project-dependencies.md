@@ -132,7 +132,7 @@ graph TD
   flake["flake.nix"] --> inputs["Inputs (References)"]
   flake --> outputs["Outputs (Artifacts)"]
   outputs --> packages["Packages"]
-  packages --> arm["Apple Silicon"]
+  packages --> arm["Apple silicon"]
   packages --> x86["Intel"]
   arm --> ffmpeg["FFmpeg"]
   arm --> opus["Opus"]

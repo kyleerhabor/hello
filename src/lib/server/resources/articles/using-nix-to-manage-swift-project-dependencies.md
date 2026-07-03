@@ -8,7 +8,20 @@ Enter [Nix, a purely functional package manager and system configuration tool](h
 
 Sampled is maintained as an Xcode project and includes a number of dependencies. In general, there are project dependencies for simplifying what would otherwise be implemented in the Xcode project, and system dependencies for integrating with system services. For example, [GRDB](https://github.com/groue/GRDB.swift) is a project dependency that manages a local database Sampled maintains, which itself includes [SQLite](https://sqlite.org/index.html) as a system dependency for the underlying database system. SQLite ships with macOS, so it’s ideal to link against the system installation. For custom builds, [SQLite allows you to bring your own build system](https://sqlite.org/amalgamation.html), making it simple to include as a project dependency. This is great, but SQLite is the exception here, since most C projects aren’t shipped with the system, nor let you uproot their build systems.
 
-In addition to Swift packages like GRDB, Sampled includes project dependencies for C projects like [Ogg](https://www.xiph.org/ogg), [Vorbis](https://xiph.org/vorbis), [Opus](https://www.opus-codec.org), and FFmpeg. Ogg, Vorbis, and Opus use [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/index.html) as their build systems, whereas FFmpeg rolls its own. In action, building each project looks like so:
+In addition to Swift packages like GRDB, Sampled includes project dependencies for C projects like [Ogg](https://www.xiph.org/ogg), [Vorbis](https://xiph.org/vorbis), [Opus](https://www.opus-codec.org), and FFmpeg. A simplified view of Sampled's dependency graph looks like so:
+
+```mermaid
+graph TD
+  sampled["Sampled"] --> grdb["GRDB (Swift Package)"]
+  sampled --> sampledcore["SampledCore (Swift Package)"]
+  grdb --> sqlite["SQLite (System)"]
+  sampledcore --> ffmpeg["FFmpeg (C Project)"]
+  ffmpeg --> vorbis["Vorbis (C Project)"]
+  ffmpeg --> opus["Opus (C Project)"]
+  vorbis --> Ogg["Ogg (C Project)"]
+```
+
+Ogg, Vorbis, and Opus use [GNU Autotools](https://www.gnu.org/software/automake/manual/html_node/index.html) as their build systems, whereas FFmpeg rolls its own. In action, building each project looks like so:
 
 ```sh
 ./configure
@@ -112,7 +125,26 @@ This produces a symlink from `result` to `/nix/store/<hash>-hello-<version>`, an
 }
 ```
 
-This has a lot of moving parts, but in summary, we’re using Nixpkgs for Apple platforms (`nixpkgs-26.05-darwin`, i.e., Darwin) and building our four dependencies as Nix packages on x86 (`x86_64-darwin`, i.e., Intel) and ARM (`aarch64-darwin`, i.e., Apple silicon). If you try to build this for your system, it should work, but not produce a useful output. At the same time, building for other systems (e.g., ARM from x86) will fail because the architectures won’t match. For this, we’ll need cross compilation:
+This has a lot of moving parts, but in summary, we’re using Nixpkgs for Apple platforms (`nixpkgs-26.05-darwin`, i.e., Darwin) and building our four dependencies as Nix packages on x86 (`x86_64-darwin`, i.e., Intel) and ARM (`aarch64-darwin`, i.e., Apple silicon). The structure of the flake looks like so:
+
+```mermaid
+graph TD
+  flake["flake.nix"] --> inputs["Inputs (References)"]
+  flake --> outputs["Outputs (Artifacts)"]
+  outputs --> packages["Packages"]
+  packages --> arm["Apple Silicon"]
+  packages --> x86["Intel"]
+  arm --> ffmpeg["FFmpeg"]
+  arm --> opus["Opus"]
+  arm --> vorbis["Vorbis"]
+  arm --> ogg["Ogg"]
+  x86 --> ffmpeg
+  x86 --> opus
+  x86 --> vorbis
+  x86 --> ogg
+```
+
+If you try to build this for your system, it should work, but not produce a useful output. At the same time, building for other systems (e.g., ARM from x86) will fail because the architectures won’t match. For this, we’ll need cross compilation:
 
 ```nix
 {

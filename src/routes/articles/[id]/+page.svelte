@@ -156,4 +156,8 @@
   .body :global(code) {
     overflow-wrap: anywhere;
   }
+
+  .body :global(img) {
+    margin-inline: auto;
+  }
 </style>

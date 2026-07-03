@@ -10,6 +10,7 @@ import { unified } from "unified";
 import rehypeMathjax from "rehype-mathjax";
 import remarkMath from "remark-math";
 import rehypeSlug from "rehype-slug";
+import rehypeMermaid from "rehype-mermaid";
 
 /**
  * Strips the first <h1> from the tree if it's the first content element.
@@ -90,6 +91,10 @@ const processor = unified()
   .use(remarkGfm)
   .use(remarkMath)
   .use(remarkRehype)
+  .use(rehypeMermaid, {
+    strategy: "img-svg",
+    dark: true,
+  })
   .use(rehypeSlug)
   .use(rehypeStripFirstH1)
   .use(rehypeExtractHeadings)

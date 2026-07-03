@@ -20,7 +20,7 @@
 
 <div class="container">
   <div class="header">
-    <h1>
+    <h1 class="heading">
       {m.articles_page_title()}
     </h1>
   </div>
@@ -47,7 +47,7 @@
     margin-block-start: var(--spacing-base);
   }
 
-  .header :global(h1) {
+  .heading {
     margin-block: 0;
   }
 

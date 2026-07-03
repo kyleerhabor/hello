@@ -41,7 +41,7 @@
     <article class="article-content">
       <div class="header">
         <div style:view-transition-name={`article-${data[server.KEY_DATA_ARTICLE_ID]}`}>
-          <h1>
+          <h1 class="heading">
             {data[server.KEY_DATA_ARTICLE_TITLE]}
           </h1>
           <time class="date" datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
@@ -142,8 +142,9 @@
     border-bottom: var(--border-width) solid var(--separator-color);
   }
 
-  .header :global(h1) {
+  .heading {
     margin-block: 0;
+    overflow-wrap: anywhere;
   }
 
   .date {
@@ -152,15 +153,7 @@
     font-size: var(--font-size-sm);
   }
 
-  .body :global(a) {
-    text-underline-offset: var(--underline-offset);
-  }
-
   .body :global(code) {
     overflow-wrap: anywhere;
-  }
-
-  .body :global(h2) {
-    margin-block-start: var(--spacing-lg);
   }
 </style>

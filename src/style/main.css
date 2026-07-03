@@ -28,10 +28,6 @@ a {
   text-underline-offset: var(--underline-offset);
 }
 
-.content h2 {
-  margin-block-start: var(--spacing-lg);
-}
-
 .hidden {
   display: none;
 }

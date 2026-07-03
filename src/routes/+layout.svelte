@@ -95,7 +95,7 @@
 	.header-parent {
 		position: sticky;
 		top: 0;
-		height: var(--header-height);
+		min-height: var(--header-height);
 		box-sizing: border-box;
 	  overflow: hidden;
 		background-color: var(--background-color);

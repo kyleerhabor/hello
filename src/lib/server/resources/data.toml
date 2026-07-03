@@ -1906,3 +1906,13 @@
 "article.date" = "2026-06-29"
 "article.description" = "Hello, World!"
 "article.content" = "hello.md"
+
+[["articles"]]
+"article.id" = "using-nix-to-manage-swift-project-dependencies"
+"article.title" = "Using Nix to Manage Swift Project Dependencies"
+"article.date" = "2026-07-02"
+"article.description" = """
+I’m developing Sampled, a macOS app empowering people to listen to music on their own terms. The project uses FFmpeg for local processing, which is very fun to work with as a non-trivial C dependency. At the same time, it’s a pain to integrate into a Swift project, and the shell scripts I’ve used to manage it have been a source of friction.
+
+Enter Nix, a purely functional package manager and system configuration tool. Also some AI. I’ll walk through what I gained, where the rough edges are, and what it cost me. The migration took two days and cost ~$4 in AI usage. In return, I got a build process that works across architectures and rebuilds, without the orchestration I’d been maintaining. Before diving into the Nix specifics, it’s worth describing the original setup."""
+"article.content" = "using-nix-to-manage-swift-project-dependencies.md"

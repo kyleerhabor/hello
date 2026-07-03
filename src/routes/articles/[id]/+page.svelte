@@ -135,7 +135,6 @@
     }
   }
 
-
   .header {
     margin-block-end: var(--spacing-xl);
     padding-block-end: var(--spacing-base);

@@ -40,12 +40,14 @@
     </aside>
     <article class="article-content">
       <div class="header">
-        <h1>
-          {data[server.KEY_DATA_ARTICLE_TITLE]}
-        </h1>
-        <time class="date" datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
-          {m.article_date({ date: data[server.KEY_DATA_ARTICLE_DATE] })}
-        </time>
+        <div style:view-transition-name={`article-${data[server.KEY_DATA_ARTICLE_ID]}`}>
+          <h1>
+            {data[server.KEY_DATA_ARTICLE_TITLE]}
+          </h1>
+          <time class="date" datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
+            {m.article_date({ date: data[server.KEY_DATA_ARTICLE_DATE] })}
+          </time>
+        </div>
       </div>
       <div class="body">
         {@html data[server.KEY_DATA_ARTICLE_CONTENT]}
@@ -116,6 +118,7 @@
     grid-column: 2;
     padding-inline: var(--page-padding-inline);
     margin-block-start: var(--spacing-base);
+    min-width: 0;
   }
 
   @media (max-width: 800px) {
@@ -151,6 +154,10 @@
 
   .body :global(a) {
     text-underline-offset: var(--underline-offset);
+  }
+
+  .body :global(code) {
+    overflow-wrap: anywhere;
   }
 
   .body :global(h2) {

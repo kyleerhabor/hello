@@ -26,9 +26,9 @@
   </div>
   <ol class="list">
     {#each data[KEY_DATA_ARTICLES] as article (article[KEY_DATA_ARTICLE_ID])}
-      <li class="item">
-        <a class="title"
-           href={resolve(`/articles/${article[KEY_DATA_ARTICLE_ID]}`)}>
+      {const id = article[KEY_DATA_ARTICLE_ID]}
+      <li class="item" style:view-transition-name={`article-${id}`}>
+        <a class="title" href={resolve(`/articles/${id}`)}>
           {article[KEY_DATA_ARTICLE_TITLE]}
         </a>
         <span class="date">
@@ -41,7 +41,7 @@
 
 <style>
   .container {
-    max-width: var(--page-max-width);
+    max-width: min(var(--page-max-width), 100%);
     margin: auto;
     padding-inline: var(--page-padding-inline);
     margin-block-start: var(--spacing-base);
@@ -55,7 +55,7 @@
     list-style: none;
     padding-inline-start: 0;
     display: grid;
-    grid-template-columns: max-content auto;
+    grid-template-columns: minmax(0, max-content) auto;
     column-gap: var(--spacing-base);
     row-gap: var(--articles-row-gap);
   }
@@ -69,6 +69,9 @@
 
   .title {
     font-size: var(--font-size-lg);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .date {

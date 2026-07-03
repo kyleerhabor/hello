@@ -40,6 +40,7 @@ pre.shiki {
   overflow-x: auto;
   color: var(--shiki-light);
   background-color: var(--background-secondary-color);
+  -webkit-text-size-adjust: none;
 }
 
 pre.shiki span {

@@ -92,6 +92,7 @@
 
   .toc-link:hover {
     color: inherit;
+    text-decoration: underline;
   }
 
   .toc-depth-2 {

@@ -10,7 +10,8 @@
 		"dev": "vite dev",
 		"dev:host": "vite dev --host",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"postinstall": "npx playwright install --with-deps chromium"
 	},
 	"devDependencies": {
 		"@inlang/paraglide-js": "^2.18.2",

@@ -27,7 +27,7 @@
   <ol class="list">
     {#each data[KEY_DATA_ARTICLES] as article (article[KEY_DATA_ARTICLE_ID])}
       {const id = article[KEY_DATA_ARTICLE_ID]}
-      <li class="item" style:view-transition-name={`article-${id}`}>
+      <li class="item">
         <a class="title" href={resolve(`/articles/${id}`)}>
           {article[KEY_DATA_ARTICLE_TITLE]}
         </a>

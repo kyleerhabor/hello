@@ -40,7 +40,7 @@
     </aside>
     <article class="article-content">
       <div class="header">
-        <div style:view-transition-name={`article-${data[server.KEY_DATA_ARTICLE_ID]}`}>
+        <div>
           <h1 class="heading">
             {data[server.KEY_DATA_ARTICLE_TITLE]}
           </h1>

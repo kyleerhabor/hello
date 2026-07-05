@@ -1,23 +1,11 @@
 <script>
   import { PUBLIC_NAME } from "$env/static/public";
   import { m } from "$lib/paraglide/messages";
-  import { baseLocale, getLocale } from "$lib/paraglide/runtime";
+  import { getLocale } from "$lib/paraglide/runtime";
   import * as server from "$lib/server";
   import StarRating from "../StarRating.svelte";
 
   const { data } = $props();
-
-  function displayTitleName(title) {
-    const key = title[server.KEY_DATA_TITLE_NAME];
-    // TODO: Don't depend on this page's structure of data.
-    const messages = data[server.KEY_DATA_LOCALIZATIONS][key][server.KEY_DATA_LOCALIZATION_MESSAGES];
-    // I haven't tested whether or not this works with other locales.
-    const locale = getLocale();
-    const message = messages[locale] ?? messages[baseLocale];
-    const name = message[server.KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE];
-
-    return name;
-  }
 
   function displayMediumName({ value }) {
     switch (value) {
@@ -48,7 +36,7 @@
 
   function logMessage(log) {
     const title = log[server.KEY_DATA_LOG_TITLE];
-    const name = displayTitleName(data[server.KEY_DATA_TITLES][title]);
+    const name = data[server.KEY_DATA_TITLES][title][server.KEY_DATA_TITLE_NAME];
 
     return name;
   }
@@ -157,7 +145,7 @@
           <tr class="row">
             <!-- TODO: Note accessibility improvements from using th over td.  -->
             <th class="cell title" scope="row">
-              {displayTitleName(title, data)}
+              {title[server.KEY_DATA_TITLE_NAME]}
             </th>
             <td class="cell medium">
               {displayMediumName(mediumDisplay)}

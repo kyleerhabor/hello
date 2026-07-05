@@ -1,36 +1,13 @@
-import { getLocale } from "$lib/paraglide/runtime";
 import * as client from "$lib/server";
 import * as server from "$lib/server/index";
 import * as R from "ramda";
 
 /** @type {import('./$types').PageServerLoad]} */
 export function load() {
-  const locale = getLocale();
   const data = server.parseData();
   const resources = R.indexBy(R.prop(server.KEY_DATA_RESOURCE_ID), data[server.KEY_DATA_RESOURCES]);
-  const mediums = R.indexBy(R.prop(server.KEY_DATA_MEDIUM_ID), data[server.KEY_DATA_MEDIUMS]);  
+  const mediums = R.indexBy(R.prop(server.KEY_DATA_MEDIUM_ID), data[server.KEY_DATA_MEDIUMS]);
   const result = {
-    [client.KEY_DATA_LOCALIZATIONS]: R.indexBy(
-      R.prop(client.KEY_DATA_LOCALIZATION_ID),
-      data[server.KEY_DATA_LOCALIZATIONS].map((localization) => {
-        const id = localization[server.KEY_DATA_LOCALIZATION_ID];
-        const result = {
-          [client.KEY_DATA_LOCALIZATION_ID]: id,
-          [client.KEY_DATA_LOCALIZATION_MESSAGES]: R.indexBy(
-            R.prop(client.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE),
-            data[server.KEY_DATA_LOCALIZATION_MESSAGES]
-              .filter((message) => message[server.KEY_DATA_LOCALIZATION_MESSAGE_LOCALIZATION] == id)
-              .map((message, i) => ({
-                [client.KEY_DATA_LOCALIZATION_MESSAGE_ID]: i,
-                [client.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE]: message[server.KEY_DATA_LOCALIZATION_MESSAGE_LOCALE],
-                [client.KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE]: message[server.KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE],
-              })),
-          ),
-        };
-
-        return result;
-      }),
-    ),
     [client.KEY_DATA_TITLES]: R.indexBy(
       R.prop(client.KEY_DATA_TITLE_ID),
       data[server.KEY_DATA_TITLES].map((title) => {

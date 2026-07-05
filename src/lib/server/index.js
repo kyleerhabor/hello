@@ -17,14 +17,6 @@ export const KEY_DATA_MEDIUMS = "mediums";
 export const KEY_DATA_MEDIUM_ID = "medium.id";
 export const KEY_DATA_MEDIUM_VALUE = "medium.value";
 
-// Localizations
-export const KEY_DATA_LOCALIZATIONS = "localizations";
-export const KEY_DATA_LOCALIZATION_ID = "localization.id";
-export const KEY_DATA_LOCALIZATION_MESSAGES = "localization.messages";
-export const KEY_DATA_LOCALIZATION_MESSAGE_LOCALIZATION = "localization.message.localization";
-export const KEY_DATA_LOCALIZATION_MESSAGE_LOCALE = "localization.message.locale";
-export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "localization.message.message";
-
 // CV
 export const KEY_DATA_CV_NAME = "cv.name";
 export const KEY_DATA_CV_TITLE = "cv.title";

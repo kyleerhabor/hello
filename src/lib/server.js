@@ -24,16 +24,6 @@ export const DATA_MEDIUM_VALUE_MANGA = 6;
 export const DATA_MEDIUM_VALUE_MANHUA = 7;
 export const DATA_MEDIUM_VALUE_MANHWA = 8;
 
-// Localizations
-//
-// TODO: Remove.
-export const KEY_DATA_LOCALIZATIONS = "data.localizations";
-export const KEY_DATA_LOCALIZATION_ID = "data.localization.id";
-export const KEY_DATA_LOCALIZATION_MESSAGES = "data.localization.messages";
-export const KEY_DATA_LOCALIZATION_MESSAGE_ID = "data.localization.message.id";
-export const KEY_DATA_LOCALIZATION_MESSAGE_LOCALE = "data.localization.message.locale";
-export const KEY_DATA_LOCALIZATION_MESSAGE_MESSAGE = "data.localization.message.message";
-
 // Home
 export const KEY_DATA_HOME_CONTENT = "data.home.content";
 

@@ -67,7 +67,7 @@
 		</nav>
 	</header>
 </div>
-<main>
+<main class="content">
   {@render children()}
 </main>
 <div style="display:none">
@@ -155,5 +155,9 @@
 		.navigation {
 			margin-block-start: revert;
 		}
+	}
+
+	.content {
+	  margin-block-end: var(--spacing-base);
 	}
 </style>

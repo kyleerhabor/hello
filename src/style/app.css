@@ -30,6 +30,7 @@
 
   /* Layout */
   --border-width: 1px;
+  --border-width-thick: 4px;
   --page-max-width: 800px;
   --page-padding-inline: 16px;
 

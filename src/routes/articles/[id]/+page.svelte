@@ -5,6 +5,49 @@
   import * as server from "$lib/server";
 
   const { data } = $props();
+  let toc = $state(null);
+  let activeHeading = $state(null);
+  $effect(() => {
+    const body = document.querySelector(".body");
+    const headings = [...body.querySelectorAll("h2, h3, h4, h5, h6")];
+
+    if (headings.length === 0) {
+      return;
+    }
+
+    /** @type {Set<string>} */
+    // eslint-disable-next-line svelte/prefer-svelte-reactivity
+    const visibleHeadings = new Set();
+    const headerHeight = parseFloat(getComputedStyle(toc).top);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleHeadings.add(entry.target.id);
+          } else {
+            visibleHeadings.delete(entry.target.id);
+          }
+
+          for (const heading of headings.toReversed()) {
+            if (heading.getBoundingClientRect().top <= headerHeight) {
+              activeHeading = heading.id;
+
+              return;
+            }
+          }
+
+          activeHeading = null;
+        })
+      },
+      {
+        rootMargin: `-${headerHeight}px 0px 0px 0px`,
+      },
+    );
+
+    headings.forEach((heading) => observer.observe(heading));
+
+    return () => observer.disconnect();
+  })
 </script>
 
 <svelte:head>
@@ -22,15 +65,19 @@
 
 <div id="id">
   <div class="article-layout">
-    <aside class="toc">
+    <aside class="toc" bind:this={toc}>
       <nav>
         <ul class="toc-list">
           <li class="toc-item toc-item-top">
-            <a class="toc-link" href="#top">Top</a>
+            <a class="toc-link"
+               class:toc-link-active={activeHeading === null}
+               href="#top">Top</a>
           </li>
           {#each data[server.KEY_DATA_ARTICLE_HEADINGS] as heading (heading.id)}
             <li class="toc-item toc-depth-{heading.depth}">
-              <a class="toc-link" href="#{heading.id}">
+              <a class="toc-link"
+                 class:toc-link-active={activeHeading === heading.id}
+                 href="#{heading.id}">
                 {heading.text}
               </a>
             </li>
@@ -58,21 +105,22 @@
 
 <style>
   .article-layout {
+    align-items: start;
+    column-gap: var(--spacing-xl);
     display: grid;
     grid-template-columns: 1fr minmax(0, var(--page-max-width)) 1fr;
-    column-gap: var(--spacing-xl);
-    align-items: start;
   }
 
   .toc {
+    font-size: var(--font-size-sm);
     grid-column: 1;
     justify-self: end;
-    position: sticky;
-    top: var(--header-height);
     max-height: calc(100vh - var(--header-height) - var(--spacing-base));
     overflow-y: auto;
-    font-size: var(--font-size-sm);
     padding-block-start: var(--spacing-base);
+    padding-inline-start: var(--spacing-base);
+    position: sticky;
+    top: var(--header-height);
   }
 
   .toc-list {
@@ -93,6 +141,10 @@
   .toc-link:hover {
     color: inherit;
     text-decoration: underline;
+  }
+
+  .toc-link-active {
+    color: inherit;
   }
 
   .toc-depth-2 {
@@ -122,9 +174,10 @@
     min-width: 0;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     .article-layout {
-      grid-template-columns: 1fr;
+      column-gap: inherit;
+      grid-template-columns: 1fr minmax(0, var(--page-max-width)) 1fr;
     }
 
     .toc {
@@ -132,7 +185,7 @@
     }
 
     .article-content {
-      grid-column: 1;
+      grid-column: 2;
     }
   }
 
@@ -159,5 +212,25 @@
 
   .body :global(img) {
     margin-inline: auto;
+  }
+
+  .body :global(blockquote) {
+    margin-inline: 0;
+    padding-inline-start: var(--spacing-base);
+    border-inline-start: var(--border-width-thick) solid var(--separator-color);
+    font-style: italic;
+    color: var(--text-secondary-color);
+  }
+
+  /* In the future, we should prefer margin-trim when it becomes baseline.
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/margin-trim
+   */
+
+  .body :global(blockquote > :first-child) {
+    margin-block: 0;
+  }
+
+  .body :global(blockquote > :last-child) {
+    margin-block-end: 0;
   }
 </style>

@@ -41,10 +41,10 @@
 
 <style>
   .container {
-    max-width: min(var(--page-max-width), 100%);
     margin: auto;
-    padding-inline: var(--page-padding-inline);
     margin-block-start: var(--spacing-base);
+    max-width: min(var(--page-max-width), 100%);
+    padding-inline: var(--page-padding-inline);
   }
 
   .heading {
@@ -52,31 +52,28 @@
   }
 
   .list {
-    list-style: none;
-    padding-inline-start: 0;
+    column-gap: var(--spacing-base);
     display: grid;
     grid-template-columns: minmax(0, max-content) auto;
-    column-gap: var(--spacing-base);
+    list-style: none;
+    padding-inline-start: 0;
     row-gap: var(--articles-row-gap);
   }
 
   .item {
-    display: grid;
-    grid-template-columns: subgrid;
-    grid-column: 1 / -1;
     align-items: baseline;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
   }
 
   .title {
     font-size: var(--font-size-lg);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .date {
-    font-size: var(--font-size-sm);
     color: var(--text-secondary-color);
+    font-size: var(--font-size-sm);
     white-space: nowrap;
   }
 </style>

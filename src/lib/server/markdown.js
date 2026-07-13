@@ -1,16 +1,18 @@
 import * as client from "$lib/server";
 import * as server from "$lib/server/index";
-import rehypeShiki from "@shikijs/rehype";
+import caddyfileGrammar from "$lib/server/resources/syntaxes/caddyfile.tmLanguage.json";
+import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
 import rehypeExternalLinks from "rehype-external-links";
+import rehypeMathjax from "rehype-mathjax";
+import rehypeMermaid from "rehype-mermaid";
+import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import { bundledLanguages, createHighlighter } from "shiki";
 import { unified } from "unified";
-import rehypeMathjax from "rehype-mathjax";
-import remarkMath from "remark-math";
-import rehypeSlug from "rehype-slug";
-import rehypeMermaid from "rehype-mermaid";
 
 /**
  * Strips the first <h1> from the tree if it's the first content element.
@@ -27,7 +29,9 @@ function rehypeStripFirstH1() {
    * @param {import('hast').Root} tree
    */
   return (tree) => {
-    const index = tree.children.findIndex((node) => node.type === "element" || node.type == "raw");
+    const index = tree.children.findIndex(
+      (node) => node.type === "element" || node.type == "raw",
+    );
 
     if (index === -1) {
       return;
@@ -86,6 +90,19 @@ function rehypeExtractHeadings() {
   };
 }
 
+const SHIKI_THEME_LIGHT = "github-light";
+const SHIKI_THEME_DARK = "github-dark";
+const highlighter = await createHighlighter({
+  themes: [SHIKI_THEME_LIGHT, SHIKI_THEME_DARK],
+  langs: [
+    ...Object.keys(bundledLanguages),
+    {
+      ...caddyfileGrammar,
+      aliases: ["caddyfile"],
+    },
+  ],
+});
+
 const processor = unified()
   .use(remarkParse)
   .use(remarkGfm)
@@ -99,13 +116,17 @@ const processor = unified()
   .use(rehypeStripFirstH1)
   .use(rehypeExtractHeadings)
   .use(rehypeMathjax)
-  .use(rehypeShiki, {
-    themes: {
-      light: "github-light",
-      dark: "github-dark",
+  .use(
+    rehypeShikiFromHighlighter,
+    highlighter,
+    {
+      themes: {
+        light: SHIKI_THEME_LIGHT,
+        dark: SHIKI_THEME_DARK,
+      },
+      defaultColor: false,
     },
-    defaultColor: false,
-  })
+  )
   .use(rehypeExternalLinks, {
     target: "_blank",
     rel: ["external", "noopener", "noreferrer", "nofollow"],

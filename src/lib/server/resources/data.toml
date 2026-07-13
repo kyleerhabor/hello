@@ -1324,3 +1324,10 @@ I’m developing Sampled, a macOS app empowering people to listen to music on th
 
 Enter Nix, a purely functional package manager and system configuration tool. Also some AI. I’ll walk through what I gained, where the rough edges are, and what it cost me. The migration took two days and cost ~$4 in AI usage. In return, I got a build process that works across architectures and rebuilds, without the orchestration I’d been maintaining. Before diving into the Nix specifics, it’s worth describing the original setup."""
 "article.content" = "using-nix-to-manage-swift-project-dependencies.md"
+
+[["articles"]]
+"article.id" = "tailscale-mullvad-and-avoiding-the-$5-add-on-a-case-study-in-secure-networking"
+"article.title" = "Tailscale, Mullvad, and avoiding the $5 add-on: a case study in secure networking"
+"article.date" = "2026-07-13"
+"article.description" = "In my previous article about using Nix to manage project dependencies in Swift, I very briefly touched on Tailscale, a VPN service. Since publishing this, I’ve updated my configuration to support multiple hosts with multiple servers, so my 2019 MacBook Pro can host Navidrome at https://navidrome.mbp2019.home.kyleerhabor.com, and a future device like an M6 MacBook Pro could host Komga at https://komga.mbp2026.home.kyleerhabor.com. This is nice, but I assume most people are unfamiliar with the various technologies and the issues they’re addressing, so I want this article to be a gentle introduction to what this enables."
+"article.content" = "tailscale-mullvad-and-avoiding-the-$5-add-on-a-case-study-in-secure-networking.md"

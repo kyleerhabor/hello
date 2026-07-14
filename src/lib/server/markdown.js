@@ -214,10 +214,7 @@ const processor = unified()
       defaultColor: false,
     },
   )
-  .use(rehypeExternalLinks, {
-    target: "_blank",
-    rel: ["external", "noopener", "noreferrer", "nofollow"],
-  })
+  .use(rehypeExternalLinks, { rel: ["external", "noopener", "noreferrer", "nofollow"] })
   .use(rehypeFootnotes)
   .use(rehypeStringify);
 

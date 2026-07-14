@@ -2,6 +2,7 @@ import * as client from "$lib/server";
 import * as server from "$lib/server/index";
 import caddyfileGrammar from "$lib/server/resources/syntaxes/caddyfile.tmLanguage.json";
 import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
+import { toHtml } from "hast-util-to-html";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeMathjax from "rehype-mathjax";
 import rehypeMermaid from "rehype-mermaid";
@@ -13,6 +14,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { bundledLanguages, createHighlighter } from "shiki";
 import { unified } from "unified";
+import { visit } from "unist-util-visit";
 
 /**
  * Strips the first <h1> from the tree if it's the first content element.
@@ -30,7 +32,7 @@ function rehypeStripFirstH1() {
    */
   return (tree) => {
     const index = tree.children.findIndex(
-      (node) => node.type === "element" || node.type == "raw",
+      (node) => node.type === "element" || node.type === "raw",
     );
 
     if (index === -1) {
@@ -90,6 +92,90 @@ function rehypeExtractHeadings() {
   };
 }
 
+const CLOBBER_PREFIX = "user-content-";
+const CLOBBER_FN_PREFIX = `${CLOBBER_PREFIX}fn-`;
+
+/**
+ * @returns {(tree: import("hast").Root, file: import("vfile").VFile) => void}
+ */
+function rehypeFootnotes() {
+  return (tree, file) => {
+    const sectionIndex = tree.children.findIndex(
+      (node) =>
+        node.type === "element"
+        && node.tagName === "section"
+        && node.properties.dataFootnotes !== undefined,
+    );
+
+    if (sectionIndex === -1) {
+      return;
+    }
+
+    const section = tree.children[sectionIndex];
+
+    /** @type {Array<{id: number, backref: string, html: string}>} */
+    const footnotes = [];
+
+    visit(section, "element", (li) => {
+      if (li.tagName !== "li") {
+        return;
+      }
+
+      const id = li.properties.id;
+
+      if (!id?.startsWith(CLOBBER_FN_PREFIX)) {
+        return;
+      }
+
+      const number = id.replace(CLOBBER_FN_PREFIX, "");
+      let backref = null;
+
+      visit(li, "element", (node) => {
+        if (node.properties.dataFootnoteBackref === undefined) {
+          return;
+        }
+
+        backref = node;
+
+        return visit.EXIT;
+      });
+
+      if (!backref) {
+        return;
+      }
+
+      // Remove the backref from its parent (last block element in the footnote)
+      for (const child of li.children) {
+        if (child.type !== "element") {
+          continue;
+        }
+
+        const index = child.children.indexOf(backref);
+
+        if (index === -1) {
+          continue;
+        }
+
+        child.children.splice(index, 1);
+
+        break;
+      }
+
+      const html = li.children.map((n) => toHtml(n)).join("");
+
+      footnotes.push({
+        id: Number(number),
+        htmlID: id,
+        backref: backref.properties.href,
+        html,
+      });
+    });
+
+    tree.children.splice(sectionIndex, 1);
+    file.data.footnotes = footnotes;
+  };
+}
+
 const SHIKI_THEME_LIGHT = "github-light";
 const SHIKI_THEME_DARK = "github-dark";
 const highlighter = await createHighlighter({
@@ -107,7 +193,7 @@ const processor = unified()
   .use(remarkParse)
   .use(remarkGfm)
   .use(remarkMath)
-  .use(remarkRehype)
+  .use(remarkRehype, { clobberPrefix: CLOBBER_PREFIX })
   .use(rehypeMermaid, {
     strategy: "img-svg",
     dark: true,
@@ -131,6 +217,7 @@ const processor = unified()
     target: "_blank",
     rel: ["external", "noopener", "noreferrer", "nofollow"],
   })
+  .use(rehypeFootnotes)
   .use(rehypeStringify);
 
 export async function render(md) {
@@ -138,6 +225,7 @@ export async function render(md) {
   const result = {
     html: String(file),
     headings: file.data.headings,
+    footnotes: file.data.footnotes,
   };
 
   return result;

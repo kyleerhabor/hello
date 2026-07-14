@@ -60,10 +60,23 @@ pre.shiki code {
   }
 }
 
+/* MathJax */
+
 mjx-container svg {
   display: inline;
 }
 
 mjx-container[display="true"] svg {
   display: block;
+}
+
+/* Unified */
+
+/* Place `[` and `]` around footnote references. */
+[data-footnote-ref]::before {
+  content: "[";
+}
+
+[data-footnote-ref]::after {
+  content: "]";
 }

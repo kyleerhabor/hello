@@ -29,11 +29,13 @@
           }
 
           for (const heading of headings.toReversed()) {
-            if (heading.getBoundingClientRect().top <= headerHeight) {
-              activeHeading = heading.id;
-
-              return;
+            if (heading.getBoundingClientRect().top > headerHeight) {
+              continue;
             }
+
+            activeHeading = heading.id;
+
+            return;
           }
 
           activeHeading = null;
@@ -47,7 +49,7 @@
     headings.forEach((heading) => observer.observe(heading));
 
     return () => observer.disconnect();
-  })
+  });
 </script>
 
 <svelte:head>
@@ -99,6 +101,25 @@
       <div class="body">
         {@html data[server.KEY_DATA_ARTICLE_CONTENT]}
       </div>
+      {#if data[server.KEY_DATA_ARTICLE_FOOTNOTES].length !== 0}
+        <section class="footnotes">
+          <h2 class="footnote-heading">
+            Footnotes
+          </h2>
+          <ol class="footnote-list">
+            {#each data[server.KEY_DATA_ARTICLE_FOOTNOTES] as footnote (footnote.id)}
+              <li class="footnote-item">
+                <a href={footnote.backref} data-footnote-backref aria-label="Back to reference {footnote.id}">
+                  [{footnote.id}]
+                </a>
+                <div id={footnote.htmlID} class="footnote-content">
+                  {@html footnote.html}
+                </div>
+              </li>
+            {/each}
+          </ol>
+        </section>
+      {/if}
     </article>
   </div>
 </div>
@@ -231,6 +252,52 @@
   }
 
   .body :global(blockquote > :last-child) {
+    margin-block-end: 0;
+  }
+
+  .footnotes {
+    border-top: 1px solid var(--separator-color);
+    color: var(--text-secondary-color);
+    font-size: smaller;
+    margin-block-start: var(--spacing-xl);
+  }
+
+  .footnote-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    word-wrap: normal;
+    border: 0;
+  }
+
+  .footnote-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5ch;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .footnote-item {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  .footnote-item:target {
+    background: var(--background-secondary-color);
+    border-radius: var(--spacing-sm);
+    padding-inline: var(--spacing-xs);
+  }
+
+  .footnote-content > :global(:first-child) {
+    margin-block-start: 0;
+  }
+
+  .footnote-content > :global(:last-child) {
     margin-block-end: 0;
   }
 </style>

@@ -27,6 +27,7 @@ export async function load({ params }) {
     [client.KEY_DATA_ARTICLE_DESCRIPTION]: article[server.KEY_DATA_ARTICLE_DESCRIPTION],
     [client.KEY_DATA_ARTICLE_CONTENT]: rendered.html,
     [client.KEY_DATA_ARTICLE_HEADINGS]: rendered.headings,
+    [client.KEY_DATA_ARTICLE_FOOTNOTES]: rendered.footnotes,
   };
 
   return result;

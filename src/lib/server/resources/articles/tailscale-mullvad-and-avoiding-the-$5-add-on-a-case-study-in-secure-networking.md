@@ -1,6 +1,6 @@
 # Tailscale, Mullvad, and avoiding the $5 add-on: a case study in secure networking
 
-In [my previous article about using Nix to manage project dependencies in Swift](https://kyleerhabor.com/articles/using-nix-to-manage-swift-project-dependencies), I very briefly touched on [Tailscale, a VPN service](https://tailscale.com):
+In [my previous article about using Nix to manage project dependencies in Swift](/articles/using-nix-to-manage-swift-project-dependencies), I very briefly touched on [Tailscale, a VPN service](https://tailscale.com):
 
 > A few days before writing this, I was configuring my system to support secure connection between my MacBook Pro and iPhone over the local network with Tailscale. I was able to use [Caddy](https://caddyserver.com) as a reverse proxy to access services like [Navidrome](https://www.navidrome.org) and [Komga](https://komga.org) at `https://*.home.kyleerhabor.com` as an alternative to port numbers. The best part is that [I accomplished this with very little setup using Nix](https://github.com/kyleerhabor/nix-config/blob/7348b8e6dfe4d50d7b2eddf7f4c4d818d74f4b43/home/kyleerhabor.nix#L37-L75), so apart from Tailscale, Nix manages the dependencies and server processes in a way that works on any system.
 

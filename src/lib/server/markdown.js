@@ -108,6 +108,8 @@ function rehypeFootnotes() {
     );
 
     if (sectionIndex === -1) {
+      file.data.footnotes = [];
+
       return;
     }
 
@@ -115,7 +117,6 @@ function rehypeFootnotes() {
 
     /** @type {Array<{id: number, backref: string, html: string}>} */
     const footnotes = [];
-
     visit(section, "element", (li) => {
       if (li.tagName !== "li") {
         return;

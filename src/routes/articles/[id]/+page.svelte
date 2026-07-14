@@ -263,14 +263,14 @@
   }
 
   .footnote-heading {
-    position: absolute;
-    width: 1px;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     padding: 0;
+    position: absolute;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    width: 1px;
     word-wrap: normal;
-    border: 0;
   }
 
   .footnote-list {

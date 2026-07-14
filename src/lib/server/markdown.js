@@ -231,8 +231,8 @@ export async function render(md) {
 
 export function renderArticle(article) {
   return {
-    [client.KEY_DATA_ARTICLE_ID]: article[server.KEY_DATA_ARTICLE_ID],
-    [client.KEY_DATA_ARTICLE_TITLE]: article[server.KEY_DATA_ARTICLE_TITLE],
-    [client.KEY_DATA_ARTICLE_DATE]: article[server.KEY_DATA_ARTICLE_DATE],
+    [client.KEY_DATA_ARTICLE_ID]: article[server.KEY_ARTICLE_ID],
+    [client.KEY_DATA_ARTICLE_TITLE]: article[server.KEY_ARTICLE_TITLE],
+    [client.KEY_DATA_ARTICLE_DATE]: article[server.KEY_ARTICLE_DATE],
   };
 }

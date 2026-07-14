@@ -58,11 +58,6 @@
     </a>
 		<nav>
 			<ul class="navigation">
-				<!-- <li>
-					<a href="{resolve("/cv")}">
-						CV
-					</a>
-				</li> -->
 				<li>
           <a href={resolve("/articles")}>
             {m.nav_link_articles()}

@@ -5,7 +5,7 @@ import { renderArticle } from "$lib/server/markdown";
 export function load() {
   const data = server.parseData();
   const result = {
-    [client.KEY_DATA_ARTICLES]: data[server.KEY_DATA_ARTICLES]
+    [client.KEY_DATA_ARTICLES]: data[server.KEY_ARTICLES]
       .map((article) => renderArticle(article))
       .toReversed(),
   };

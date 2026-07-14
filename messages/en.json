@@ -1,9 +1,5 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"cv_page_title": "CV | {name}",
-	"cv_contact_email": "Email",
-	"cv_contact_github": "GitHub",
-	"cv_contact_linkedin": "LinkedIn",
 	"nav_link_articles": "Articles",
 	"nav_link_series": "Series Recs.",
 	"nav_link_email": "Email",
@@ -41,45 +37,5 @@
 	"series_column_title": "Title",
 	"series_column_medium": "Medium",
 	"series_column_rating": "Rating",
-	"series_column_links": "Links",
-	"cv_date_single": [
-		{
-			"declarations": [
-				"input date",
-				"input dateStatus",
-				"local formattedDate = date: datetime month=long year=numeric timeZone=UTC"
-			],
-			"selectors": [
-				"dateStatus"
-			],
-			"match": {
-				"dateStatus=completed": "{formattedDate}",
-				"dateStatus=expected": "Expected {formattedDate}"
-			}
-		}
-	],
-	"cv_date_range": [
-		{
-			"declarations": [
-				"input endDate",
-				"input endDateStatus",
-				"input startDate",
-				"input startDateStatus",
-				"local formattedEndDate = endDate: datetime month=long year=numeric timeZone=UTC",
-				"local formattedStartDate = startDate: datetime month=long year=numeric timeZone=UTC"
-			],
-			"selectors": [
-				"endDateStatus",
-				"startDateStatus"
-			],
-			"match": {
-				"endDateStatus=completed, startDateStatus=completed": "{formattedStartDate} – {formattedEndDate}",
-				"endDateStatus=present, startDateStatus=completed": "{formattedStartDate} – Present",
-				"endDateStatus=completed, startDateStatus=present": "{formattedEndDate}",
-				"endDateStatus=expected, startDateStatus=present": "Expected {formattedEndDate}"
-			}
-		}
-	],
-	"proud_early_porpoise_fold": "Experience",
-	"wacky_sad_loris_inspire": "GitHub"
+	"series_column_links": "Links"
 }

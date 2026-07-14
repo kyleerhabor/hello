@@ -1,5 +1,5 @@
 import { render } from "$lib/server/markdown";
-import home from "$lib/server/resources/home.md?raw";
+import home from "$lib/server/resources/writings/home.md?raw";
 import * as client from "$lib/server";
 
 /** @type {import('./$types').PageServerLoad} */

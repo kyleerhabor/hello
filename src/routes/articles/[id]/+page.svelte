@@ -287,7 +287,7 @@
     grid-column: 1 / -1;
   }
 
-  .footnote-item:target {
+  .footnote-content:target {
     background: var(--background-secondary-color);
     border-radius: var(--spacing-sm);
     padding-inline: var(--spacing-xs);

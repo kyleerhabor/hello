@@ -8,7 +8,11 @@ export default defineConfig(({ mode }) => {
   const config = {
     plugins: [
       sveltekit(),
-      paraglideVitePlugin({ project: "./project.inlang", outdir: "./src/lib/paraglide" }),
+      paraglideVitePlugin({
+        project: "./project.inlang",
+        outdir: "./src/lib/paraglide",
+        strategy: ["preferredLanguage", "baseLocale"],
+      }),
       devtoolsJson(),
     ],
     server: {

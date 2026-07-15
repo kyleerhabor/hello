@@ -33,6 +33,9 @@
   --border-width-thick: 4px;
   --page-max-width: 800px;
   --page-padding-inline: 16px;
+  --popover-max-width: 360px;
+  --popover-max-height: 60vh;
+  --popover-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
   /* Header */
   --header-gap: 8px;

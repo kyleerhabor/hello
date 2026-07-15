@@ -25,11 +25,10 @@ import { visit } from "unist-util-visit";
  * - `raw`: Inline HTML
  * - `comment`: Not produced
  * - `doctype`: Not produced
+ *
+ * @returns {(tree: import("hast").Root) => void}
  */
 function rehypeStripFirstH1() {
-  /**
-   * @param {import('hast').Root} tree
-   */
   return (tree) => {
     const index = tree.children.findIndex(
       (node) => node.type === "element" || node.type === "raw",
@@ -49,26 +48,6 @@ function rehypeStripFirstH1() {
   };
 }
 
-/**
- * @param {import("hast").Node} node
- */
-function collectHastText(node) {
-  const stack = [node];
-  let text = "";
-
-  while (stack.length > 0) {
-    const node = stack.pop();
-
-    if (node.type === "text") {
-      text += node.value;
-    } else if (node.type === "element") {
-      stack.push(...node.children.toReversed());
-    }
-  }
-
-  return text;
-}
-
 const DEPTH = new Map([
   ["h2", 2],
   ["h3", 3],
@@ -84,11 +63,18 @@ function rehypeExtractHeadings() {
   return (tree, file) => {
     file.data.headings = tree.children
       .filter((node) => node.type === "element" && DEPTH.has(node.tagName))
-      .map((node) => ({
-        depth: DEPTH.get(node.tagName),
-        text: collectHastText(node),
-        id: node.properties.id,
-      }));
+      .map((node) => {
+        let text = "";
+        visit(node, "text", (n) => text += n.value);
+
+        const heading = {
+          depth: DEPTH.get(node.tagName),
+          text: text,
+          id: node.properties.id,
+        };
+
+        return heading;
+      });
   };
 }
 
@@ -100,6 +86,8 @@ const CLOBBER_FN_PREFIX = `${CLOBBER_PREFIX}fn-`;
  */
 function rehypeFootnotes() {
   return (tree, file) => {
+    /** @type {Array<{id: number, htmlID: string, backref: string, html: string}>} */
+    const footnotes = [];
     const sectionIndex = tree.children.findIndex(
       (node) =>
         node.type === "element"
@@ -108,15 +96,12 @@ function rehypeFootnotes() {
     );
 
     if (sectionIndex === -1) {
-      file.data.footnotes = [];
+      file.data.footnotes = footnotes;
 
       return;
     }
 
     const section = tree.children[sectionIndex];
-
-    /** @type {Array<{id: number, backref: string, html: string}>} */
-    const footnotes = [];
     visit(section, "element", (li) => {
       if (li.tagName !== "li") {
         return;
@@ -130,7 +115,6 @@ function rehypeFootnotes() {
 
       const number = id.replace(CLOBBER_FN_PREFIX, "");
       let backref = null;
-
       visit(li, "element", (node) => {
         if (node.properties.dataFootnoteBackref === undefined) {
           return;
@@ -141,7 +125,7 @@ function rehypeFootnotes() {
         return visit.EXIT;
       });
 
-      if (!backref) {
+      if (backref === null) {
         return;
       }
 
@@ -162,8 +146,7 @@ function rehypeFootnotes() {
         break;
       }
 
-      const html = li.children.map((n) => toHtml(n)).join("");
-
+      const html = li.children.map((node) => toHtml(node)).join("");
       footnotes.push({
         id: Number(number),
         htmlID: id,
@@ -229,10 +212,10 @@ export async function render(md) {
   return result;
 }
 
-export function renderArticle(article) {
+export function renderArticle(article, version) {
   return {
-    [client.KEY_DATA_ARTICLE_ID]: article[server.KEY_ARTICLE_ID],
-    [client.KEY_DATA_ARTICLE_TITLE]: article[server.KEY_ARTICLE_TITLE],
-    [client.KEY_DATA_ARTICLE_DATE]: article[server.KEY_ARTICLE_DATE],
+    [client.KEY_DATA_ARTICLE_ID]: article[server.KEY_DATA_ARTICLE_ID],
+    [client.KEY_DATA_ARTICLE_TITLE]: version[server.KEY_DATA_ARTICLE_VERSION_TITLE],
+    [client.KEY_DATA_ARTICLE_DATE]: version[server.KEY_DATA_ARTICLE_VERSION_DATE],
   };
 }

@@ -26,7 +26,7 @@ export const KEY_DATA_TITLE_ID = "data.title.id";
 export const KEY_DATA_TITLE_NAME = "data.title.name";
 export const KEY_DATA_TITLE_MEDIUM = "data.title.medium";
 
-// Title Links
+// Title links
 export const KEY_DATA_TITLE_LINKS = "data.title.links";
 export const KEY_DATA_TITLE_LINK_ID = "data.title.link.id";
 export const KEY_DATA_TITLE_LINK_RESOURCE = "data.title.link.resource";
@@ -50,3 +50,9 @@ export const KEY_DATA_ARTICLE_DESCRIPTION = "data.article.description";
 export const KEY_DATA_ARTICLE_CONTENT = "data.article.content";
 export const KEY_DATA_ARTICLE_HEADINGS = "data.article.headings";
 export const KEY_DATA_ARTICLE_FOOTNOTES = "data.article.footnotes";
+export const KEY_DATA_ARTICLE_VERSION = "data.article.version-number";
+export const KEY_DATA_ARTICLE_VERSIONS = "data.article.versions";
+
+// Article versions
+export const KEY_DATA_ARTICLE_VERSION_NUMBER = "data.article.version.number";
+export const KEY_DATA_ARTICLE_VERSION_DATE = "data.article.version.date";

@@ -1,4 +1,5 @@
 <script>
+    import { resolve } from "$app/paths";
   import { page } from "$app/stores";
   import { PUBLIC_NAME } from "$env/static/public";
   import { m } from "$lib/paraglide/messages";
@@ -65,7 +66,7 @@
   <meta property="og:article:published_time" content={data[server.KEY_DATA_ARTICLE_DATE]} />
 </svelte:head>
 
-<div id="id">
+<div>
   <div class="article-layout">
     <aside class="toc" bind:this={toc}>
       <nav>
@@ -93,9 +94,24 @@
           <h1 class="heading">
             {data[server.KEY_DATA_ARTICLE_TITLE]}
           </h1>
-          <time class="date" datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
-            {m.article_date({ date: data[server.KEY_DATA_ARTICLE_DATE] })}
-          </time>
+          <span class="meta">
+            {const oldestVersion = data[server.KEY_DATA_ARTICLE_VERSIONS][0]}
+            {const isOldest = data[server.KEY_DATA_ARTICLE_VERSION] === oldestVersion[server.KEY_DATA_ARTICLE_VERSION_NUMBER]}
+            Published
+            <time datetime={oldestVersion[server.KEY_DATA_ARTICLE_VERSION_DATE]}>
+              {m.article_date({ date: oldestVersion[server.KEY_DATA_ARTICLE_VERSION_DATE] })}
+            </time>
+            {#if !isOldest}
+              · Edited
+              <time datetime={data[server.KEY_DATA_ARTICLE_DATE]}>
+                {m.article_date({ date: data[server.KEY_DATA_ARTICLE_DATE] })}
+              </time>
+            {/if}
+            ·
+            <button class="version-history-trigger" popovertarget="version-history">
+              History
+            </button>
+          </span>
         </div>
       </div>
       <div class="body">
@@ -121,6 +137,18 @@
         </section>
       {/if}
     </article>
+    <div id="version-history" popover="auto">
+      <h2 class="history-heading">History</h2>
+      <ol class="version-list">
+        {#each data[server.KEY_DATA_ARTICLE_VERSIONS] as version (version[server.KEY_DATA_ARTICLE_VERSION_NUMBER])}
+          <li class="version-item">
+            <a href={resolve(`/articles/${data[server.KEY_DATA_ARTICLE_ID]}?v=${version[server.KEY_DATA_ARTICLE_VERSION_NUMBER]}`)}>
+              {m.article_date({ date: version[server.KEY_DATA_ARTICLE_VERSION_DATE] })}
+            </a>
+          </li>
+        {/each}
+      </ol>
+    </div>
   </div>
 </div>
 
@@ -211,7 +239,6 @@
   }
 
   .header {
-    margin-block-end: var(--spacing-xl);
     padding-block-end: var(--spacing-base);
     border-bottom: var(--border-width) solid var(--separator-color);
   }
@@ -221,10 +248,57 @@
     overflow-wrap: anywhere;
   }
 
-  .date {
+  .meta {
     display: block;
     color: var(--text-secondary-color);
     font-size: var(--font-size-sm);
+  }
+
+  .version-history-trigger {
+    all: unset;
+    anchor-name: --version-history;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: var(--underline-offset);
+  }
+
+  #version-history {
+    border: var(--border-width) solid var(--separator-color);
+    border-radius: var(--spacing-sm);
+    padding: var(--spacing-base);
+    background: var(--background-color);
+    box-shadow: var(--popover-shadow);
+    max-width: var(--popover-max-width);
+    max-height: var(--popover-max-height);
+    overflow-y: auto;
+    margin: 0;
+
+    /* Positioning */
+    position-anchor: --version-history;
+    inset-block-start: anchor(self-end);
+    inset-inline-start: anchor(self-start);
+  }
+
+  .history-heading {
+    margin-block: 0 var(--spacing-sm);
+  }
+
+  .version-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    list-style: none;
+    margin-block: 0;
+    padding-inline-start: 0;
+  }
+
+  .version-item {
+    font-size: var(--font-size-sm);
+  }
+
+  .version-current {
+    color: var(--text-tertiary-color);
   }
 
   .body :global(code) {

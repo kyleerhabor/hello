@@ -18,7 +18,7 @@ export const KEY_TITLE_ID = "title.id";
 export const KEY_TITLE_NAME = "title.name";
 export const KEY_TITLE_MEDIUM = "title.medium";
 
-// Title Links
+// Title links
 export const KEY_TITLE_LINKS = "title.links";
 export const KEY_TITLE_LINK_TITLE = "title.link.title";
 export const KEY_TITLE_LINK_RESOURCE = "title.link.resource";
@@ -33,12 +33,17 @@ export const KEY_LOG_TITLE = "log.title";
 export const KEY_LOG_RATING = "log.rating";
 
 // Articles
-export const KEY_ARTICLES = "articles";
-export const KEY_ARTICLE_ID = "article.id";
-export const KEY_ARTICLE_TITLE = "article.title";
-export const KEY_ARTICLE_DATE = "article.date";
-export const KEY_ARTICLE_DESCRIPTION = "article.description";
-export const KEY_ARTICLE_CONTENT = "article.content";
+export const KEY_DATA_ARTICLES = "articles";
+export const KEY_DATA_ARTICLE_ID = "article.id";
+
+// Article revisions
+export const KEY_DATA_ARTICLE_VERSIONS = "article.versions";
+export const KEY_DATA_ARTICLE_VERSION_ARTICLE = "article.version.article";
+export const KEY_DATA_ARTICLE_VERSION_NUMBER = "article.version.number";
+export const KEY_DATA_ARTICLE_VERSION_TITLE = "article.version.title";
+export const KEY_DATA_ARTICLE_VERSION_DATE = "article.version.date";
+export const KEY_DATA_ARTICLE_VERSION_DESCRIPTION = "article.version.description";
+export const KEY_DATA_ARTICLE_VERSION_CONTENT = "article.version.content";
 
 export const parseData = R.once(() => toml.parse(data));
 export const resource = R.curry((id, resources) => R.path([id, KEY_RESOURCE_VALUE], resources));

@@ -1,5 +1,3 @@
-import * as client from "$lib/server";
-import * as server from "$lib/server/index";
 import caddyfileGrammar from "$lib/server/resources/syntaxes/caddyfile.tmLanguage.json";
 import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
 import { toHtml } from "hast-util-to-html";
@@ -210,12 +208,4 @@ export async function render(md) {
   };
 
   return result;
-}
-
-export function renderArticle(article, version) {
-  return {
-    [client.KEY_DATA_ARTICLE_ID]: article[server.KEY_DATA_ARTICLE_ID],
-    [client.KEY_DATA_ARTICLE_TITLE]: version[server.KEY_DATA_ARTICLE_VERSION_TITLE],
-    [client.KEY_DATA_ARTICLE_DATE]: version[server.KEY_DATA_ARTICLE_VERSION_DATE],
-  };
 }

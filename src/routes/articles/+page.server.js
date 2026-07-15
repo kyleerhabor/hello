@@ -1,6 +1,5 @@
 import * as client from "$lib/server";
 import * as server from "$lib/server/index";
-import { renderArticle } from "$lib/server/markdown";
 
 export function load() {
   const data = server.parseData();
@@ -11,7 +10,7 @@ export function load() {
           .filter((version) => version[server.KEY_DATA_ARTICLE_VERSION_ARTICLE] === article[server.KEY_DATA_ARTICLE_ID])
 
         const version = versions[versions.length - 1];
-        const rendered = renderArticle(article, version);
+        const rendered = server.renderArticle(article, version);
 
         return rendered;
       })

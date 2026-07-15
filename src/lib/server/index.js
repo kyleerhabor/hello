@@ -1,3 +1,5 @@
+import * as client from "$lib/server";
+import { render } from "$lib/server/markdown";
 import data from "$lib/server/resources/data.toml?raw";
 import * as R from "ramda";
 import toml from "smol-toml";
@@ -45,6 +47,72 @@ export const KEY_DATA_ARTICLE_VERSION_DATE = "article.version.date";
 export const KEY_DATA_ARTICLE_VERSION_DESCRIPTION = "article.version.description";
 export const KEY_DATA_ARTICLE_VERSION_CONTENT = "article.version.content";
 
+export const articleModules = import.meta.glob("/src/lib/server/resources/writings/articles/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+});
+
 export const parseData = R.once(() => toml.parse(data));
 export const resource = R.curry((id, resources) => R.path([id, KEY_RESOURCE_VALUE], resources));
 export const medium = R.curry((id, mediums) => R.path([id, KEY_MEDIUM_VALUE], mediums));
+
+export function article(id, data) {
+  const article = data[KEY_DATA_ARTICLES].find((article) => article[KEY_DATA_ARTICLE_ID] === id);
+
+  if (!article) {
+    throw error(404);
+  }
+
+  return article;
+}
+
+/**
+ * @param {string} v
+ * @param {any[]} versions
+ * @returns {any}
+ */
+export function version(v, versions) {
+  const vNo = parseInt(v, 10);
+
+  if (isNaN(vNo)) {
+    throw error(400);
+  }
+
+  const version = versions.find((version) => version[KEY_DATA_ARTICLE_VERSION_NUMBER] === vNo);
+
+  if (version === undefined) {
+    throw error(404);
+  }
+
+  return version;
+}
+
+export function renderArticle(article, version) {
+  return {
+    [client.KEY_DATA_ARTICLE_ID]: article[KEY_DATA_ARTICLE_ID],
+    [client.KEY_DATA_ARTICLE_TITLE]: version[KEY_DATA_ARTICLE_VERSION_TITLE],
+    [client.KEY_DATA_ARTICLE_DATE]: version[KEY_DATA_ARTICLE_VERSION_DATE],
+  };
+}
+
+export async function renderArticleDetail(article, version, versions) {
+  const rendered = await render(
+    articleModules[`/src/lib/server/resources/writings/articles/${version[KEY_DATA_ARTICLE_VERSION_CONTENT]}`],
+  );
+
+  const result = {
+    ...renderArticle(article, version),
+    [client.KEY_DATA_ARTICLE_DESCRIPTION]: version[KEY_DATA_ARTICLE_VERSION_DESCRIPTION],
+    [client.KEY_DATA_ARTICLE_CONTENT]: rendered.html,
+    [client.KEY_DATA_ARTICLE_HEADINGS]: rendered.headings,
+    [client.KEY_DATA_ARTICLE_FOOTNOTES]: rendered.footnotes,
+    [client.KEY_DATA_ARTICLE_VERSION]: version[KEY_DATA_ARTICLE_VERSION_NUMBER],
+    [client.KEY_DATA_ARTICLE_VERSIONS]: versions.map((version) => ({
+      [client.KEY_DATA_ARTICLE_VERSION_NUMBER]: version[KEY_DATA_ARTICLE_VERSION_NUMBER],
+      [client.KEY_DATA_ARTICLE_VERSION_DATE]: version[KEY_DATA_ARTICLE_VERSION_DATE],
+    })),
+  };
+
+  return result;
+}

@@ -573,7 +573,7 @@ destination: 100.103.176.102
 The interface has switched to Mullvad’s! Let me try connecting:
 
 ```sh
-curl --verbose --head navidrome.home.kyleerhabor.com
+curl --verbose --head https://navidrome.home.kyleerhabor.com
 ```
 
 ```txt

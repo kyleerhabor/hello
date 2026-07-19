@@ -1204,3 +1204,12 @@ Enter Nix, a purely functional package manager and system configuration tool. Al
 "article.version.description" = """
 In my previous article about using Nix to manage project dependencies in Swift, I very briefly touched on Tailscale, a VPN service. Since publishing this, I’ve updated my configuration to support multiple hosts with multiple servers, so my 2019 MacBook Pro can host Navidrome at https://navidrome.mbp2019.home.kyleerhabor.com, and a future device like an M6 MacBook Pro could host Komga at https://komga.mbp2026.home.kyleerhabor.com. This is nice, but I assume most people are unfamiliar with the various technologies and the issues they’re addressing, so I want this article to be a gentle introduction to what this enables."""
 "article.version.content" = "tailscale-mullvad-and-avoiding-the-$5-add-on-a-case-study-in-secure-networking-v2.md"
+
+[["article.versions"]]
+"article.version.article" = "tailscale-mullvad-and-avoiding-the-$5-add-on-a-case-study-in-secure-networking"
+"article.version.number" = 3
+"article.version.title" = "Tailscale, Mullvad, and avoiding the $5 add-on: a case study in secure networking"
+"article.version.date" = "2026-07-18"
+"article.version.description" = """
+In my previous article about using Nix to manage project dependencies in Swift, I very briefly touched on Tailscale, a VPN service. Since publishing this, I’ve updated my configuration to support multiple hosts with multiple servers, so my 2019 MacBook Pro can host Navidrome at https://navidrome.mbp2019.home.kyleerhabor.com, and a future device like an M6 MacBook Pro could host Komga at https://komga.mbp2026.home.kyleerhabor.com. This is nice, but I assume most people are unfamiliar with the various technologies and the issues they’re addressing, so I want this article to be a gentle introduction to what this enables."""
+"article.version.content" = "tailscale-mullvad-and-avoiding-the-$5-add-on-a-case-study-in-secure-networking-v3.md"

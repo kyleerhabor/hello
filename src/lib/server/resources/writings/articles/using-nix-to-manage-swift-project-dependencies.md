@@ -1,4 +1,4 @@
-# Using Nix to Manage Swift Project Dependencies
+# Using Nix to manage Swift project dependencies
 
 I’m developing [Sampled, a macOS app empowering people to listen to music on their own terms](https://github.com/kyleerhabor/sampled). The project uses [FFmpeg](https://ffmpeg.org) for local processing, which is very fun to work with as a non-trivial C dependency. At the same time, it’s a pain to integrate into a Swift project, and the shell scripts I’ve used to manage it have been a source of friction.
 

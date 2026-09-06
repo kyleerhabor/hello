@@ -14,7 +14,7 @@ Now, I won’t sit here and act like I know what it’s like to maintain a large
 
 To close, I think it’s important to note that copyleft exists on a spectrum and can be grouped into weak copyleft, which is limited to the licensed code itself, and strong copyleft, which extends to the work that uses it. The former permits surrounding code to keep its own license, while the latter doesn’t. Because of this, it’s generally safe to distribute libraries under weak copyleft licenses like MPLv2 and LGPLv3. I see very few reasons for maintainers not to adopt them as a baseline.
 
-[^1]: [Why Copyleft?](https://www.gnu.org/philosophy/why-copyleft.en.html)
-[^2]: [Why I Use the GPL and Not Cuck Licenses](https://lukesmith.xyz/articles/why-i-use-the-gpl-and-not-cuck-licenses)
+[^1]: [Why Copyleft? - GNU Project - Free Software Foundation](https://www.gnu.org/philosophy/why-copyleft.en.html)
+[^2]: [Why I Use the GPL and Not Cuck Licenses | Luke Smith](https://lukesmith.xyz/articles/why-i-use-the-gpl-and-not-cuck-licenses)
 [^3]: [mpv/Copyright at master · mpv-player/mpv](https://github.com/mpv-player/mpv/blob/master/Copyright)
 [^4]: [LGPL relicensing · Issue #2033 · mpv-player/mpv](https://github.com/mpv-player/mpv/issues/2033)

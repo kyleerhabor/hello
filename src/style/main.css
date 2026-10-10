@@ -36,28 +36,16 @@ a {
 
 pre.shiki {
   padding: var(--spacing-base);
+  border: var(--border-width) solid var(--separator-color);
   border-radius: var(--spacing-sm);
   overflow-x: auto;
-  color: var(--shiki-light);
-  background-color: var(--background-secondary-color);
   -webkit-text-size-adjust: none;
-}
-
-pre.shiki span {
-  color: var(--shiki-light);
 }
 
 pre.shiki code {
   display: block;
   min-width: 100%;
   width: max-content;
-  color: var(--shiki-light);
-}
-
-@media (prefers-color-scheme: dark) {
-  pre.shiki, pre.shiki span {
-    color: var(--shiki-dark);
-  }
 }
 
 /* MathJax */

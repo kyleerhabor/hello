@@ -1,0 +1,54 @@
+{
+  "name": "bw",
+  "type": "light",
+  "colors": {
+    "editor.background": "var(--background-color)",
+    "editor.foreground": "inherit"
+  },
+  "settings": [
+    {
+      "settings": {
+        "foreground": "inherit"
+      }
+    },
+    {
+      "scope": [
+        "keyword",
+        "storage",
+        "storage.type",
+        "storage.modifier",
+        "constant.language",
+        "variable.language"
+      ],
+      "settings": {
+        "fontStyle": "bold underline"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator",
+        "entity.name",
+        "entity.name.type",
+        "entity.name.class",
+        "entity.name.function",
+        "entity.name.tag",
+        "entity.name.namespace",
+        "support.function",
+        "markup.heading",
+        "markup.bold"
+      ],
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "var(--text-secondary-color)"
+      }
+    }
+  ]
+}

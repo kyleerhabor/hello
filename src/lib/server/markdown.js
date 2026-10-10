@@ -1,4 +1,5 @@
 import caddyfileGrammar from "$lib/server/resources/syntaxes/caddyfile.tmLanguage.json";
+import bwTheme from "$lib/server/resources/themes/bw.json";
 import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
 import { toHtml } from "hast-util-to-html";
 import rehypeExternalLinks from "rehype-external-links";
@@ -158,10 +159,10 @@ function rehypeFootnotes() {
   };
 }
 
-const SHIKI_THEME_LIGHT = "github-light";
-const SHIKI_THEME_DARK = "github-dark";
+// Inspired from https://carette.xyz
+const SHIKI_THEME = "bw";
 const highlighter = await createHighlighter({
-  themes: [SHIKI_THEME_LIGHT, SHIKI_THEME_DARK],
+  themes: [bwTheme],
   langs: [
     ...Object.keys(bundledLanguages),
     {
@@ -188,11 +189,7 @@ const processor = unified()
     rehypeShikiFromHighlighter,
     highlighter,
     {
-      themes: {
-        light: SHIKI_THEME_LIGHT,
-        dark: SHIKI_THEME_DARK,
-      },
-      defaultColor: false,
+      theme: SHIKI_THEME,
     },
   )
   .use(rehypeExternalLinks, { rel: ["external", "noopener", "noreferrer", "nofollow"] })
